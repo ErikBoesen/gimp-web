@@ -1,6 +1,8 @@
 Title: Frequently Asked Questions
 Date: 2015-08-14T15:07:00-05:00
 Author: Alexandre Prokoudine
+lang: en
+slug: userfaq
 
 [TOC]
 

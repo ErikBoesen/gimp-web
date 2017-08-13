@@ -26,6 +26,9 @@ I18N_SUBSITES = {
         'fr': {
             'SITENAME': 'GIMP FR',
             },
+        'ar': {
+            'SITENAME': 'GIMP AR',
+            },
         }
 
 AUTHOR = u'Pat David'
