@@ -138,15 +138,18 @@ as opened in GIMP 2.9.4 (left) and GIMP 2.9.6 (right).
 </figure>
 
 Newly added color tags simplify managing large projects with a lot of layers
-and layer groups. To make more use of that, we need someone to step up and
-implement multiple layers selection. For an initial research, see
-[this wiki page](https://gui.gimp.org/index.php?title=Multi-layer_selection_workgroup).
+and layer groups. The screenshot below is a real-life PSD file opened in GIMP
+2.9.6.
 
 <figure>
     <img src="{filename}gimp-2-9-6-color-tags-psd-xcf.png" alt="New User Interface Themes" width='468' height='674' />
 </figure>
 
-For full access to all the new features, we updated the Layer Attributes
+To make more use of that feature, we need someone to step up and implement
+multiple layers selection. For an initial research, see
+[this wiki page](https://gui.gimp.org/index.php?title=Multi-layer_selection_workgroup).
+
+For full access to all the new features, we updated the *Layer Attributes*
 dialog to provide the single UI for setting layer's name, blending mode,
 opacity, and offset, toggling visibility, link status, various locks,
 color tags.
@@ -161,7 +164,7 @@ Under the influence of Elle Stone (and with her code contributions), CIE LCH
 and CIE LAB color spaces are finding more use in GIMP now.
 
 Color dialogs now have an LCH color selector that, in due time, will most
-likely replace outdated HSV selector for reasons outlined in
+likely replace outdated HSV selector for reasons outlined by Elle in
 [this article](http://ninedegreesbelow.com/photography/determine-image-tonality-and-palette-part-1.html).
 The LCH selector also supports gamut checking.
 
@@ -260,8 +263,8 @@ as well as loading/exporting metadata from/to XMP files.
 ## Filters
 
 Thanks to contributions from Thomas Manni and Ell, GIMP now has 9 more
-GEGL-based filters, including much anticipated Wavelet Decompose, as well
-as an Extract Component plug-in that simplifies fetching e.g. CMYK's K
+GEGL-based filters, including much anticipated *Wavelet Decompose*, as well
+as an *Extract Component* plug-in that simplifies fetching e.g. CMYK's K
 channel or LAB's L* channel from an image.
 
 Another new feature that we expect to develop further is GUM—a simple
@@ -277,8 +280,8 @@ GEGL filters. Here's a quick video:
 
 ## Resources and Presets
 
-To make GIMP more useful by default we now ship it with some basic presets
-for the Crop tool: 2×3, 3×4, 16:10, 16:9, and Square.
+To make GIMP more useful by default, we now ship it with some basic presets
+for the *Crop* tool: 2&times;3, 3&times;4, 16:10, 16:9, and Square.
 
 Documents templates have been updated and now feature popular, contemporary
 presets for both print and digital media.
@@ -289,6 +292,6 @@ We still have a bunch of bugs to fix before we can release 2.10 and we
 appreciate all the huge and tiny useful patches contributors send us to that
 effect.
 
-GIMP 2.9.8 is expected to ship with more bug fixes and an updated Blend
-(Gradient Fill) tool that works completely on canvas, including adding and
+GIMP 2.9.8 is expected to ship with more bug fixes and an updated *Blend*
+(*Gradient Fill*) tool that works completely on canvas, including adding and
 removing color stops and assigning colors.
