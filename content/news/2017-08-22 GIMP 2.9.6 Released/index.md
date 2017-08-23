@@ -3,14 +3,15 @@ Date: 2017-08-22
 Category: News
 Authors: Alexandre Prokoudine
 Slug: gimp-2-9-6-released
-Status: draft
 Summary: After more than a year of hard work we are excited to release GIMP 2.9.6
-featuring many improvements and bug fixes.
+featuring many improvements, some new features, translation updates for 22
+languages, and 204 bug fixes.
 
 After more than a year of hard work we are excited to release GIMP 2.9.6
-featuring many improvements and bug fixes.
+featuring many improvements, some new features, translation updates for 22
+languages, and 204 bug fixes.
 
-As usual, for a complete list of changes please see 
+As usual, for a complete list of changes please see
 [NEWS](https://git.gnome.org/browse/gimp/tree/NEWS). Here we'd like to focus
 on the most important changes.
 
@@ -28,43 +29,27 @@ On the other hand, you can always set the amount of cores to 1 if you couldn't
 be bothered to report bugs. For that, please tweak the amount of threads on the
 *System Resources* page of the *Preferences* dialog.
 
-## GUI and usability
+## GUI, Usability, and Configurability
 
-  - Easily add or remove layer masks by clicking either the layer
-    preview or a new button in the Layers dialog.
-  - Enhance the Layer Attributes dialog to provide the single UI for
-    setting layer's name, blending mode, opacity, and offset,
-    toggling visibility, link status, various locks, color tags.
-  - Add a Save As button to the “Quit GIMP” dialog and raise images
-    on click for easy checks.
-  - Allow to choose fill color when resizing layers and images.
-  - Quick Mask and Channel Attributes dialogs use the new spinscale
-    widget for the  mask opacity slider.
-  - Enable grid views of dynamics and tool presets.
-  - Allow to zoom with middle mouse button + control + drag up/down.
-  - For all paint tools, when switching to the color picker mode,
-    don't rely on the exact modifier being pressed or released. Instead,
-    check if only the right modifier is pressed after *each* modifier
-    change, and switch to color picking if it is.
-  - On startup, GIMP checks for duplicate accelerators in menus, and
-    removes duplicates.
-  - Standard (Freedesktop) and GTK+ icons can now be set by the icon
-    theme for a fully consistent style.
-  - Many new icons.
-  - Toolbox buttons do not grab focus anymore, which used to break
-    usage of the Tab key and other canvas-related shortcuts after
-    changing tools with a pointing device click.
-  - Delete Layer/Channel/Path are consistently the last option in
-    respective dialogs now.
-  - Extend the text along the tangent of the last path stroke, when
-    the length of the path is shorter than the width of the text to be
-    warped.
-  - Allow to toggle the histogram dialog between gamma and linear.
-  - New 'Colors -> Linear Invert' command to provide radiometrically
-    correct color inversion.
-  - Quit dialog now exits when all the images in the list have been
-    saved.
-  - The built-in error dialog now displays errors outputted by GEGL.
+Benoit Touchette improved mask creation workflow for users who use a ton of
+masks in their projects. Now GIMP remembers the last type of mask
+initialization, and you can use key modifiers + mouse click on layer previews
+to create, apply, or remove masks. There’s a new button in the *Layers*
+dockable dialog for that as well.
+
+To make that feature possible, Michael Natterer introduced saving of last
+dialogs' settings across sessions and made these defaults configurable via the
+new *Interface / Dialog Defaults* page in the *Preferences* dialog.
+
+[screenshot]
+
+Additionally, the *Preferences* dialog got a vertical scrollbar where
+applicable to keep its height more sensible, and settings on individual pages
+of the dialog can be reset separately now.
+
+The *Quit* dialog got a few updates: automatically exiting when all the images
+in the list have been saved, and a *Save As* button for every opened image
+(clicking an image in the list will raise it easy checks).
 
 ## On-canvas interaction changes
 
@@ -98,8 +83,10 @@ Moreover, we made both compositing of layers and blending color space
 configurable, should you have the need to use that for advanced image
 manipulation.
 
-We also added a new 'Colors -> Linear Invert' command to provide
-radiometrically correct color inversion.
+We also added a new *Colors -> Linear Invert* command to provide
+radiometrically correct color inversion. And the histogram dialog now features
+a toggle between gamma and linear modes—again, it's a design we'd like to
+improve.
 
 Thanks to Øyvind Kolås and his Patreon supporters GIMP now also has a simple
 'blendfun' framework that greatly simplifies implementing new color modes. Ell
@@ -116,6 +103,8 @@ For full access to all the new features, we updated the Layer Attributes
 dialog to provide the single UI for setting layer's name, blending mode,
 opacity, and offset, toggling visibility, link status, various locks,
 color tags.
+
+[screenshot]
 
 ## CIE LCH and CIE LAB
 
@@ -230,7 +219,7 @@ To make GIMP more useful by default we now ship it with some basic presets
 for the Crop tool: 2×3, 3×4, 16:10, 16:9, and Square.
 
 Documents templates have been updated and now feature popular, contemporary
-document presets for both print and digital media.
+presets for both print and digital media.
 
 ## What's Next
 
