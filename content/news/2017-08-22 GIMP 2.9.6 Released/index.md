@@ -91,12 +91,13 @@ unless someone sends a clean patch).
 * GEGL-based filters can be interacted with directly on the canvas
 (*Spiral* and *Supernova* so far as test case).
 
-<div class='fluid-video'>
- <video width="880" height="528" controls>
-  <source src="https://download.gimp.org/pub/gimp/video/v2.9/spiral.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video> 
-</div>
+<p>
+<video width="880" height="528" controls>
+  <source src="https://download.gimp.org/mirror/pub/gimp/video/v2.9/gimp-2-9-6-spiral-filter.webm" type="video/webm">
+  <source src="https://download.gimp.org/mirror/pub/gimp/video/v2.9/gimp-2-9-6-spiral-filter.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</p>
 
 So far one still needs to write C code to make a GEGL-based filter use
 on-canvas interaction. We expect to spend some time figuring out a way to
@@ -189,6 +190,14 @@ hang of it, you love it.
 Thanks to Ell, the *Warp Transform* tool is now a lot faster, partially thanks
 to a switch that toggles high-quality preview that isn't always necessary.
 
+<p>
+<video width="856" height="566" controls>
+  <source src="https://download.gimp.org/mirror/pub/gimp/video/v2.9/gimp-2-9-6-warp-transform.webm" type="video/webm">
+  <source src="https://download.gimp.org/mirror/pub/gimp/video/v2.9/gimp-2-9-6-warp-transform.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</p>
+
 All transformation tools don't display grid by default anymore, and during
 an interactive transformation the original layer gets hidden now. The latter
 greatly simplifies transforming upper layer in relation to a lower layer.
@@ -271,12 +280,13 @@ Another new feature that we expect to develop further is GUM—a simple
 metadata language that helps automatically building more sensible UI for
 GEGL filters. Here's a quick video:
 
-<div class='fluid-video'>
- <video width="384" height="544" controls>
-  <source src="https://download.gimp.org/pub/gimp/video/v2.9/dynamic-op-ui.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video> 
-</div>
+<p>
+<video width="384" height="544" controls>
+  <source src="https://download.gimp.org/mirror/pub/gimp/video/v2.9/gimp-2-9-6-gegl-dynamic-op-ui.webm" type="video/webm">
+  <source src="https://download.gimp.org/mirror/pub/gimp/video/v2.9/gimp-2-9-6-gegl-dynamic-op-ui.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</p>
 
 ## Resources and Presets
 
