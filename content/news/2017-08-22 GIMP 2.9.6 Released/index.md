@@ -94,6 +94,11 @@ made use of that by adding Linear Burn, Vivid Light, Linear Light, Pin Light,
 Hard Mix, Exclusion, Merge, Split, and Luminance (RGB) blending modes (most of
 them now also supported in the PSD plug-in).
 
+Another prominent change is the introduction of the Pass Through mode for layer
+groups. When this mode is used instead of any other one, GIMP mixes layers
+inside that group directly to the layers below, skipping creation of the group
+projection. The feature was implemented by Ell.
+
 Newly added color tags simplify managing large projects with a lot of layers
 and layer groups. To make more use of that, we need someone to step up and
 implement multiple layers selection. For an initial research, see
