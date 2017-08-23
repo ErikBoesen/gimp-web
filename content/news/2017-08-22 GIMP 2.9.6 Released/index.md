@@ -79,7 +79,7 @@ dialog.
 
 Michael Natterer did a huge under-the-hood work that is likely to affect user
 interaction with GIMP bigly. Simply put, he moved a lot of on-canvas code
-from tools like Rectangle Select, Measure and Paths into reusable code.
+from tools like *Rectangle Select*, *Measure* and *Path* into reusable code.
 
 The effect of that is multifold:
 
@@ -167,7 +167,7 @@ likely replace outdated HSV selector for reasons outlined by Elle in
 [this article](http://ninedegreesbelow.com/photography/determine-image-tonality-and-palette-part-1.html).
 The LCH selector also supports gamut checking.
 
-A new *Hue-Chroma* filter in the Colors menu works much like *Hue-Saturation*,
+A new *Hue-Chroma* filter in the *Colors* menu works much like *Hue-Saturation*,
 but operates in CIE LCH color space. Moreover, the *Fuzzy Select* and the
 *Bucket Fill* tool now can select colors by CIE L, C, and H.
 
@@ -201,7 +201,7 @@ an interactive transformation the original layer gets hidden now. The latter
 greatly simplifies transforming upper layer in relation to a lower layer.
 Before that, the original layer used to block the view.
 
-Free Select tool now waits for Enter being pressed to confirm selection, which
+*Free Select* tool now waits for Enter being pressed to confirm selection, which
 enables you to tweak positions of polygonal selection.
 
 ## Painting
@@ -209,7 +209,7 @@ enables you to tweak positions of polygonal selection.
 An important new feature that is somewhat easy to overlook is being able to
 paint on transparent layers with modes other than normal.
 
-Thanks to shark0r, the Smudge tool now has a Flow control that allows mixing
+Thanks to shark0r, the *Smudge* tool now has a *Flow* control that allows mixing
 in both constant and gradient color while smudging. There's another new option
 to never decrease alpha of existing pixels while smudging in the tools options
 now as well. For more on this, please read
@@ -244,9 +244,9 @@ confirm your choice. You will need to restart GIMP.
 ## Better PSD Support
 
 The PSD plug-in now supports a wider range of blending modes for layers,
-at both importing and exporting: linear burn, linear light, vivid light,
-pin light, and hard mix layer modes. It also finally supports exporting
-layer groups and reads/writes pass-through mode in those. Additionally,
+at both importing and exporting: Linear Burn, Linear Light, Vivid Light,
+Pin Light, and Hard Mix blending modes. It also finally supports exporting
+layer groups and reads/writes the Pass Through mode in those. Additionally,
 GIMP now imports and exports color tags from/to PSD files.
 
 ## Metadata Viewing and Editing
