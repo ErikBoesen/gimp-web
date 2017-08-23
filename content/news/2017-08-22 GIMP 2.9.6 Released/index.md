@@ -1,5 +1,5 @@
 Title: GIMP 2.9.6 Released
-Date: 2017-08-22
+Date: 2017-08-23
 Category: News
 Authors: Alexandre Prokoudine
 Slug: gimp-2-9-6-released
@@ -29,6 +29,10 @@ On the other hand, you can always set the amount of cores to 1 if you couldn't
 be bothered to report bugs. For that, please tweak the amount of threads on the
 *System Resources* page of the *Preferences* dialog.
 
+<figure>
+    <img src="{filename}gimp-2-9-6-system-resources.png" alt="Setting amount of threads in GIMP 2.9.6" width='772' height='660' />
+</figure>
+
 ## GUI, Usability, and Configurability
 
 Benoit Touchette improved mask creation workflow for users who use a ton of
@@ -37,11 +41,17 @@ initialization, and you can use key modifiers + mouse click on layer previews
 to create, apply, or remove masks. There’s a new button in the *Layers*
 dockable dialog for that as well.
 
+<figure>
+    <img src="{filename}gimp-2-9-6-create-mask.png" alt="Easily create new mask with GIMP 2.9.6" width='418' height='431' />
+</figure>
+
 To make that feature possible, Michael Natterer introduced saving of last
 dialogs' settings across sessions and made these defaults configurable via the
 new *Interface / Dialog Defaults* page in the *Preferences* dialog.
 
-[screenshot]
+<figure>
+    <img src="{filename}gimp-2-9-6-dialog-defaults.png" alt="Configurable Dialog Defaults in GIMP 2.9.6" width='772' height='660' />
+</figure>
 
 Additionally, the *Preferences* dialog got a vertical scrollbar where
 applicable to keep its height more sensible, and settings on individual pages
@@ -50,6 +60,22 @@ of the dialog can be reset separately now.
 The *Quit* dialog got a few updates: automatically exiting when all the images
 in the list have been saved, and a *Save As* button for every opened image
 (clicking an image in the list will raise it easy checks).
+
+<figure>
+    <img src="{filename}gimp-2-9-6-fill-with.png" alt="Configurable Fill With option in GIMP 2.9.6" width='361' height='597' />
+</figure>
+
+## Better Hi-DPI Support
+
+While most changes for better Hi-DPI displays support are planned for v3.0, when
+GIMP is expected to be based on either GTK+3 or GTK+4, we were able to remove at
+least some of the friction by introducing icon sizes at different resolutions
+and a switch for icon sizes on the *Icon Theme* page of the *Preferences*
+dialog.
+
+<figure>
+    <img src="{filename}gimp-2-9-6-icon-themes.png" alt="Configurable icon size in GIMP 2.9.6" width='772' height='660' />
+</figure>
 
 ## On-canvas Interaction Changes
 
@@ -63,9 +89,14 @@ The effect of that is multifold:
 tools should be easier now, although we are not planning that for 2.10,
 unless someone sends a clean patch).
 * GEGL-based filters can be interacted with directly on the canvas
-(Spiral and Supernova so far as test case).
+(*Spiral* and *Supernova* so far as test case).
 
-[video from https://streamable.com/7zvs4]
+<div class='fluid-video'>
+ <video width="880" height="528" controls>
+  <source src="https://download.gimp.org/pub/gimp/video/v2.9/spiral.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video> 
+</div>
 
 So far one still needs to write C code to make a GEGL-based filter use
 on-canvas interaction. We expect to spend some time figuring out a way to
@@ -88,28 +119,41 @@ radiometrically correct color inversion. And the histogram dialog now features
 a toggle between gamma and linear modes—again, it's a design we'd like to
 improve.
 
-Thanks to Øyvind Kolås and his Patreon supporters GIMP now also has a simple
-'blendfun' framework that greatly simplifies implementing new color modes. Ell
-made use of that by adding Linear Burn, Vivid Light, Linear Light, Pin Light,
-Hard Mix, Exclusion, Merge, Split, and Luminance (RGB) blending modes (most of
-them now also supported in the PSD plug-in).
+Thanks to Øyvind Kolås and his
+[Patreon supporters](https://www.patreon.com/pippin), GIMP now also has a
+simple 'blendfun' framework that greatly simplifies implementing new color
+modes. Ell made use of that by adding Linear Burn, Vivid Light, Linear Light,
+Pin Light, Hard Mix, Exclusion, Merge, Split, and Luminance (RGB) blending modes
+(most of them now also supported in the PSD plug-in).
 
 Another prominent change is the introduction of the Pass Through mode for layer
 groups. When this mode is used instead of any other one, GIMP mixes layers
 inside that group directly to the layers below, skipping creation of the group
-projection. The feature was implemented by Ell.
+projection. The feature was implemented by Ell. The screenshot below features a
+user-submitted PSD file that has TEXTURES layer group in the Pass Through mode,
+as opened in GIMP 2.9.4 (left) and GIMP 2.9.6 (right).
+
+<figure>
+    <img src="{filename}gimp-2-9-6-pass-through.jpg" alt="Pass Through mode vs no Pass Through mode" width='960' height='586' />
+</figure>
 
 Newly added color tags simplify managing large projects with a lot of layers
 and layer groups. To make more use of that, we need someone to step up and
 implement multiple layers selection. For an initial research, see
 [this wiki page](https://gui.gimp.org/index.php?title=Multi-layer_selection_workgroup).
 
+<figure>
+    <img src="{filename}gimp-2-9-6-color-tags-psd-xcf.png" alt="New User Interface Themes" width='468' height='674' />
+</figure>
+
 For full access to all the new features, we updated the Layer Attributes
 dialog to provide the single UI for setting layer's name, blending mode,
 opacity, and offset, toggling visibility, link status, various locks,
 color tags.
 
-[screenshot]
+<figure>
+    <img src="{filename}gimp-2-9-6-layer-attributes-dialog.png" alt="Updated Layer Attributes dialog" width='608' height='579' />
+</figure>
 
 ## CIE LCH and CIE LAB
 
@@ -127,6 +171,10 @@ but operates in CIE LCH color space. Moreover, the *Fuzzy Select* and the
 
 Finally, both the *Color Picker* and the *Sample Points* dialog now display
 pixel values in CIE LAB and CIE LCH.
+
+<figure>
+    <img src="{filename}gimp-2-9-6-sample-points-lch-lab.jpg" alt="Sample points in LCH and LAB, GIMP 2.9.6" width='767' height='355' />
+</figure>
 
 ## Tools
 
@@ -197,13 +245,17 @@ Thanks to Benoit Touchette, GIMP now ships a new metadata viewer that
 uses Exiv2 to display Exif, XMP, IPTC, and DICOM metadata (the latter
 is displayed on the XMP tab).
 
-[screenshot]
+<figure>
+    <img src="{filename}gimp-2-9-6-metadata-viewer.jpg" alt="Metadata viewer in GIMP 2.9.6" width='772' height='601' />
+</figure>
 
 Moreover, Benoit implemented a much anticipated metadata editor that
 supports adding/editing writing XMP, IPTC, DICOM, and GPS/Exif metadata,
 as well as loading/exporting metadata from/to XMP files.
 
-[screenshot]
+<figure>
+    <img src="{filename}gimp-2-9-6-metadata-editor.jpg" alt="Metadata editor in GIMP 2.9.6" width='772' height='608' />
+</figure>
 
 ## Filters
 
@@ -216,7 +268,12 @@ Another new feature that we expect to develop further is GUM—a simple
 metadata language that helps automatically building more sensible UI for
 GEGL filters. Here's a quick video:
 
-[video from https://streamable.com/ajbi4]
+<div class='fluid-video'>
+ <video width="384" height="544" controls>
+  <source src="https://download.gimp.org/pub/gimp/video/v2.9/dynamic-op-ui.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video> 
+</div>
 
 ## Resources and Presets
 
