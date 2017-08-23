@@ -51,7 +51,7 @@ The *Quit* dialog got a few updates: automatically exiting when all the images
 in the list have been saved, and a *Save As* button for every opened image
 (clicking an image in the list will raise it easy checks).
 
-## On-canvas interaction changes
+## On-canvas Interaction Changes
 
 Michael Natterer did a huge under-the-hood work that is likely to affect user
 interaction with GIMP bigly. Simply put, he moved a lot of on-canvas code
@@ -71,7 +71,7 @@ So far one still needs to write C code to make a GEGL-based filter use
 on-canvas interaction. We expect to spend some time figuring out a way to
 simplify this, possibly using the GUM language (see below).
 
-## Layers, linear and perceptual workflows
+## Layers, Linear and Perceptual Workflows
 
 Since we want to make workflows in linear color spaces more prominent in GIMP,
 it was time to update the blend modes code. You can now switch between two
@@ -161,7 +161,7 @@ painting performance. Bitmap brushes also don't get clipped anymore, when
 hardness is less than 100. Plus there's a specialized convolution algorithm
 for the hardness blur to make it faster now.
 
-## Processing raw images
+## Processing Raw Images
 
 Since 2.9.4, GIMP is capable of opening raw (digital camera) images via
 [darktable](http://www.darktable.org), and the plan was to open it up to more
@@ -178,7 +178,7 @@ available on your computer. For this, open the *Preferences* dialog and go to
 the *Image Import* page, then click on the plug-in you prefer and click OK to
 confirm your choice. You will need to restart GIMP.
 
-## Better PSD support
+## Better PSD Support
 
 The PSD plug-in now supports a wider range of blending modes for layers,
 at both importing and exporting: linear burn, linear light, vivid light,
@@ -186,7 +186,7 @@ pin light, and hard mix layer modes. It also finally supports exporting
 layer groups and reads/writes pass-through mode in those. Additionally,
 GIMP now imports and exports color tags from/to PSD files.
 
-## Metadata editing
+## Metadata Viewing and Editing
 
 Thanks to Benoit Touchette, GIMP now ships a new metadata viewer that
 uses Exiv2 to display Exif, XMP, IPTC, and DICOM metadata (the latter
@@ -213,7 +213,7 @@ GEGL filters. Here's a quick video:
 
 [video from https://streamable.com/ajbi4]
 
-## Resources and presets
+## Resources and Presets
 
 To make GIMP more useful by default we now ship it with some basic presets
 for the Crop tool: 2×3, 3×4, 16:10, 16:9, and Square.
