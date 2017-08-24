@@ -1,5 +1,5 @@
 Title: GIMP 2.9.6 Released
-Date: 2017-08-23
+Date: 2017-08-24
 Category: News
 Authors: Alexandre Prokoudine
 Slug: gimp-2-9-6-released
@@ -248,6 +248,22 @@ at both importing and exporting: Linear Burn, Linear Light, Vivid Light,
 Pin Light, and Hard Mix blending modes. It also finally supports exporting
 layer groups and reads/writes the Pass Through mode in those. Additionally,
 GIMP now imports and exports color tags from/to PSD files.
+
+## WebP support
+
+We already shipped GIMP 2.9.2 with initial support for opening and exporting
+WebP files, however the plug-in was missing a number of essential features.
+Last year, we replaced it with a pre-existing plug-in initially written by
+[Nathan Osman](https://github.com/nathan-osman) back in 2011 and maintained
+through the years. We now ship it by default as part of GIMP.
+
+<figure>
+    <img src="{filename}gimp-2-9-6-webp-exporting.jpg" alt="WebP exporting in GIMP 2.9.6" width='772' height='561' />
+</figure>
+
+The new plug-in received additional contributions from Benoit Touchette and
+Pascal Massimino and supports both ICC profiles, metadata loading/exporting,
+and animation.
 
 ## Metadata Viewing and Editing
 
