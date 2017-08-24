@@ -147,7 +147,7 @@ if 'STABLE' in GIMP:
                 RELEASE_DATE
             except NameError:
                 RELEASE_DATE = info['date']
-        if 'windows' in info: 
+        if 'windows' in info:
             try:
                 WINDOWS_FILE
             except NameError:
@@ -164,14 +164,39 @@ if 'STABLE' in GIMP:
 else:
     print 'STABLE not defined'
 
+if 'DEVELOPMENT' in GIMP:
+    # development version
+    GIMP_VERSION_DEVELOPMENT = GIMP['DEVELOPMENT'].keys()[0]
+    for version, info in GIMP['DEVELOPMENT'].iteritems() :
+        if 'date' in info:
+            try:
+                RELEASE_DATE_DEVELOPMENT
+            except NameError:
+                RELEASE_DATE_DEVELOPMENT = info['date']
+        if 'windows' in info:
+            try:
+                WINDOWS_FILE_DEVELOPMENT
+            except NameError:
+                WINDOWS_VER_DEVELOPMENT = version
+                WINDOWS_FILE_DEVELOPMENT = info['windows'].keys()[0]
+                WINDOWS_HASH_DEVELOPMENT = info['windows'].values()[0]
+        if 'macos' in info:
+            try:
+                MACOS_FILE_DEVELOPMENT
+            except NameError:
+                MACOS_VER_DEVELOPMENT = version
+                MACOS_FILE_DEVELOPMENT = info['macos'].keys()[0]
+                MACOS_HASH_DEVELOPMENT = info['macos'].values()[0]
+else:
+    print 'DEVELOPMENT not defined'
 
 #
 # Random Header Background Image
-# 
+#
 # This is to get the possible header images
 # and choose one randomly to display.
 #
-# Templates will use HEADER_IMG data to parse image information.  
+# Templates will use HEADER_IMG data to parse image information.
 # Refer to the random_header plugin for actually putting the image
 # in the correct stylesheet.
 #

@@ -1,0 +1,322 @@
+{% extends "page.html" %}
+
+{#
+    We've switched to using the GIMP_VERSIONS json file.
+    Access it using GIMP.###
+#}
+
+{% block head %}
+{{ super() }}
+        <link rel='stylesheet' type='text/css' href='/theme/css/downloads.css' />
+{% endblock %}
+
+{% block data %}
+
+    <figure>
+    <img src="downloadsplash-aryeom.jpg" alt="Download Splash Image courtesy of Aryeom" />
+    </figure>
+
+    <h2>Current Development Version</h2>
+    <p>The current development release of GIMP is <b>{{ GIMP_VERSION_DEVELOPMENT }}</b> ({{ RELEASE_DATE_DEVELOPMENT }}).</p>
+
+
+    <div class="OSTEST">
+        <p>
+            We think your OS is 
+            <span id="pOSTEST">
+                Well, we don't actually know.  
+                Either JavaScript is disabled, or I am not working quite right...  
+                So I am showing you all the options.  
+            </span>  
+        </p>
+
+        <p id='others'>
+            Show downloads for 
+            <span class="show_links" id='os_linux'>GNU/Linux</span>&nbsp;| 
+            <span class="show_links" id='os_mac'>OS&nbsp;X</span>&nbsp;| 
+            <span class="show_links" id='os_win'>Microsoft&nbsp;Windows</span>&nbsp;| 
+            <span class="show_links" id='os_all'>All</span>
+        </p>
+
+    </div>
+
+    <div id='linux' class="os linux" markdown='1'>
+        <h2>GIMP for Unix-like systems</h2>
+
+        <p>It's very likely your Unix-like system such as a GNU/Linux distribution already comes with a GIMP package. It is a preferred method of installing GIMP, as the distribution maintainers take care of all the dependencies and bug fix updates. Please note that many distros decide to pin a specific version of GIMP to their releases.</p>
+
+        <p>
+            GIMP can also run on Solaris and is available for the BSD family of systems such as FreeBSD and OpenBSD.
+        </p>
+
+        <p>
+            Please refer to the documentation for your Unix-like system on the installation of software.
+        </p>
+
+    </div>
+
+
+    <div id='mac' class="os mac" markdown="1">
+        <h2>GIMP for Mac OS X</h2>
+
+        <p>
+            <span class='win-button' id='osx-torrent'>
+                <a href="//download.gimp.org/pub/gimp/v2.9/osx/{{ MACOS_FILE }}.torrent">
+                    Download GIMP&nbsp;{{ MACOS_VER_DEVELOPMENT }}<br/>
+                    via BitTorrent
+                </a>
+            </span>
+            <span class='win-button'>
+                <a href="//download.gimp.org/mirror/pub/gimp/v2.9/osx/{{ MACOS_FILE }}">
+                    Download GIMP&nbsp;{{ MACOS_VER_DEVELOPMENT }}<br/>
+                    directly
+                </a>
+            </span>
+        </p>
+
+        <small>
+            <p>
+                The download links above will attempt to download GIMP from one of our trusted mirror servers.
+                If the mirrors do not work or you would rather download directly from our server, you can get the <a href='//download.gimp.org/pub/gimp/v2.9/osx/'>direct download here</a>.
+            </p>
+        </small>
+
+        <p>Since the 2.9.2 version, GIMP runs on OSX natively. No X11 environment is required.</p>
+
+        <h3>Native build</h3>
+
+        <p>The official GIMP 2.9 DMG installer (linked above) is a stock GIMP build without any add-ons. It works on OS X 10.6 Snow Leopard and later. Just open the downloaded DMG and drag and drop GIMP into your "Applications" folder.</p>
+
+        <p>
+            The MD5 hash sum for <code>{{ MACOS_FILE_DEVELOPMENT }}</code> is:
+            <kbd>{{ MACOS_HASH }}</kbd>
+        </p>
+
+
+
+        <h3>Older Downloads</h3>
+        <p>Previous installers for OSX can be found here: <a href='//download.gimp.org/mirror/pub/gimp/v2.9/osx/'>download.gimp.org</a>.</p>
+
+
+
+        <h3>Macports</h3>
+        <p>
+            An easy way to compile and install GIMP and other great <a href="https://www.gnu.org/philosophy/free-sw.html">Free software</a> on your Mac is by using <a href="https://www.macports.org/">Macports</a>. The installer allows you to choose from a large directory of packages. To install gimp using Macports, you simply do <code>sudo port install gimp</code> once you have Macports installed.
+        </p>
+
+        <p>
+            The <a href="https://github.com/macports/macports-ports/blob/master/graphics/gimp/Portfile">GIMP
+            port file</a> points to the current stable 2.9.18 release
+            and we have reports from people who've built GIMP
+            successfully this way.
+        </p>
+
+        <ul>
+            <li><a href="https://www.macports.org/">Download Macports</a></li>
+        </ul>
+
+
+
+        <h3>Homebrew</h3>
+        <p>
+            Homebrew is similar to Macports and provides packages (aka formulas) to install, either by compiling them from source or by using pre-made binaries. There are indications that there is now a formula for GIMP, installable with: <code>brew install gimp</code>.
+        </p>
+
+        <ul>
+            <li>
+                <a href="http://brew.sh/">Download Homebrew</a>
+            </li>
+        </ul>
+
+
+
+        <h3>Fink</h3>
+        <p>
+            Fink is a package repository that offer mostly precompiled binaries. It provides the apt-get command known to e.g. Debian and Ubuntu users, and installing GIMP is as easy as <code>sudo apt-get install gimp</code> once you have installed the <a href="http://www.finkproject.org/download/index.php">Fink installer</a>.  
+        <br>
+        If there's no binary package, then <code>fink install gimp</code> will compile GIMP from source.
+        </p>
+
+        <p>
+            Disclaimer: we haven't been able to determine if it is possible to install or build GIMP 2.9 from Fink. GIMP 2.6.12 appears to be the most recent <a href="http://pdb.finkproject.org/pdb/browse.php?summary=gimp">GIMP package</a> that is <a href="http://pdb.finkproject.org/pdb/package.php/gimp2">offered there</a>.
+        </p>
+
+        <ul>
+            <li>
+                <a href="http://www.finkproject.org/">Download Fink</a>
+            </li>
+        </ul>
+
+    </div>
+
+
+
+    <div id='win' class="os win" markdown="1">
+    <h2>GIMP for Windows</h2>
+
+    <p>
+        <span class='win-button' id='win-torrent'>
+            <a href="//download.gimp.org/pub/gimp/v2.9/windows/{{ WINDOWS_FILE_DEVELOPMENT }}.torrent" title="Download GIMP via BitTorrent" id="win-torrent-link">
+                Download GIMP&nbsp;{{ WINDOWS_VER_DEVELOPMENT }}<br/>
+                via BitTorrent
+            </a>  
+        </span>
+        <span class='win-button'>
+            <a href="//download.gimp.org/mirror/pub/gimp/v2.9/windows/{{ WINDOWS_FILE_DEVELOPMENT }}" title="Download GIMP via HTTP" id='win-download-link' >
+                Download GIMP&nbsp;{{ WINDOWS_VER_DEVELOPMENT }}<br/>
+                directly
+            </a>
+        </span>
+    </p>
+
+    <small>
+        <p>
+            The download links above will attempt to download GIMP from one of our trusted mirror servers.
+            If the mirrors do not work or you would rather download directly from our server, you can get the <a href="//download.gimp.org/pub/gimp/v2.9/windows/">direct download here</a>.
+        </p>
+    </small>
+
+    <p>
+        These links download the official GIMP installer for Windows (~100MB). 
+        The installer contains both 32-bit and 64-bit versions of GIMP, and will automatically use the appropriate one.
+    </p>
+
+    <p>
+        BitTorrent is a peer-to-peer file sharing system. It works by downloading GIMP from a distributed network of BitTorrent users, and may improve download speed dramatically. 
+        Choosing this option will download the torrent file for the GIMP installer. 
+        You may need to install a torrent client to make use of this file. <a href="//en.wikipedia.org/wiki/BitTorrent" title="BitTorrent on Wikipedia">Learn more...</a>
+    </p>
+
+    <h3>MD5 Hash Sum</h3>
+    <p>
+        The MD5 hash sum for <code>{{ WINDOWS_FILE_DEVELOPMENT }}</code> is: <kbd>{{ WINDOWS_HASH_DEVELOPMENT }}</kbd>
+    </p>
+
+    <h3>Older Downloads</h3>
+    <p>
+        Previous installers for Windows can be found here: <a href='//download.gimp.org/mirror/pub/gimp/v2.9/windows/'>download.gimp.org</a>.
+    </p>
+
+    <h3>GIMP User Manual</h3>
+    <p>
+        These links download language-specific Windows installers for GIMP's local help.
+        By default, they will place the help files with your GIMP installation.
+    </p>
+
+    <p>
+        Note: GIMP uses online help by default. If you want to use this local help offline, you will need to change GIMP's help settings.
+    </p>
+
+    <ol>
+        <li>In GIMP, select [Edit] > [Preferences] > [Help System]</li>
+        <li>For "User manual", select "Use a locally installed copy"</li>
+        <li>Under "Help Browser", you can choose between your system's web browser and GIMP's help browser plugin (if available).</li>
+    </ol>
+
+    <p>
+        See the <a href='//docs.gimp.org/2.9/en/gimp-pimping.html#gimp-prefs-help'>online help</a> for more settings.
+    </p>
+
+    <ul>
+        <li><a href='//download.gimp.org/mirror/pub/gimp/help/windows/2.9/2.8.2/gimp-help-2-2.8.2-zh_CN-setup.exe'>Chinese Simplified</a> (24.3 MB)</li>
+        <li><a href='//download.gimp.org/mirror/pub/gimp/help/windows/2.8/2.8.2/gimp-help-2-2.8.2-ca-setup.exe'>Catalan</a> (24.2 MB)</li>
+        <li><a href='//download.gimp.org/mirror/pub/gimp/help/windows/2.8/2.8.2/gimp-help-2-2.8.2-da-setup.exe'>Danish</a> (24.2 MB)</li>
+        <li><a href='//download.gimp.org/mirror/pub/gimp/help/windows/2.8/2.8.2/gimp-help-2-2.8.2-nl-setup.exe'>Dutch</a> (24.3 MB)</li>
+        <li><a href='//download.gimp.org/mirror/pub/gimp/help/windows/2.8/2.8.2/gimp-help-2-2.8.2-en-setup.exe'>English</a> (24.2 MB)</li>
+        <li><a href='//download.gimp.org/mirror/pub/gimp/help/windows/2.8/2.8.2/gimp-help-2-2.8.2-en_GB-setup.exe'>English (United Kingdom)</a> (24.2 MB)</li>
+        <li><a href='//download.gimp.org/mirror/pub/gimp/help/windows/2.8/2.8.2/gimp-help-2-2.8.2-fr-setup.exe'>French</a> (25.7 MB)</li>
+        <li><a href='//download.gimp.org/mirror/pub/gimp/help/windows/2.8/2.8.2/gimp-help-2-2.8.2-de-setup.exe'>German</a> (28.0 MB)</li>
+        <li><a href='//download.gimp.org/mirror/pub/gimp/help/windows/2.8/2.8.2/gimp-help-2-2.8.2-el-setup.exe'>Greek</a> (24.0 MB)</li>
+        <li><a href='//download.gimp.org/mirror/pub/gimp/help/windows/2.8/2.8.2/gimp-help-2-2.8.2-it-setup.exe'>Italian</a> (30.2 MB)</li>
+        <li><a href='//download.gimp.org/mirror/pub/gimp/help/windows/2.8/2.8.2/gimp-help-2-2.8.2-ja-setup.exe'>Japanese</a> (23.6 MB)</li>
+        <li><a href='//download.gimp.org/mirror/pub/gimp/help/windows/2.8/2.8.2/gimp-help-2-2.8.2-ko-setup.exe'>Korean</a> (24.9 MB)</li>
+        <li><a href='//download.gimp.org/mirror/pub/gimp/help/windows/2.8/2.8.2/gimp-help-2-2.8.2-nn-setup.exe'>Norwegian Nynorsk</a> (20.9 MB)</li>
+        <li><a href='//download.gimp.org/mirror/pub/gimp/help/windows/2.8/2.8.2/gimp-help-2-2.8.2-ru-setup.exe'>Russian</a> (24.9 MB)</li>
+        <li><a href='//download.gimp.org/mirror/pub/gimp/help/windows/2.8/2.8.2/gimp-help-2-2.8.2-sl-setup.exe'>Slovenian</a> (24.3 MB)</li>
+        <li><a href='//download.gimp.org/mirror/pub/gimp/help/windows/2.8/2.8.2/gimp-help-2-2.8.2-es-setup.exe'>Spanish</a> (24.9 MB)</li>
+        <li><a href='//download.gimp.org/mirror/pub/gimp/help/windows/2.8/2.8.2/gimp-help-2-2.8.2-sv-setup.exe'>Swedish</a> (24.7 MB)</li>
+    </ul>
+
+    </div>
+
+    <hr>
+
+    <div id='source'>
+    <h2>Source for version 2.9 (Development)</h2>
+
+    <p>GIMP releases available from gimp.org and its <a href='#mirrors'>mirrors</a> contain the source code and have to be compiled in order to be installed on your system.</p>
+
+    <p>For instructions, how to build GIMP from source code, please see <a href='/source/'>this page</a>.</p>
+
+    <p>GIMP {{ GIMP_VERSION_DEVELOPMENT }} is now available at <a href='//download.gimp.org/mirror/pub/gimp/v2.9/'>https://download.gimp.org/mirror/pub/gimp/v2.9/</a>. You may want to read the <a href='/release-notes/gimp-2.9.html'>Release Notes for GIMP 2.9</a>.</p>
+
+    <p>To allow you to check the integrity of the tarballs, here are the MD5 sums of the latest releases:</p>
+
+    {% if GIMP.DEVELOPMENT %}
+        {% for version, values in GIMP.DEVELOPMENT.iteritems() %}
+            {% if 'source' in values %}
+            <p>
+                <strong>{{ values['source'].keys()[0] }}</strong><br>
+                <kbd>{{ values['source'].values()[0] }}</kbd>
+            </p>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+
+
+    <p>
+        GIMP help files are available at <a href='//download.gimp.org/mirror/pub/gimp/help/'>https://download.gimp.org/mirror/pub/gimp/help/</a>.
+    </p>
+
+    <p>
+        Please consider using one of the mirrors listed below.
+    </p>
+
+    <h2>Development snapshots</h2>
+
+    <p>The current development branch is GIMP 2.9 and will finally lead to the next stable GIMP release 2.10.</p>
+
+    <p>For instructions, how to build GIMP from source code, please see <a href='/source/'>this page</a>.</p>
+
+    <p>Nightly builds for Windows are available at <a href="http://nightly.darkrefraction.com/gimp/">darkrefraction.com</a>. This is unstable software, please use it at your own risk.</p>
+
+    <p>A detailed list of changes in the development branch is available in <a href="https://git.gnome.org/cgit/gimp/plain/NEWS">git</a>.</p>
+
+    <p>GIMP 2.9.4 is now available at <a href="//download.gimp.org/mirror/pub/gimp/v2.9/">https://download.gimp.org/mirror/pub/gimp/v2.9/</a>.</p>
+
+    <p>To allow you to check the integrity of the tarballs, here are the MD5 sums of the latest development snapshots:</p>
+
+    <p>
+        <strong>gimp-2.9.4.tar.bz2</strong><br>  
+        <kbd>6b3d425a7949110eeb532badedf721f3</kbd>
+    </p>
+
+    <p>
+        <strong>gimp-2.9.2.tar.bz2</strong><br>  
+        <kbd>aa8a846a497e3328c5b7d2fd33f5cf63</kbd>
+    </p>
+
+    </div>
+
+    <div id='mirrors'  markdown="1">
+    <h2>FTP and Web Mirrors</h2>
+
+    <p>
+        We had a server move a while back that caused us to lose our existing mirrors (moved from physical to virtual server and to an environment that doesn't allow FTP access).
+        On the plus side, we are now able to offer rsync access to download.gimp.org.
+    </p>
+
+    <p>
+        If you are running one of the existing GIMP mirrors, or want to create a new one, please <a href='/webmasters.html'>contact us</a> to get your rsync credentials.
+    </p>
+
+    <!-- MIRRORS -->
+
+    </div>
+
+
+    <script src='/js/platform.js'></script>
+    <script src='/js/platform-display.js'></script>
+
+
+{% endblock data %}

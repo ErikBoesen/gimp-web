@@ -136,5 +136,30 @@
                 "gimp-2.8.0-setup.exe": "631dbbcf6ffcd5249d30a6cde934d35f"
                 }
             }
+    },
+
+    DEVELOPMENT : {
+        "2.9.6" :
+        {
+            "source": {
+                 "gimp-2.9.6.tar.bz2": ""
+            },
+            "windows": {
+                 "gimp-2.9.6-setup.exe": ""
+            }
+        }
+
+    },
+
+    NIGHTLY : {
+        "2.9.5" :
+        {
+            "source": {
+
+            },
+            "windows": {
+
+            }
+        }
     }
 }
