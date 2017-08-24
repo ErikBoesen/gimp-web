@@ -63,6 +63,9 @@ in the list have been saved, and a *Save As* button for every opened image
     <img src="{filename}gimp-2-9-6-fill-with.png" alt="Configurable Fill With option in GIMP 2.9.6" width='361' height='597' />
 </figure>
 
+Yet another new feature is an option (on the screenshot above) to choose fill
+color or pattern for empty spaces after resizing the canvas.
+
 ## Better Hi-DPI Support
 
 While most changes for better Hi-DPI displays support are planned for v3.0, when
