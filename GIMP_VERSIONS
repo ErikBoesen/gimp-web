@@ -139,13 +139,14 @@
     },
 
     "DEVELOPMENT" : {
+        "date" : "2017-08-24",
         "2.9.6" :
         {
             "source": {
                  "gimp-2.9.6.tar.bz2": "b2d5b5619630288c882a35118e2241e5"
             },
             "windows": {
-                 "gimp-2.9.6-setup.exe": ""
+                 "gimp-2.9.6-x64-setup.exe": "b5ecff201cade29721fa670420b12222"
             }
         }
 
