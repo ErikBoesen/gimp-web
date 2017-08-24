@@ -138,21 +138,35 @@
             }
     },
 
-    "DEVELOPMENT" : {
-        "date" : "2017-08-24",
-        "2.9.6" :
+    "DEVELOPMENT": {
+        "date": "2017-08-24",
+        "2.9.6":
         {
             "source": {
-                 "gimp-2.9.6.tar.bz2": "b2d5b5619630288c882a35118e2241e5"
+                "gimp-2.9.6.tar.bz2": "b2d5b5619630288c882a35118e2241e5"
             },
             "windows": {
                  "gimp-2.9.6-x64-setup.exe": "b5ecff201cade29721fa670420b12222"
+            }
+        },
+
+        "2.9.4":
+        {
+            "source": {
+                "gimp-2.9.4.tar.bz2": "6b3d425a7949110eeb532badedf721f3"
+            }
+        },
+
+        "2.9.2":
+        {
+            "source": {
+                "gimp-2.9.2.tar.bz2": "aa8a846a497e3328c5b7d2fd33f5cf63"
             }
         }
 
     },
 
-    "NIGHTLY" : {
+    "NIGHTLY": {
         "2.9.7" :
         {
             "source": {
