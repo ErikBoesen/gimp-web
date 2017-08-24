@@ -142,7 +142,7 @@
         "2.9.6" :
         {
             "source": {
-                 "gimp-2.9.6.tar.bz2": ""
+                 "gimp-2.9.6.tar.bz2": "b2d5b5619630288c882a35118e2241e5"
             },
             "windows": {
                  "gimp-2.9.6-setup.exe": ""
