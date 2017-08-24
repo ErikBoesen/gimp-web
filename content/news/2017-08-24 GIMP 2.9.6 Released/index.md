@@ -3,10 +3,10 @@ Date: 2017-08-24
 Category: News
 Authors: Alexandre Prokoudine
 Slug: gimp-2-9-6-released
-Summary: After more than a year of hard work we are excited to release GIMP 2.9.6 featuring many improvements, some new features, translation updates for 22 languages, and 204 bug fixes.
+Summary: After more than a year of hard work we are excited to release GIMP 2.9.6 featuring many improvements, some new features, translation updates for 23 languages, and 204 bug fixes.
 
 After more than a year of hard work we are excited to release GIMP 2.9.6
-featuring many improvements, some new features, translation updates for 22
+featuring many improvements, some new features, translation updates for 23
 languages, and 204 bug fixes.
 
 As usual, for a complete list of changes please see
