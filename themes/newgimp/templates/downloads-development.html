@@ -2,7 +2,7 @@
 
 {#
     We've switched to using the GIMP_VERSIONS json file.
-    Access it using GIMP.###
+    Access it using GIMP.### - see pelicanconf(-testing).py and the source section below
 #}
 
 {% block head %}
@@ -19,6 +19,9 @@
     <h2>Current Development Version</h2>
     <p>The current development release of GIMP is <b>{{ GIMP_VERSION_DEVELOPMENT }}</b> ({{ RELEASE_DATE_DEVELOPMENT }}).</p>
 
+    {% if GIMP_VERSION is defined %}
+    <p>Looking for the stable GIMP {{ GIMP_VERSION }} release?<br />Get it on our <a href="/downloads/">downloads page</a>.</p>
+    {% endif %}
 
     <div class="OSTEST">
         <p>
@@ -59,15 +62,21 @@
     <div id='mac' class="os mac" markdown="1">
         <h2>GIMP for Mac OS X</h2>
 
+{% if MACOS_FILE_DEVELOPMENT is defined %}
+
+        {% if MACOS_VER_DEVELOPMENT != GIMP_VERSION_DEVELOPMENT %}
+        <p>Note: the currently available package provides GIMP {{ MACOS_VER_DEVELOPMENT }} and has not yet updated to the lastet version, GIMP {{ GIMP_VERSION_DEVELOPMENT }}. We're working on that, please check back later.</p>
+        {% endif %}
+
         <p>
             <span class='win-button' id='osx-torrent'>
-                <a href="//download.gimp.org/pub/gimp/v2.9/osx/{{ MACOS_FILE }}.torrent">
+                <a href="//download.gimp.org/pub/gimp/v2.9/osx/{{ MACOS_FILE_DEVELOPMENT }}.torrent">
                     Download GIMP&nbsp;{{ MACOS_VER_DEVELOPMENT }}<br/>
                     via BitTorrent
                 </a>
             </span>
             <span class='win-button'>
-                <a href="//download.gimp.org/mirror/pub/gimp/v2.9/osx/{{ MACOS_FILE }}">
+                <a href="//download.gimp.org/mirror/pub/gimp/v2.9/osx/{{ MACOS_FILE_DEVELOPMENT }}">
                     Download GIMP&nbsp;{{ MACOS_VER_DEVELOPMENT }}<br/>
                     directly
                 </a>
@@ -81,7 +90,7 @@
             </p>
         </small>
 
-        <p>Since the 2.9.2 version, GIMP runs on OSX natively. No X11 environment is required.</p>
+        <p>Since the 2.8.2 version, GIMP runs on OSX natively. No X11 environment is required.</p>
 
         <h3>Native build</h3>
 
@@ -89,13 +98,17 @@
 
         <p>
             The MD5 hash sum for <code>{{ MACOS_FILE_DEVELOPMENT }}</code> is:
-            <kbd>{{ MACOS_HASH }}</kbd>
+            <kbd>{{ MACOS_HASH_DEVELOPMENT }}</kbd>
         </p>
-
-
 
         <h3>Older Downloads</h3>
         <p>Previous installers for OSX can be found here: <a href='//download.gimp.org/mirror/pub/gimp/v2.9/osx/'>download.gimp.org</a>.</p>
+
+{% else %}
+
+        <p>There is no macOS package yet, sorry. Please check back later.</p>
+
+{% endif %}
 
     </div>
 
@@ -127,8 +140,8 @@
     </small>
 
     <p>
-        These links download the official GIMP installer for Windows (~100MB). 
-        The installer contains both 32-bit and 64-bit versions of GIMP, and will automatically use the appropriate one.
+        These links download the official development GIMP installer for Windows (~100MB). 
+        The installer contains the 64-bit version of GIMP.
     </p>
 
     <p>

@@ -19,6 +19,9 @@
     <h2>Current Stable Version</h2>
     <p>The current stable release of GIMP is <b>{{ GIMP_VERSION }}</b> ({{ RELEASE_DATE }}).</p>
 
+    {% if GIMP_VERSION_DEVELOPMENT is defined %}
+    <p>Pssst... want to check out the GIMP {{ GIMP_VERSION_DEVELOPMENT }} development release?<br />Get it on our <a href="/downloads/devel/">development downloads page</a>.</p>
+    {% endif %}
 
     <div class="OSTEST">
         <p>
