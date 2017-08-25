@@ -2,7 +2,7 @@
 
 {#
     We've switched to using the GIMP_VERSIONS json file.
-    Access it using GIMP.###
+    Access it using GIMP.### - see pelicanconf(-testing).py and the source section below
 #}
 
 {% block head %}
@@ -59,6 +59,7 @@
     <div id='mac' class="os mac" markdown="1">
         <h2>GIMP for Mac OS X</h2>
 
+{% if {{ MACOS_FILE_DEVELOPMENT }} %} <p>fooo</p> {% endif %}
         <p>
             <span class='win-button' id='osx-torrent'>
                 <a href="//download.gimp.org/pub/gimp/v2.9/osx/{{ MACOS_FILE_DEVELOPMENT }}.torrent">
@@ -127,8 +128,8 @@
     </small>
 
     <p>
-        These links download the official GIMP installer for Windows (~100MB). 
-        The installer contains both 32-bit and 64-bit versions of GIMP, and will automatically use the appropriate one.
+        These links download the official development GIMP installer for Windows (~100MB). 
+        The installer contains the 64-bit version of GIMP.
     </p>
 
     <p>
