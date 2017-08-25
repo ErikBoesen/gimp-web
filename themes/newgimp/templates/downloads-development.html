@@ -60,6 +60,11 @@
         <h2>GIMP for Mac OS X</h2>
 
 {% if MACOS_FILE_DEVELOPMENT is defined %}
+
+        {% if MACOS_VER_DEVELOPMENT != GIMP_VERSION_DEVELOPMENT %}
+        <p>Note: the currently available package provides GIMP {{ MACOS_VER_DEVELOPMENT }} and has not yet updated to the lastet version, GIMP {{ GIMP_VERSION_DEVELOPMENT }}. We're working on that, please check back later.</p>
+        {% endif %}
+
         <p>
             <span class='win-button' id='osx-torrent'>
                 <a href="//download.gimp.org/pub/gimp/v2.9/osx/{{ MACOS_FILE_DEVELOPMENT }}.torrent">
@@ -98,7 +103,7 @@
 
 {% else %}
 
-        <p>There is no macOS package yet, sorry.</p>
+        <p>There is no macOS package yet, sorry. Please check back later.</p>
 
 {% endif %}
 
