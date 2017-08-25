@@ -59,7 +59,7 @@
     <div id='mac' class="os mac" markdown="1">
         <h2>GIMP for Mac OS X</h2>
 
-{% if {{ MACOS_FILE_DEVELOPMENT }} %} <p>fooo</p> {% endif %}
+{% if MACOS_FILE_DEVELOPMENT is defined %}
         <p>
             <span class='win-button' id='osx-torrent'>
                 <a href="//download.gimp.org/pub/gimp/v2.9/osx/{{ MACOS_FILE_DEVELOPMENT }}.torrent">
@@ -93,10 +93,14 @@
             <kbd>{{ MACOS_HASH_DEVELOPMENT }}</kbd>
         </p>
 
-
-
         <h3>Older Downloads</h3>
         <p>Previous installers for OSX can be found here: <a href='//download.gimp.org/mirror/pub/gimp/v2.9/osx/'>download.gimp.org</a>.</p>
+
+{% else %}
+
+        <p>There is no macOS package yet, sorry.</p>
+
+{% endif %}
 
     </div>
 
