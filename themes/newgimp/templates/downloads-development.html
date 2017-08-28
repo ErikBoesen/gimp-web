@@ -13,15 +13,22 @@
 {% block data %}
 
     <figure>
-    <img src="downloadsplash-aryeom.jpg" alt="Download Splash Image courtesy of Aryeom" />
+    <img src="tacoma-narrows.jpg" alt="Tacoma Narrows Bridge Collapse" />
     </figure>
+
+    <h2>Please Note</h2>
+    <p class='tRed'>This is the download page for <strong>the development version of GIMP</strong>.</p>
+    <p>That means these builds are a work-in-progress. 
+        Please proceed with caution because <em>they may be unstable</em>.
+        If a crash does occur, please <a href='/bugs/' title='GIMP Bugs'>report it</a>!</p>
+
+    {% if GIMP_VERSION is defined %}
+    <p>If you're looking for the stable GIMP {{ GIMP_VERSION }} release instead, you can find it on our <a href="/downloads/">downloads page</a>.</p>
+    {% endif %}
 
     <h2>Current Development Version</h2>
     <p>The current development release of GIMP is <b>{{ GIMP_VERSION_DEVELOPMENT }}</b> ({{ RELEASE_DATE_DEVELOPMENT }}).</p>
 
-    {% if GIMP_VERSION is defined %}
-    <p>Looking for the stable GIMP {{ GIMP_VERSION }} release?<br />Get it on our <a href="/downloads/">downloads page</a>.</p>
-    {% endif %}
 
     <div class="OSTEST">
         <p>
@@ -34,17 +41,19 @@
         </p>
 
         <p id='others'>
-            Show downloads for 
-            <span class="show_links" id='os_linux'>GNU/Linux</span>&nbsp;|
-            <span class="show_links" id='os_mac'>OS&nbsp;X</span>&nbsp;|
-            <span class="show_links" id='os_win'>Microsoft&nbsp;Windows</span>&nbsp;| 
-            <span class="show_links" id='os_all'>All</span>
+            <small>
+                Show downloads for 
+                <span class="show_links" id='os_linux'>GNU/Linux</span>&nbsp;|
+                <span class="show_links" id='os_mac'>OS&nbsp;X</span>&nbsp;|
+                <span class="show_links" id='os_win'>Microsoft&nbsp;Windows</span>&nbsp;| 
+                <span class="show_links" id='os_all'>All</span>
+            </small>
         </p>
 
     </div>
 
     <div id='linux' class="os linux" markdown='1'>
-        <h2>GIMP for Unix-like systems</h2>
+        <h2>GIMP (development version) for Unix-like systems</h2>
 
         <p>It's very likely your Unix-like system such as a GNU/Linux distribution already comes with a GIMP package. It is a preferred method of installing GIMP, as the distribution maintainers take care of all the dependencies and bug fix updates. Please note that many distros decide to pin a specific version of GIMP to their releases.</p>
 
@@ -63,7 +72,7 @@
 
 
     <div id='mac' class="os mac" markdown="1">
-        <h2>GIMP for Mac OS X</h2>
+        <h2>GIMP (development version) for Mac OS X</h2>
 
 {% if MACOS_FILE_DEVELOPMENT is defined %}
 
@@ -116,7 +125,7 @@
     </div>
 
     <div id='win' class="os win" markdown="1">
-    <h2>GIMP for Windows</h2>
+    <h2>GIMP (development version) for Windows</h2>
 
 {% if WINDOWS_FILE_DEVELOPMENT is defined %}
 
