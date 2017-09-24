@@ -27,11 +27,16 @@ The tools to build and test the site are Python, Pelican, and a couple of module
     Make sure that pip is using Python 2.7.x if you have multiple versions installed.
     There may be a pip2.7 alias on your system.
     You can also use a virtualenv to isolate the required Python environment.
+    Note: last I tested, Pelican 3.7.1 was failing to build the website.
+    Older Pelican 3.6.3 worked fine with our code: `pip2 install pelican==3.6.3`
 3. Install some extra components:
     * For Markdown support (required):
         `pip install Markdown`
     * For fancy typography elements with typogrify:
         `pip install typogrify`
+    * For geographical information from an IP address (optional for
+      plugin `gimp_mirrors`):
+        `pip install pygeoip`
 
 Further information in greater detail can be found in the Pelican documentation (http://docs.getpelican.com/en/stable/).
 
