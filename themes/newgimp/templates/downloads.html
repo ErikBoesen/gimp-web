@@ -285,19 +285,20 @@
 
     <p>A detailed list of changes in the development branch is available in <a href="https://git.gnome.org/cgit/gimp/plain/NEWS">git</a>.</p>
 
-    <p>GIMP 2.9.4 is now available at <a href="//download.gimp.org/mirror/pub/gimp/v2.9/">https://download.gimp.org/mirror/pub/gimp/v2.9/</a>.</p>
+    <p>GIMP {{ GIMP_VERSION_DEVELOPMENT }} is now available at <a href="//download.gimp.org/mirror/pub/gimp/v2.9/">https://download.gimp.org/mirror/pub/gimp/v2.9/</a>.</p>
 
     <p>To allow you to check the integrity of the tarballs, here are the MD5 sums of the latest development snapshots:</p>
 
-    <p>
-        <strong>gimp-2.9.4.tar.bz2</strong><br>  
-        <kbd>6b3d425a7949110eeb532badedf721f3</kbd>
-    </p>
-
-    <p>
-        <strong>gimp-2.9.2.tar.bz2</strong><br>  
-        <kbd>aa8a846a497e3328c5b7d2fd33f5cf63</kbd>
-    </p>
+    {% if GIMP.DEVELOPMENT %}
+        {% for version, values in GIMP.DEVELOPMENT.iteritems() %}
+            {% if 'source' in values %}
+            <p>
+                <strong>{{ values['source'].keys()[0] }}</strong><br>
+                <kbd>{{ values['source'].values()[0] }}</kbd>
+            </p>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
 
     </div>
 

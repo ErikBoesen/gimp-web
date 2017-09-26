@@ -63,3 +63,7 @@
     .mirrors {
         display: none;
     }
+    
+    p.tRed {
+        color: red;
+    }

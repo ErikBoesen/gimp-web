@@ -13,38 +13,47 @@
 {% block data %}
 
     <figure>
-    <img src="downloadsplash-aryeom.jpg" alt="Download Splash Image courtesy of Aryeom" />
+    <img src="tacoma-narrows.jpg" alt="Tacoma Narrows Bridge Collapse" />
     </figure>
+
+    <h2>Please Note</h2>
+    <p class='tRed'>This is the download page for <strong>the development version of GIMP</strong>.</p>
+    <p>That means these builds are a work-in-progress. 
+        Please proceed with caution because <em>they may be unstable</em>.
+        If a crash does occur, please <a href='/bugs/' title='GIMP Bugs'>report it</a>!</p>
+
+    {% if GIMP_VERSION is defined %}
+    <p>If you're looking for the stable GIMP {{ GIMP_VERSION }} release instead, you can find it on our <a href="/downloads/">downloads page</a>.</p>
+    {% endif %}
 
     <h2>Current Development Version</h2>
     <p>The current development release of GIMP is <b>{{ GIMP_VERSION_DEVELOPMENT }}</b> ({{ RELEASE_DATE_DEVELOPMENT }}).</p>
 
-    {% if GIMP_VERSION is defined %}
-    <p>Looking for the stable GIMP {{ GIMP_VERSION }} release?<br />Get it on our <a href="/downloads/">downloads page</a>.</p>
-    {% endif %}
 
     <div class="OSTEST">
         <p>
             We think your OS is 
             <span id="pOSTEST">
-                Well, we don't actually know.  
+                Well, we don't actually know.
                 Either JavaScript is disabled, or I am not working quite right...  
-                So I am showing you all the options.  
-            </span>  
+                So I am showing you all the options.
+            </span>
         </p>
 
         <p id='others'>
-            Show downloads for 
-            <span class="show_links" id='os_linux'>GNU/Linux</span>&nbsp;| 
-            <span class="show_links" id='os_mac'>OS&nbsp;X</span>&nbsp;| 
-            <span class="show_links" id='os_win'>Microsoft&nbsp;Windows</span>&nbsp;| 
-            <span class="show_links" id='os_all'>All</span>
+            <small>
+                Show downloads for 
+                <span class="show_links" id='os_linux'>GNU/Linux</span>&nbsp;|
+                <span class="show_links" id='os_mac'>OS&nbsp;X</span>&nbsp;|
+                <span class="show_links" id='os_win'>Microsoft&nbsp;Windows</span>&nbsp;| 
+                <span class="show_links" id='os_all'>All</span>
+            </small>
         </p>
 
     </div>
 
     <div id='linux' class="os linux" markdown='1'>
-        <h2>GIMP for Unix-like systems</h2>
+        <h2>GIMP (development version) for Unix-like systems</h2>
 
         <p>It's very likely your Unix-like system such as a GNU/Linux distribution already comes with a GIMP package. It is a preferred method of installing GIMP, as the distribution maintainers take care of all the dependencies and bug fix updates. Please note that many distros decide to pin a specific version of GIMP to their releases.</p>
 
@@ -56,11 +65,14 @@
             Please refer to the documentation for your Unix-like system on the installation of software.
         </p>
 
+	<p>
+	  Most Unix-like systems make it very easy to install a development environment for building software from source. If you can't find a GIMP package in your distribution's package repository or want to build a more recent GIMP version that what is available there, then see the <a href="#source">source code section</a>.
+	</p>
     </div>
 
 
     <div id='mac' class="os mac" markdown="1">
-        <h2>GIMP for Mac OS X</h2>
+        <h2>GIMP (development version) for Mac OS X</h2>
 
 {% if MACOS_FILE_DEVELOPMENT is defined %}
 
@@ -112,17 +124,23 @@
 
     </div>
 
-
-
     <div id='win' class="os win" markdown="1">
-    <h2>GIMP for Windows</h2>
+    <h2>GIMP (development version) for Windows</h2>
+
+{% if WINDOWS_FILE_DEVELOPMENT is defined %}
+
+    {% if WINDOWS_VER_DEVELOPMENT != GIMP_VERSION_DEVELOPMENT %}
+    <p>
+      Note: the currently available package provides GIMP {{ WINDOWS_VER_DEVELOPMENT }} and has not yet updated to the lastet version, GIMP {{ GIMP_VERSION_DEVELOPMENT }}. We're working on that, please check back later.
+    </p>
+    {% endif %}
 
     <p>
         <span class='win-button' id='win-torrent'>
             <a href="//download.gimp.org/pub/gimp/v2.9/windows/{{ WINDOWS_FILE_DEVELOPMENT }}.torrent" title="Download GIMP via BitTorrent" id="win-torrent-link">
                 Download GIMP&nbsp;{{ WINDOWS_VER_DEVELOPMENT }}<br/>
                 via BitTorrent
-            </a>  
+            </a>
         </span>
         <span class='win-button'>
             <a href="//download.gimp.org/mirror/pub/gimp/v2.9/windows/{{ WINDOWS_FILE_DEVELOPMENT }}" title="Download GIMP via HTTP" id='win-download-link' >
@@ -145,7 +163,7 @@
     </p>
 
     <p>
-        BitTorrent is a peer-to-peer file sharing system. It works by downloading GIMP from a distributed network of BitTorrent users, and may improve download speed dramatically. 
+        BitTorrent is a peer-to-peer file sharing system. It works by downloading GIMP from a distributed network of BitTorrent users, and may improve download speed dramatically.
         Choosing this option will download the torrent file for the GIMP installer. 
         You may need to install a torrent client to make use of this file. <a href="//en.wikipedia.org/wiki/BitTorrent" title="BitTorrent on Wikipedia">Learn more...</a>
     </p>
@@ -159,6 +177,14 @@
     <p>
         Previous installers for Windows can be found here: <a href='//download.gimp.org/mirror/pub/gimp/v2.9/windows/'>download.gimp.org</a>.
     </p>
+
+{% else %}
+
+        <p>There is no installer package for Microsoft Windows yet, sorry. Please check back later.</p>
+
+{% endif %}
+
+    </div>
 
     <div id='source'>
     <h2>Source for version 2.9 (Development)</h2>
@@ -175,7 +201,7 @@
         {% for version, values in GIMP.DEVELOPMENT.iteritems() %}
             {% if 'source' in values %}
             <p>
-                <strong>{{ values['source'].keys()[0] }}</strong><br>
+                <a href="//download.gimp.org/mirror/pub/gimp/v2.9/{{ values['source'].keys()[0] }}"><strong>{{ values['source'].keys()[0] }}</strong></a><br>
                 <kbd>{{ values['source'].values()[0] }}</kbd>
             </p>
             {% endif %}
@@ -190,6 +216,8 @@
     <p>
         Please consider using one of the mirrors listed below.
     </p>
+
+    </div>
 
     <div id='mirrors'  markdown="1">
     <h2>FTP and Web Mirrors</h2>
