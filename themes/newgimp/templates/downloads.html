@@ -277,28 +277,8 @@
 
     <h2>Development snapshots</h2>
 
-    <p>The current development branch is GIMP 2.9 and will finally lead to the next stable GIMP release 2.10.</p>
-
-    <p>For instructions, how to build GIMP from source code, please see <a href='/source/'>this page</a>.</p>
-
-    <p>Nightly builds for Windows are available at <a href="http://nightly.darkrefraction.com/gimp/">darkrefraction.com</a>. This is unstable software, please use it at your own risk.</p>
-
-    <p>A detailed list of changes in the development branch is available in <a href="https://git.gnome.org/cgit/gimp/plain/NEWS">git</a>.</p>
-
-    <p>GIMP {{ GIMP_VERSION_DEVELOPMENT }} is now available at <a href="//download.gimp.org/mirror/pub/gimp/v2.9/">https://download.gimp.org/mirror/pub/gimp/v2.9/</a>.</p>
-
-    <p>To allow you to check the integrity of the tarballs, here are the MD5 sums of the latest development snapshots:</p>
-
-    {% if GIMP.DEVELOPMENT %}
-        {% for version, values in GIMP.DEVELOPMENT.iteritems() %}
-            {% if 'source' in values %}
-            <p>
-                <strong>{{ values['source'].keys()[0] }}</strong><br>
-                <kbd>{{ values['source'].values()[0] }}</kbd>
-            </p>
-            {% endif %}
-        {% endfor %}
-    {% endif %}
+    <p>We now have a separate page for development versions of GIMP.</p>
+     <p>Want to check out the GIMP {{ GIMP_VERSION_DEVELOPMENT }} development release?<br />Get it on our <a href="/downloads/devel/">development downloads page</a>.</p>
 
     </div>
 
