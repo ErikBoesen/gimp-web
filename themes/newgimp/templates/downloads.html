@@ -45,8 +45,16 @@
 
     <div id='linux' class="os linux" markdown='1'>
         <h2>GIMP for Unix-like systems</h2>
+        <p>
+            <span class='win-button'>
+                <a href="https://flathub.org/repo/appstream/org.gimp.GIMP.flatpakref">
+                    Install GIMP flatpak
+                </a>
+            </span>
+        </p>
 
-        <p>It's very likely your Unix-like system such as a GNU/Linux distribution already comes with a GIMP package. It is a preferred method of installing GIMP, as the distribution maintainers take care of all the dependencies and bug fix updates. Please note that many distros decide to pin a specific version of GIMP to their releases.</p>
+	<p>The flatpak link above should open your software installer and propose you to install GIMP (available platforms: i386, x86-64, ARM and AArch64). It may not work out-of-the-box on some platforms since the flatpak technology is recent. If that is the case, <a href="http://flatpak.org/getting.html">ensure flatpak is installed</a> and if just clicking the link still does not propose to install GIMP, install by command line: <code>flatpak install https://flathub.org/repo/appstream/org.gimp.GIMP.flatpakref</code></p>
+        <p>The flatpak build is very new and therefore may present shortcomings. It's very likely your Unix-like system such as a GNU/Linux distribution already comes with a GIMP package. It is a preferred method of installing GIMP, as the distribution maintainers take care of all the dependencies and bug fix updates. Nevertheless note that many distros decide to pin a specific version of GIMP to their releases, whereas our flatpak will follow GIMP releases closely.</p>
 
         <p>
             GIMP can also run on Solaris and is available for the BSD family of systems such as FreeBSD and OpenBSD.
