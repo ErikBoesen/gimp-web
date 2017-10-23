@@ -38,7 +38,8 @@
                             <a href="/downloads/" title="Download GIMP!">
                                 <span id="DLButton"><i class="fa fa-download"></i> DOWNLOAD <span id='ver'>{{ GIMP_VERSION }}</span></span>
                             </a>
-                            <a href="/release-notes/gimp-2.8.html" title="2.8 Release Notes" >
+                            <a href="/release-notes/gimp-{{ GIMP_MAJOR_MINOR_VERSION }}.html"
+                               title="{{ GIMP_MAJOR_MINOR_VERSION }} Release Notes" >
                                 <span id="ReleaseButton">RELEASE NOTES</span>
                             </a>
                         </span>

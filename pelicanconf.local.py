@@ -154,6 +154,7 @@ if 'STABLE' in GIMP:
     # current version _should_ be the first key
     # hence, .keys()[0]
     GIMP_VERSION = GIMP['STABLE'].keys()[0]
+    GIMP_MAJOR_MINOR_VERSION = GIMP_VERSION[:GIMP_VERSION.index('.', GIMP_VERSION.index('.') + 1)]
     for version, info in GIMP['STABLE'].iteritems() :
         if 'date' in info:
             try:
