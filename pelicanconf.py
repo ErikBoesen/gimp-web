@@ -153,6 +153,7 @@ if 'STABLE' in GIMP:
                 WINDOWS_FILE
             except NameError:
                 WINDOWS_VER = version
+                WINDOWS_MAJOR_MINOR_VER = version[:version.index('.', version.index('.') + 1)]
                 WINDOWS_FILE = info['windows'].keys()[0]
                 WINDOWS_HASH = info['windows'].values()[0]
         if 'macos' in info:
@@ -160,6 +161,7 @@ if 'STABLE' in GIMP:
                 MACOS_FILE
             except NameError:
                 MACOS_VER = version
+                MACOS_MAJOR_MINOR_VER = version[:version.index('.', version.index('.') + 1)]
                 MACOS_FILE = info['macos'].keys()[0]
                 MACOS_HASH = info['macos'].values()[0]
 else:

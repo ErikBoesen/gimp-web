@@ -72,13 +72,13 @@
 
         <p>
             <span class='win-button' id='osx-torrent'>
-                <a href="//download.gimp.org/pub/gimp/v2.8/osx/{{ MACOS_FILE }}.torrent">
+                <a href="//download.gimp.org/pub/gimp/v{{ MACOS_MAJOR_MINOR_VER }}/osx/{{ MACOS_FILE }}.torrent">
                     Download GIMP&nbsp;{{ MACOS_VER }}<br/>
                     via BitTorrent
                 </a>
             </span>
             <span class='win-button'>
-                <a href="//download.gimp.org/mirror/pub/gimp/v2.8/osx/{{ MACOS_FILE }}">
+                <a href="//download.gimp.org/mirror/pub/gimp/v{{ MACOS_MAJOR_MINOR_VER }}/osx/{{ MACOS_FILE }}">
                     Download GIMP&nbsp;{{ MACOS_VER }}<br/>
                     directly
                 </a>
@@ -88,7 +88,8 @@
         <small>
             <p>
                 The download links above will attempt to download GIMP from one of our trusted mirror servers.
-                If the mirrors do not work or you would rather download directly from our server, you can get the <a href='//download.gimp.org/pub/gimp/v2.8/osx/'>direct download here</a>.
+                If the mirrors do not work or you would rather download directly from our server, you can get the <a
+                href='//download.gimp.org/pub/gimp/v{{ MACOS_MAJOR_MINOR_VER }}/osx/'>direct download here</a>.
             </p>
         </small>
 
@@ -96,8 +97,7 @@
 
         <h3>Native build</h3>
 
-        <p>The official GIMP 2.8 DMG installer (linked above) is a stock GIMP build without any add-ons. It works on OS X 10.6 Snow Leopard and later. Just open the downloaded DMG and drag and drop GIMP into your "Applications" folder.</p>
-
+        <p>The official GIMP {{ MACOS_MAJOR_MINOR_VER }} DMG installer (linked above) is a stock GIMP build without any add-ons. It works on OS X 10.6 Snow Leopard and later. Just open the downloaded DMG and drag and drop GIMP into your "Applications" folder.</p>
         <p>
             The MD5 hash sum for <code>{{ MACOS_FILE }}</code> is:
             <kbd>{{ MACOS_HASH }}</kbd>
@@ -106,7 +106,7 @@
 
 
         <h3>Older Downloads</h3>
-        <p>Previous installers for OSX can be found here: <a href='//download.gimp.org/mirror/pub/gimp/v2.8/osx/'>download.gimp.org</a>.</p>
+        <p>Previous installers for OSX can be found here: <a href='//download.gimp.org/mirror/pub/gimp/v{{ MACOS_MAJOR_MINOR_VER }}/osx/'>download.gimp.org</a>.</p>
 
 
 
@@ -116,8 +116,8 @@
         </p>
 
         <p>
-            The <a href="https://github.com/macports/macports-ports/blob/master/graphics/gimp/Portfile">GIMP
-            port file</a> points to the current stable 2.8.18 release
+            Last we checked, the <a href="https://github.com/macports/macports-ports/blob/master/graphics/gimp/Portfile">GIMP
+            port file</a> pointed to the current stable release
             and we have reports from people who've built GIMP
             successfully this way.
         </p>
@@ -149,7 +149,9 @@
         </p>
 
         <p>
-            Disclaimer: we haven't been able to determine if it is possible to install or build GIMP 2.8 from Fink. GIMP 2.6.12 appears to be the most recent <a href="http://pdb.finkproject.org/pdb/browse.php?summary=gimp">GIMP package</a> that is <a href="http://pdb.finkproject.org/pdb/package.php/gimp2">offered there</a>.
+            Disclaimer: we haven't been able to determine if it is
+            possible to install or build recent GIMP from Fink.
+            Last we checked, GIMP 2.6.12 appears to be the most recent <a href="http://pdb.finkproject.org/pdb/browse.php?summary=gimp">GIMP package</a> that is <a href="http://pdb.finkproject.org/pdb/package.php/gimp2">offered there</a>.
         </p>
 
         <ul>
@@ -167,13 +169,17 @@
 
     <p>
         <span class='win-button' id='win-torrent'>
-            <a href="//download.gimp.org/pub/gimp/v2.8/windows/{{ WINDOWS_FILE }}.torrent" title="Download GIMP via BitTorrent" id="win-torrent-link">
+            <a
+            href="//download.gimp.org/pub/gimp/v{{ WINDOWS_MAJOR_MINOR_VER }}/windows/{{ WINDOWS_FILE }}.torrent"
+            title="Download GIMP via BitTorrent" id="win-torrent-link">
                 Download GIMP&nbsp;{{ WINDOWS_VER }}<br/>
                 via BitTorrent
             </a>  
         </span>
         <span class='win-button'>
-            <a href="//download.gimp.org/mirror/pub/gimp/v2.8/windows/{{ WINDOWS_FILE }}" title="Download GIMP via HTTP" id='win-download-link' >
+            <a
+            href="//download.gimp.org/mirror/pub/gimp/v{{ WINDOWS_MAJOR_MINOR_VER }}/windows/{{ WINDOWS_FILE }}"
+            title="Download GIMP via HTTP" id='win-download-link' >
                 Download GIMP&nbsp;{{ WINDOWS_VER }}<br/>
                 directly
             </a>
@@ -183,7 +189,7 @@
     <small>
         <p>
             The download links above will attempt to download GIMP from one of our trusted mirror servers.
-            If the mirrors do not work or you would rather download directly from our server, you can get the <a href="//download.gimp.org/pub/gimp/v2.8/windows/">direct download here</a>.
+            If the mirrors do not work or you would rather download directly from our server, you can get the <a href="//download.gimp.org/pub/gimp/v{{ WINDOWS_MAJOR_MINOR_VER }}/windows/">direct download here</a>.
         </p>
     </small>
 
@@ -205,7 +211,7 @@
 
     <h3>Older Downloads</h3>
     <p>
-        Previous installers for Windows can be found here: <a href='//download.gimp.org/mirror/pub/gimp/v2.8/windows/'>download.gimp.org</a>.
+        Previous installers for Windows can be found here: <a href='//download.gimp.org/mirror/pub/gimp/v{{ WINDOWS_MAJOR_MINOR_VER }}/windows/'>download.gimp.org</a>.
     </p>
 
     <h3>GIMP User Manual</h3>
@@ -253,13 +259,15 @@
     <hr>
 
     <div id='source'>
-    <h2>Source for version 2.8 (Stable)</h2>
+    <h2>Source for version {{ GIMP_MAJOR_MINOR_VERSION }} (Stable)</h2>
 
     <p>GIMP releases available from gimp.org and its <a href='#mirrors'>mirrors</a> contain the source code and have to be compiled in order to be installed on your system.</p>
 
     <p>For instructions, how to build GIMP from source code, please see <a href='/source/'>this page</a>.</p>
 
-    <p>GIMP {{ GIMP_VERSION }} is now available at <a href='//download.gimp.org/mirror/pub/gimp/v2.8/'>https://download.gimp.org/mirror/pub/gimp/v2.8/</a>. You may want to read the <a href='/release-notes/gimp-2.8.html'>Release Notes for GIMP 2.8</a>.</p>
+    <p>GIMP {{ GIMP_VERSION }} is now available at <a
+    href='//download.gimp.org/mirror/pub/gimp/v{{ GIMP_MAJOR_MINOR_VERSION }}/'>https://download.gimp.org/mirror/pub/gimp/v{{ GIMP_MAJOR_MINOR_VERSION }}/</a>. You may want to read the <a
+    href='/release-notes/gimp-{{ GIMP_MAJOR_MINOR_VERSION }}.html'>Release Notes for GIMP {{ GIMP_MAJOR_MINOR_VERSION }}</a>.</p>
 
     <p>To allow you to check the integrity of the tarballs, here are the MD5 sums of the latest releases:</p>
 
