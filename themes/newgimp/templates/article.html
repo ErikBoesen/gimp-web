@@ -96,7 +96,7 @@
             <div class='column full social'>
                 <p>
                 Share this on: <a href="https://plus.google.com/share?url=https://www.gimp.org/{{ article.url|urlencode }}" target="_blank" title="Share this post on Google+">Google+</a> |
-                <a href="https://twitter.com/intent/tweet?url=https://www.gimp.org/{{ article.url|urlencode }}" target="_blank" title="Share this post on twitter">twitter</a> |
+                <a href="https://twitter.com/intent/tweet?url=https://www.gimp.org/{{ article.url|urlencode }}&via=GIMP_Official&text={{ article.title|striptags }}" target="_blank" title="Share this post on twitter">twitter</a> |
                 <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.gimp.org/{{ article.url|urlencode }}" target="_blank" title="Share this post on Facebook">Facebook</a>
                 </p>
             </div>
