@@ -112,7 +112,7 @@ So if you prefer seeing LAB values, that's what you will see every time until
 you choose something else.
 
 Canvas rotation and flip information is now visible in the status bar, as angle
-and flip icons. Clicking on these canvas status will respectively raise the
+value and flip icon. Clicking on these canvas status will respectively raise the
 _Select Rotation Angle_ dialog or unflip the canvas.
 
 ## Improved Wavelet Decompose Filter
@@ -121,6 +121,11 @@ The much demanded _Wavelet Decompose_ filter got a small round of updates
 and gained a couple of new options: placing decomposition stack into its own
 layer group and adding a layer mask to each scales layers. It also produces
 more expected results now.
+
+## File formats
+
+Various fixes were done to PSD format support. Moreover password-protected
+PDF files can now be imported in GIMP.
 
 ## Translations
 
