@@ -124,8 +124,20 @@ more expected results now.
 
 ## File formats
 
-Various fixes were done to PSD format support. Moreover password-protected
-PDF files can now be imported in GIMP.
+* Various fixes were done to PSD format support.
+* Password-protected PDF files can now be imported in GIMP.
+* HGT files can now be imported. HGT format is the format for [Digital Elevation
+  Model data by the NASA](https://dds.cr.usgs.gov/srtm/version2_1/Documentation/SRTM_Topo.pdf).
+  GIMP now supports both the SRTM-1 and SRTM-3 types which will be imported as
+  grayscale RGB images, on which you will want to map a gradient in order to
+  obtain more visible relief information.
+
+<figure>
+<img src="{filename}images/gimp-2-9-8/GIMP-import-hgt.png" alt='Importing HGT files in GIMP' width='950' height='616'>
+<figcaption>
+NASA HGT file import followed by appropriate "Gradient Map" filtering
+</figcaption>
+</figure>
 
 ## Translations
 
