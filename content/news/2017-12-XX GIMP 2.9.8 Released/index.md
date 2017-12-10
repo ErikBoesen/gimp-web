@@ -86,11 +86,13 @@ transforms once the library supports ICC profiles based on lookup tables.
 ## Wayland support
 
 While we already had the screenshot plug-in working under GNOME/Wayland,
-we now implemented screenshots for KDE/Wayland.
+we now implemented screenshots for KDE/Wayland (though it misses [rectangular
+area selection](https://bugs.kde.org/show_bug.cgi?id=387721)).
 
-The Color Picker widget will now also work in KDE/Wayland. There is no
-color-picking interface in GNOME yet for Wayland, so as a workaround, color
-picking will only work inside GIMP windows for this platform.
+The Color Picker widget will now also work in KDE/Wayland.
+Note that there is still [no color-picking interface in GNOME for
+Wayland](https://bugzilla.gnome.org/show_bug.cgi?id=789756), so as a workaround,
+color picking will only work inside GIMP windows for this platform.
 
 Color-picked and screenshot pixels are not color-managed yet in Wayland.
 
@@ -137,11 +139,13 @@ more expected results now.
 
 * Various fixes were done to PSD format support.
 * Password-protected PDF files can now be imported in GIMP.
-* HGT files can now be imported. HGT format is the format for [Digital Elevation
-  Model data by the NASA](https://dds.cr.usgs.gov/srtm/version2_1/Documentation/SRTM_Topo.pdf).
-  GIMP now supports both the SRTM-1 and SRTM-3 types which will be imported as
-  grayscale RGB images, on which you will want to map a gradient in order to
-  obtain more visible relief information.
+* HGT files can now be imported. HGT is the format for [Digital Elevation Model
+  data by the NASA and other space agencies](https://dds.cr.usgs.gov/srtm/version2_1/Documentation/SRTM_Topo.pdf).
+  GIMP now supports both the SRTM-1 and SRTM-3 types (as far as we know, the
+  only 2 variants) which will be imported as grayscale RGB images.
+  In order to obtain more visible relief information, you will want to map
+  altitudes to colors, for instance with "Gradient Map" filter as we did in the
+  example image below.
 
 <figure>
 <img src="{filename}images/gimp-2-9-8/GIMP-import-hgt.png" alt='Importing HGT files in GIMP' width='950' height='616'>
