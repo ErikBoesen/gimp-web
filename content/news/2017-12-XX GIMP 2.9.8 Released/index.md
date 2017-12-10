@@ -83,6 +83,17 @@ transforms ca. 5 times faster in comparison to LittleCMS v2 on a few test
 images we tried this on. We expect to make further use of babl for doing color
 transforms once the library supports ICC profiles based on lookup tables.
 
+## Wayland support
+
+While we already had the screenshot plug-in working under GNOME/Wayland,
+we now implemented screenshots for KDE/Wayland.
+
+The Color Picker widget will now also work in KDE/Wayland. There is no
+color-picking interface in GNOME yet for Wayland, so as a workaround, color
+picking will only work inside GIMP windows for this platform.
+
+Color-picked and screenshot pixels are not color-managed yet in Wayland.
+
 ## Paste in Place
 
 Michael Natterer implemented another small feature request from a user who
