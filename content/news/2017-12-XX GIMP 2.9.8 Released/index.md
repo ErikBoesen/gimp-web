@@ -128,6 +128,29 @@ Canvas rotation and flip information is now visible in the status bar, as angle
 value and flip icon. Clicking on these canvas status will respectively raise the
 _Select Rotation Angle_ dialog or unflip the canvas.
 
+## Help manuals
+
+Upon detection of locally installed manuals in several languages, GIMP will now
+allow selection of the manual language to display in the preferences (tab
+`Interface > Help System`).
+
+<figure>
+<img src="{filename}help-localization.png" alt='manual localization in preferences' width='831' height='420'>
+<figcaption>
+Manual localization settings in GIMP preferences
+</figcaption>
+</figure>
+
+This is especially useful since GIMP interface has localization in 80 languages
+yet its [manual](https://www.gimp.org/docs/) is translated in *only* 17
+languages. You may therefore not have a choice of viewing a manual in
+your preferred language.
+
+Moreover one may use an interface in a language while still preferring read the
+manual in another for any personal reasons, and may not want or have the
+possibility to read it online. Hence this choice made available in
+preferences.
+
 ## Improved Wavelet Decompose Filter
 
 The much demanded _Wavelet Decompose_ filter got a small round of updates
@@ -148,7 +171,7 @@ more expected results now.
   example image below.
 
 <figure>
-<img src="{filename}images/gimp-2-9-8/GIMP-import-hgt.png" alt='Importing HGT files in GIMP' width='950' height='616'>
+<img src="{filename}GIMP-import-hgt.png" alt='Importing HGT files in GIMP' width='950' height='616'>
 <figcaption>
 NASA HGT file import followed by appropriate "Gradient Map" filtering
 </figcaption>
