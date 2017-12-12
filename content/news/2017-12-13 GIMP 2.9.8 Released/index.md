@@ -21,7 +21,13 @@ canvas. You can create and delete color stops, select and shift them, assign
 colors to color stops, change blending and coloring for segments between color
 stops, create new color stops from midpoints.
 
--- [missing video from Alexandre] --
+<p>
+<video width="830" height="467" controls>
+  <source src="https://download.gimp.org/mirror/pub/gimp/video/v2.9/gimp-2-9-8-gradient-edit.webm" type="video/webm">
+  <source src="https://download.gimp.org/mirror/pub/gimp/video/v2.9/gimp-2-9-8-gradient-edit.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</p>
 
 Secondly, default gradients are now "editable". As you probably know, the
 reason most resources such as brushes, painting dynamics, and gradients are not
@@ -69,7 +75,13 @@ it's mostly geared towards images where colors are stored with floating point
 precision. You will mostly benefit from this, if you work on 16/32 bit per
 channel float images such as EXR and TIFF.
 
--- [video from alexandre] --
+<p>
+<video width="830" height="467" controls>
+  <source src="https://download.gimp.org/mirror/pub/gimp/video/v2.9/gimp-2-9-8-clipped-colors-warning.webm" type="video/webm">
+  <source src="https://download.gimp.org/mirror/pub/gimp/video/v2.9/gimp-2-9-8-clipped-colors-warning.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</p>
 
 Implementing this feature as a display filter has certain disadvantages such
 as having to go through the whole routine of adding a display filter for every
