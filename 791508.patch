@@ -1,0 +1,29 @@
+From 95b2c72a47a9db484153924f9856d163a943d382 Mon Sep 17 00:00:00 2001
+From: "Robert C. Helling" <helling@atdotde.de>
+Date: Tue, 12 Dec 2017 09:37:27 +0100
+Subject: [PATCH] Update Homebrew install command
+
+Gimp is now in a homebrew cask and thus the command to install
+it has changed.
+
+Signed-off-by: Robert C. Helling <helling@atdotde.de>
+---
+ themes/newgimp/templates/downloads.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/themes/newgimp/templates/downloads.html b/themes/newgimp/templates/downloads.html
+index cb1b99e0..177180a7 100644
+--- a/themes/newgimp/templates/downloads.html
++++ b/themes/newgimp/templates/downloads.html
+@@ -133,7 +133,7 @@
+ 
+         <h3>Homebrew</h3>
+         <p>
+-            Homebrew is similar to Macports and provides packages (aka formulas) to install, either by compiling them from source or by using pre-made binaries. There are indications that there is now a formula for GIMP, installable with: <code>brew install gimp</code>.
++            Homebrew is similar to Macports and provides packages (aka formulas) to install, either by compiling them from source or by using pre-made binaries. There are indications that there is now a formula for GIMP, installable with: <code>brew tap caskroom/cask && brew cask install gimp</code>.
+         </p>
+ 
+         <ul>
+-- 
+2.14.3 (Apple Git-98)
+

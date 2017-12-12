@@ -5,6 +5,7 @@ Authors: Alexandre Prokoudine
 Slug: gimp-2-9-8-released
 Summary: GIMP 2.9.8 introduces on-canvas gradient editing and various
 enhancements while focusing on bugfixing and stability.
+Status: draft
 
 Newly released GIMP 2.9.8 introduces on-canvas gradient editing and various
 enhancements while focusing on bugfixing and stability. For a complete list of
