@@ -21,7 +21,7 @@ canvas. You can create and delete color stops, select and shift them, assign
 colors to color stops, change blending and coloring for segments between color
 stops, create new color stops from midpoints.
 
--- [missing video from Ell] --
+-- [missing video from Alexandre] --
 
 Secondly, default gradients are now "editable". As you probably know, the
 reason most resources such as brushes, painting dynamics, and gradients are not
@@ -29,7 +29,7 @@ direclty editable is that they are typically installed into a system directory
 where non-privileged user can't make any changes.
 
 Now when you try to change an existing gradient from a system folder, GIMP will
-create a copy of it, call it a 'Custom Gradient' and preserve it across
+create a copy of it, call it a _Custom Gradient_ and preserve it across
 sessions. Unless, of course, you edit another 'system' gradient, in which case
 it will become the new custom gradient.
 
@@ -60,7 +60,7 @@ important options for tools.
 
 _Ell_ also implemented a feature request made in our public mailing list,
 where Elle Stone asked for some way to visualize underexposed and overexposed
-areas of a photo — a common feature in digital photography tools such as
+areas of a photo, which is a common feature in digital photography tools such as
 darktable and RawTherapee.
 
 The new _Clip Warning_ display filter targets that use case and fills
@@ -106,7 +106,7 @@ regular clipboard and named buffers.
 
 -- [missing screenshot from alexandre] --
 
-_Paste in Place_ complements the usual 'Paste' command which places contents
+_Paste in Place_ complements the usual _Paste_ command which places contents
 of the clipboard into the center of the viewport.
 
 ## GUI and Usability
@@ -132,28 +132,28 @@ the _Select Rotation Angle_ dialog or unflip the canvas.
     <img src="{filename}canvas-rotation-flip-status.png" alt="Status about canvas rotation and flip" width='528' height='36' />
 </figure>
 
-## Help manuals
+## Help Manuals
 
 Upon detection of locally installed manuals in several languages, GIMP will now
-allow selection of the manual language to display in the preferences (tab
-`Interface > Help System`).
+allow selection of the preferred manual language in the _Preferences_ dialog
+(_Interface > Help System_).
 
 <figure>
 <img src="{filename}help-localization.png" alt='manual localization in preferences' width='831' height='420'>
 <figcaption>
-Manual localization settings in GIMP preferences
+Manual localization settings in GIMP's preferences
 </figcaption>
 </figure>
 
-This is especially useful since GIMP interface has localization in 80 languages
-yet its [manual](https://www.gimp.org/docs/) is translated in *only* 17
-languages. You may therefore not have a choice of viewing a manual in
-your preferred language.
+This is especially useful since GIMP's interface is available in 80 languages,
+while its [manual](https://www.gimp.org/docs/) is translated to *only* 17
+languages. You may therefore not have a choice of viewing the manual in your
+preferred language.
 
-Moreover one may use an interface in a language while still preferring read the
-manual in another for any personal reasons, and may not want or have the
-possibility to read it online. Hence this choice made available in
-preferences.
+Moreover, some people choose English over their native language for user
+interfaces, while sticking to their native language for reading documentation.
+This is another case where choosing preferred language for the user manual
+might come in handy.
 
 ## Improved Wavelet Decompose Filter
 
@@ -162,25 +162,32 @@ and gained a couple of new options: placing decomposition stack into its own
 layer group and adding a layer mask to each scales layers. It also produces
 more expected results now.
 
-## File formats
+## File Formats
 
-* Various fixes were done to PSD format support.
-* Password-protected PDF files can now be imported in GIMP.
-* HGT files can now be imported. HGT is the format for [Digital Elevation Model
-  data by the NASA and other space agencies](https://dds.cr.usgs.gov/srtm/version2_1/Documentation/SRTM_Topo.pdf).
-  GIMP now supports both the SRTM-1 and SRTM-3 types (as far as we know, the
-  only 2 variants) which will be imported as grayscale RGB images.
-  In order to obtain more visible relief information, you will want to map
-  altitudes to colors, for instance with "Gradient Map" filter as we did in the
-  example image below (see also this [explicative post on the
-  process](https://girinstud.io/news/2017/12/new-format-in-gimp-hgt/)).
+The PSD plug-in was fixed to properly handle Photoshop files with deeply
+nested layer groups and preserve expanded state of groups for both importing
+and exporting. Additional changes fix mask position and improve layer opacity
+for importing/exporting.
+
+The PDF plug-in now supports loading password-protected files by promting
+the user for password.
+
+HGT files can now be imported. HGT is the format for [Digital Elevation Model
+data by the NASA and other space agencies](https://dds.cr.usgs.gov/srtm/version2_1/Documentation/SRTM_Topo.pdf).
+GIMP now supports both the SRTM-1 and SRTM-3 types (as far as we know, the
+only two variants) which will be imported as grayscale RGB images.
 
 <figure>
-<img src="{filename}GIMP-import-hgt.png" alt='Importing HGT files in GIMP' width='950' height='616'>
+<img src="{filename}GIMP-import-hgt.jpg" alt='Importing HGT files in GIMP' width='830' height='538'>
 <figcaption>
 NASA HGT file import followed by appropriate "Gradient Map" filtering
 </figcaption>
 </figure>
+
+In order to obtain more visible relief information, you will want to map
+altitudes to colors, for instance with the "Gradient Map" filter as we did
+in the example image above (see also this [explicative post on the
+process](https://girinstud.io/news/2017/12/new-format-in-gimp-hgt/)).
 
 ## Translations
 
@@ -190,10 +197,6 @@ Spanish, and Swedish.
 
 ## What's Next
 
-We had been hoping, earlier this year, to release GIMP 2.10 by the end of 2017.
-As you can see, the chances of it happening are rather slim now and this only
-proves that we should never give any temporal hints for release dates!
-
-Nevertheless we are getting very close to GIMP 2.10 and are thinking of entering
-feature and string freeze periods, which may actually happen soon after the
-release of GIMP 2.9.8 development version. Exciting times!
+We'll enter strings freeze soon so that translators could safely finalize their
+work for 2.10. Following that we expect to start making release candidates
+of GIMP 2.10.
