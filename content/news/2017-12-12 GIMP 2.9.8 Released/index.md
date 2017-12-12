@@ -42,11 +42,6 @@ Since this feature is useful for more than just gradients, it was made generic
 enough to be used for brushes and other types of resources in the future.
 We expect to revisit this in the future releases of GIMP.
 
-<figure>
-    <img src="{filename}gimp-2-9-8-on-canvas-gradient.png" alt="Editing a gradient fill on the canvas" width='FIXME' height='FIXME' />
-</figure>
-
-
 Now that 2.9.8 is out with the updated Blend tool, we are interested in your
 feedback, as we still expect some cleanup and enhancements to be done there.
 
@@ -127,6 +122,10 @@ differently to hint that position of cursor above the widget matters.
 When changing values in the lower step section, the pointer will be wrapped
 around the screen so that you could continue adjusting the value without
 interruptions.
+
+<figure>
+    <img src="{filename}spinscale.png" alt="spinscale widget highlighting lower area" width='308' height='52' />
+</figure>
 
 When using transform tools, you can now press a modifier key before or after
 pressing/releasing a mouse button.
