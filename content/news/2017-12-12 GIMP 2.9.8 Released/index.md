@@ -110,8 +110,6 @@ should be able to paste contents of the clipboard at exact coordinates the
 contents was originally copied from. This feature is available for both the
 regular clipboard and named buffers.
 
--- [missing screenshot from alexandre] --
-
 _Paste in Place_ complements the usual _Paste_ command which places contents
 of the clipboard into the center of the viewport.
 
