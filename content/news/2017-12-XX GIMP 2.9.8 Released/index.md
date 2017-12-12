@@ -185,4 +185,10 @@ Spanish, and Swedish.
 
 ## What's Next
 
-FIXME
+We had been hoping, earlier this year, to release GIMP 2.10 by the end of 2017.
+As you can see, the chances of it happening are rather slim now and this only
+proves that we should never give any temporal hints for release dates!
+
+Nevertheless we are getting very close to GIMP 2.10 and are thinking of entering
+feature and string freeze periods, which may actually happen soon after the
+release of GIMP 2.9.8 development version. Exciting times!
