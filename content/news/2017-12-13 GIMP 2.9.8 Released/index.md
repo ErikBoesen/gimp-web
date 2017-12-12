@@ -129,7 +129,7 @@ value and flip icon. Clicking on these canvas statuses will respectively raise
 the _Select Rotation Angle_ dialog or unflip the canvas.
 
 <figure>
-    <img src="{filename}canvas-rotation-flip-status.png" alt="Status about canvas rotation and flip" width='528' height='36' />
+    <img src="{filename}gimp-2-9-8-canvas-rotation-flip-status.png" alt="Status about canvas rotation and flip" width='528' height='36' />
 </figure>
 
 ## Help Manuals
@@ -139,7 +139,7 @@ allow selection of the preferred manual language in the _Preferences_ dialog
 (_Interface > Help System_).
 
 <figure>
-<img src="{filename}help-localization.png" alt='manual localization in preferences' width='831' height='420'>
+<img src="{filename}gimp-2-9-8-help-localization.png" alt='manual localization in preferences' width='831' height='420'>
 <figcaption>
 Manual localization settings in GIMP's preferences
 </figcaption>
@@ -178,7 +178,7 @@ GIMP now supports both the SRTM-1 and SRTM-3 types (as far as we know, the
 only two variants) which will be imported as grayscale RGB images.
 
 <figure>
-<img src="{filename}GIMP-import-hgt.jpg" alt='Importing HGT files in GIMP' width='830' height='538'>
+<img src="{filename}gimp-2-9-8-import-hgt.jpg" alt='Importing HGT files in GIMP' width='830' height='538'>
 <figcaption>
 NASA HGT file import followed by appropriate "Gradient Map" filtering
 </figcaption>
