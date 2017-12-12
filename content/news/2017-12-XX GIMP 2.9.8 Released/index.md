@@ -168,7 +168,8 @@ more expected results now.
   only 2 variants) which will be imported as grayscale RGB images.
   In order to obtain more visible relief information, you will want to map
   altitudes to colors, for instance with "Gradient Map" filter as we did in the
-  example image below.
+  example image below (see also this [explicative post on the
+  process](https://girinstud.io/news/2017/12/new-format-in-gimp-hgt/)).
 
 <figure>
 <img src="{filename}GIMP-import-hgt.png" alt='Importing HGT files in GIMP' width='950' height='616'>
