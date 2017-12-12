@@ -125,8 +125,12 @@ So if you prefer seeing LAB values, that's what you will see every time until
 you choose something else.
 
 Canvas rotation and flip information is now visible in the status bar, as angle
-value and flip icon. Clicking on these canvas status will respectively raise the
-_Select Rotation Angle_ dialog or unflip the canvas.
+value and flip icon. Clicking on these canvas statuses will respectively raise
+the _Select Rotation Angle_ dialog or unflip the canvas.
+
+<figure>
+    <img src="{filename}canvas-rotation-flip-status.png" alt="Status about canvas rotation and flip" width='528' height='36' />
+</figure>
 
 ## Help manuals
 
