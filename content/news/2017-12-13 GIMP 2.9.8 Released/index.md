@@ -1,5 +1,5 @@
 Title: GIMP 2.9.8 Released
-Date: 2017-12-XX
+Date: 2017-12-13
 Category: News
 Authors: Alexandre Prokoudine
 Slug: gimp-2-9-8-released
