@@ -138,6 +138,16 @@
             }
     },
     "DEVELOPMENT": {
+        "2.9.8": {
+            "date": "2017-12-12",
+            "source": {
+                "gimp-2.9.8.tar.bz2": "bade4163fb5b7a2063e1db570f27242f"
+            },
+            "windows": {
+                 "gimp-2.9.8-x64-setup.exe": "33389c3402c02f0b702370162e2026ca"
+            }
+        },
+
         "2.9.6": {
             "date": "2017-08-24",
             "source": {
