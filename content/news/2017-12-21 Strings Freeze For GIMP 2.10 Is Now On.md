@@ -3,8 +3,7 @@ Date: 2017-12-21
 Category: News
 Authors: Alexandre Prokoudine
 Slug: gimp-2-10-strings-freeze
-Summary: GIMP's master branch is now entering a tentative strings freeze phase
-in preparation for 2.10 release.
+Summary: GIMP's master branch is now entering a tentative strings freeze phase in preparation for 2.10 release.
 
 GIMP's user interface is currently available in 80 languages. So far ca. 20 translations have been updated in the unstable branch since the beginning of the work on v2.10, and only 8 translations in the 'po' directory (where most translatable messages reside) are at least 90% complete. So clearly we need to give our translators a head start.
 
