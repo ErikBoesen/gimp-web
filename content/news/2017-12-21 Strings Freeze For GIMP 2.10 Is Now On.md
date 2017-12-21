@@ -10,4 +10,6 @@ GIMP's user interface is currently available in 80 languages. So far ca. 20 tran
 
 This is why GIMP's master branch is now entering a tentative strings freeze phase in preparation for 2.10 release. We expect further changes between today and the v2.10 final release to affect no more than 1% of translatable messages. So it's safe to start updating user interface translations now.
 
+If you are interested, how complete the transation into your language is, check out the [current stats](https://l10n.gnome.org/module/gimp/). To start updating it, please contact your [local team](https://l10n.gnome.org/teams/).
+
 We would also like to remind translators that we are relaxing the release policy for the stable branch. Starting with v2.10, stable releases may have minor new features. This makes changes and the introduction of new strings more likely than in previous stable branches, where the only changes allowed were bug fixes (and which introduced only few string changes).
