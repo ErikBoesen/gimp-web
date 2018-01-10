@@ -15,7 +15,7 @@ This year is starting off great with not one, but **two** libre graphics oriente
 <img src="{attach}LGM-Logo-Big.svg" alt="LGM Logo">
 </figure>
 
-Come and join us for the 13<sup>th</sup> annual [Libre Graphics Meeting][] (LGM) being held April 26–30 in [Seville, Spain][]! LGM is a wonderful opportunity for artists, developers, and contributors to meet face-to-face and share/learn from each other. Several GIMP developers will be holding an annual team meeting there (as usual) so come and say hello!
+Come and join us for the 13<sup>th</sup> annual [Libre Graphics Meeting][] (LGM) being held April 26–30 in [Seville, Spain][]! LGM is a wonderful opportunity for artists, developers, and contributors to meet face-to-face and share/learn from each other. Several GIMP developers will be holding an annual team meeting there (as usual), so come and say hello!
 
 [Libre Graphics Meeting]: http://libregraphicsmeeting.org/2018/ "Libre Graphics Meeting 2018"
 [Seville, Spain]: http://libregraphicsmeeting.org/2018/2018-edition/
