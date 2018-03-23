@@ -175,10 +175,10 @@ side (and he is also the one who made us our current website, [back in
 2015](https://www.gimp.org/news/2015/11/22/20-years-of-gimp-release-of-gimp-2816/#new-website)).
 
 Last but not least, we remind that you can contribute financially in a
-few ways. You can donate to the project itself, or you can support the
-core team developers who raise funds individually, in particular
-[_Øyvind Kolås_](https://www.patreon.com/pippin) for his work on GEGL,
-GIMP graphics engine, and [_ZeMarmot_ project](https://film.zemarmot.net/en/donate)
+few ways. You can [donate to the project itself](https://www.gimp.org/donating/),
+or you can support the core team developers who raise funds
+individually, in particular [_Øyvind Kolås_](https://www.patreon.com/pippin)
+for his work on GEGL, GIMP graphics engine, and [_ZeMarmot_ project](https://film.zemarmot.net/en/donate)
 (_Aryeom & Jehan_) for their work on GIMP itself (about 34% of this
 release is contributed by *ZeMarmot*).
 [_Alexandre Prokoudine_](https://www.patreon.com/prokoudine), one of
