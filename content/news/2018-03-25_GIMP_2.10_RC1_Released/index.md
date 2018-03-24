@@ -78,6 +78,20 @@ rescue your unsaved work!
 
 This feature was also contributed by _ZeMarmot_ project.
 
+### Shadows-Highlights
+
+This new filter is now available in GIMP in the _Colors_ menu thanks
+to the contribution by Thomas Manni who created a likewise named GEGL
+operation.
+
+<figure>
+    <img src="{filename}gimp-2-10-rc1-shadows-highlights.jpg" alt="Shadows-Highlights" width='950' height='685' />
+</figure>
+
+The filter allows adjusting shadows and highlights in an image separately,
+with some options available. The implementation closely follows its
+counterpart in [darktable](https://www.darktable.org) digital photography software.
+
 ## Completed features
 ### Layer masks on layer groups
 
@@ -120,6 +134,21 @@ JPEG 2000 codestream files are also supported. Whereas color space can be
 detected for JPEG 2000 images, for codestream files you will be asked
 to specify the color space.
 
+### Linear workflow updates
+
+_Curves_ and _Levels_ filters have been updated to have a switch between
+linear and perceptual (non-linear) modes, depending on which one you need.
+
+<figure>
+    <img src="{filename}gimp-2-10-rc1-curves-linear.jpg" alt="Curves in linear mode" width='965' height='642' />
+</figure>
+
+You can apply _Levels_ in perceptual mode to a linear image, or _Curves_ in
+linear mode to a perceptual image — whichever suits you best for the task
+at hand.
+
+The same switch in the _Histogram_ dock has been updated accordingly.
+
 ### Screenshot and color-picking
 
 **On Linux**, taking screenshots with the Freedesktop API has been implemented.
@@ -135,11 +164,6 @@ well to handle hardware-accelerated software and multi-monitor displays.
 **On macOS** finally, color picking with the Color dock is now
 color-managed.
 
-### Missing icons
-
-8 new icons were added by _Alexandre Prokoudine_, _Aryeom Han_
-(*ZeMarmot* film director), and _Ell_.
-
 ### Metadata preferences
 
 Settings were added for metadata export handling in "Image Import &
@@ -148,9 +172,30 @@ checked, which means that GIMP will export all metadata, but you can uncheck
 them (in particular since metadata can often contain a lot of sensitive
 private information).
 
+<figure>
+    <img src="{filename}gimp-2-10-rc1-metadata-preservation.png" alt="Metadata preservation" width='914' height='380' />
+</figure>
+
 Note also that these options can also be changed per format ("Load
 Defaults" and "Save Defaults" button), and of course per file during
 exporting, just like any other option.
+
+### Lock brush to view
+
+GIMP finally gives you a choice whether you want a brush locked to
+a certain zoom level and rotation angle of the canvas.
+
+<figure>
+    <img src="{filename}gimp-2-10-rc1-lock-brush-to-view.jpg" alt="Lock brush to view demo" width='950' height='568' />
+</figure>
+
+The option is available for all painting tools that use a brush except
+for the MyPaint Brush tool.
+
+### Missing icons
+
+8 new icons were added by _Alexandre Prokoudine_, _Aryeom Han_
+(*ZeMarmot* film director), and _Ell_.
 
 ### Various GUI refining
 
