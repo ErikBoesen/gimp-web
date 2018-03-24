@@ -7,7 +7,7 @@ Summary: GIMP 2.10 RC1: bugfixes, stability and polish
 Status: draft
 
 Newly released GIMP 2.10 RC1 is the first release candidate before GIMP
-2.10 stable release. With more than 730 commits since the 2.9.8
+2.10 stable release. With more than 740 commits since the 2.9.8
 development version mid-December, the focus has really been on getting the
 last details right.
 
@@ -22,6 +22,10 @@ and recover lost data. For a complete list of changes please see
 A new _Dashboard_ dock helps monitoring GIMP's resource usage to keep
 things in check, allowing you to make more educated decisions about various
 configuration options.
+
+<figure>
+    <img src="{filename}gimp-2-10-rc1-dashboard.jpg" alt="Dashboard dock" width='950' height='685' />
+</figure>
 
 On developer side, it also helps us in debugging and profiling various
 operations or parts of the interface, which is important in our constant
@@ -72,7 +76,7 @@ the next time you start the application.
 </figure>
 
 This is not a 100%-guaranteed procedure, since a program state during
-a crash is unstable by definition, so backing up images might not always
+a crash is unstable by nature, so backing up images might not always
 succeed. What matters is that it will succeed sometimes, and this might
 rescue your unsaved work!
 
@@ -81,7 +85,7 @@ This feature was also contributed by _ZeMarmot_ project.
 ### Shadows-Highlights
 
 This new filter is now available in GIMP in the _Colors_ menu thanks
-to the contribution by Thomas Manni who created a likewise named GEGL
+to the contribution by _Thomas Manni_ who created a likewise named GEGL
 operation.
 
 <figure>
@@ -176,9 +180,9 @@ private information).
     <img src="{filename}gimp-2-10-rc1-metadata-preservation.png" alt="Metadata preservation" width='914' height='380' />
 </figure>
 
-Note also that these options can also be changed per format ("Load
-Defaults" and "Save Defaults" button), and of course per file during
-exporting, just like any other option.
+Note that these options can also be changed per format ("Load Defaults"
+and "Save Defaults" button), and of course per file during exporting,
+just like any other option.
 
 ### Lock brush to view
 
@@ -218,7 +222,7 @@ The Windows installer is now also localized with gettext.
 
 We'd like to remind you that GIMP is free software. Therefore the first way
 to help is to contribute your time. You can report bugs and send patches,
-whether they are code patches, icons, brushes, documentation, translations etc.
+whether they are code patches, icons, brushes, documentation, translations, etc.
 
 In this release for instance, about 15% of changes were done by
 non-regular contributors.
@@ -235,8 +239,8 @@ few ways. You can [donate to the project itself](https://www.gimp.org/donating/)
 or you can support the core team developers who raise funds
 individually, in particular [_Øyvind Kolås_](https://www.patreon.com/pippin)
 for his work on GEGL, GIMP graphics engine, and [_ZeMarmot_ project](https://film.zemarmot.net/en/donate)
-(_Aryeom & Jehan_) for their work on GIMP itself (about 34% of this
-release is contributed by the project).
+(_Aryeom & Jehan_) for their work on GIMP itself (about 35% of this
+release is contributed by their project).
 
 ## What's Next
 
