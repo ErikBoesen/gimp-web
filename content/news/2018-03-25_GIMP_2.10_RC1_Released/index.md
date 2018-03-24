@@ -85,6 +85,10 @@ Masks on layer groups are finally possible! This work, started years ago,
 has finally been finalized by _Ell_. Group-layer masks work similarly
 to ordinary-layer masks, with the following considerations.
 
+<figure>
+    <img src="{filename}gimp-2-10-rc1-mask-on-layer-group.jpg" alt="Mask on a layer group" width='950' height='685' />
+</figure>
+
 The group's mask size is the same as group's size (i.e., the
 bounding box of its children) at all times. When the group's size
 changes, the mask is cropped to the new size — areas of the mask
