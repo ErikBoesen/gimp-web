@@ -110,9 +110,8 @@ to ordinary-layer masks, with the following considerations.
 The group's mask size is the same as group's size (i.e., the
 bounding box of its children) at all times. When the group's size
 changes, the mask is cropped to the new size — areas of the mask
-that fall outside of the new bounds are discarded and their data is
-lost (no undo), and newly added areas are filled with black (and
-hence are transparent by default).
+that fall outside of the new bounds are discarded, and newly added
+areas are filled with black (and hence are transparent by default).
 
 ### JPEG 2000 support ported to OpenJPEG
 
