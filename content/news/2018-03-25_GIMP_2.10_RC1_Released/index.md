@@ -59,9 +59,13 @@ The feature was contributed by _Jehan Pages_ from [ZeMarmot](https://film.zemarm
 ### Image recovery after crash
 
 Now that the debugging system was in place to detect a crash, it was easy
-enough to add crash recovery.  In case of a crash, GIMP will now attempt
+enough to add crash recovery. In case of a crash, GIMP will now attempt
 to backup all images with unsaved changes, then suggest to reopen them
 the next time you start the application.
+
+<figure>
+    <img src="{filename}gimp-2-10-rc1-crash-recovery.jpg" alt="Crash recovery dialog" width='914' height='507' />
+</figure>
 
 This is not a 100%-guaranteed procedure, since a program state during
 a crash is unstable by definition, so backing up images might not always
