@@ -19,7 +19,7 @@ and recover lost data. For a complete list of changes please see
 ## New features
 ### Dashboard dockable
 
-A new _Dahsboard_ dock helps monitoring GIMP's resource usage to keep
+A new _Dashboard_ dock helps monitoring GIMP's resource usage to keep
 things in check, allowing you to make more educated decisions about various
 configuration options.
 
@@ -42,8 +42,12 @@ that producing useful information for a report can be difficult, and there
 is little we can do about a complaint that says _"GIMP crashed. I don't
 know what I was doing and I have no logs"_.
 
-So GIMP now ships with a built-in [debugging system](https://girinstud.io/news/2018/02/automatic-bug-report-stack-traces-gimp/) that gathers technical
-details on errors and crashes.
+So GIMP now ships with a built-in [debugging system](https://girinstud.io/news/2018/02/automatic-bug-report-stack-traces-gimp/) that gathers
+technical details on errors and crashes.
+
+<figure>
+    <img src="{filename}gimp-2-10-rc1-bug-reporting.jpg" alt="Debug dialog to simplify bug reporting" width='914' height='662' />
+</figure>
 
 On development versions, the dialog will be raised on all kind of errors
 (even minor ones). On stable releases, it will be raised only during crashes.
