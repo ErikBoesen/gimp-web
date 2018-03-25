@@ -222,10 +222,10 @@ The Windows installer is now also localized with gettext.
 The [GEGL](http://gegl.org/) library now used by GIMP for all image processing,
 has received numerous updates.
 
-Most importantly, all scaling is now done on linear data. This produces more
-accurate scaled-down thumbnails and more valid results of mipmap computations.
-GIMP 2.10 doesn't use mipmaps yet, but it definitely will further down the
-line.
+Most importantly, all scaling for display is now done on linear data. This
+produces more accurate scaled-down thumbnails and more valid results of mipmap
+computations. GIMP 2.10 doesn't use mipmaps yet, but it definitely will further 
+down the line.
 
 More work has been done to improve performance of GEGL across many parts of
 the source code. Improvements to pixel data fetching and setting functions have
