@@ -234,9 +234,9 @@ blur), and for some performance-critical display cases performance should have
 improved two- to three-fold since the release in December 2017.
 
 There are 5 new operations in the workshop now. Among those, _enlarge_ and
-_inpaint_ are parts of the new experimental inpainting framework by Øyvind
-Kolås, _domain transform_ by Felipe Einsfeld Kersting is an edge-preserving
-smoothing filter, and _recursive-transform_ is Ell's take on the famous
+_inpaint_ are parts of the new experimental inpainting framework by _Øyvind
+Kolås_, _domain transform_ by _Felipe Einsfeld Kersting_ is an edge-preserving
+smoothing filter, and _recursive-transform_ is _Ell's_ take on the famous
 [Droste effect](https://en.wikipedia.org/wiki/Droste_effect).
 
 ## Helping GIMP
