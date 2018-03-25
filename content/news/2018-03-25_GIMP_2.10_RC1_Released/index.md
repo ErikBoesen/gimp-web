@@ -217,11 +217,34 @@ Swedish, Turkish.
 
 The Windows installer is now also localized with gettext.
 
+## GEGL changes
+
+The [GEGL](http://gegl.org/) library now used by GIMP for all image processing,
+has received numerous updates.
+
+Most importantly, all scaling is now done on linear data. This produces more
+accurate scaled-down thumbnails and more valid results of mipmap computations.
+GIMP 2.10 doesn't use mipmaps yet, but it definitely will further down the
+line.
+
+More work has been done to improve performance of GEGL across many parts of
+the source code. Improvements to pixel data fetching and setting functions have
+led to performance boosts across many GEGL operations (in particular, Gaussian
+blur), and for some performance-critical display cases performance should have
+improved two- to three-fold since the release in December 2017.
+
+There are 5 new operations in the workshop now. Among those, _enlarge_ and
+_inpaint_ are parts of the new experimental inpainting framework by Øyvind
+Kolås, _domain transform_ by Felipe Einsfeld Kersting is an edge-preserving
+smoothing filter, and _recursive-transform_ is Ell's take on the famous
+[Droste effect](https://en.wikipedia.org/wiki/Droste_effect).
+
 ## Helping GIMP
 
 We'd like to remind you that GIMP is free software. Therefore the first way
 to help is to contribute your time. You can report bugs and send patches,
-whether they are code patches, icons, brushes, documentation, translations, etc.
+whether they are code patches, icons, brushes, documentation, translations,
+etc.
 
 In this release for instance, about 15% of changes were done by
 non-regular contributors.
