@@ -1,13 +1,13 @@
-Title: GIMP 2.10 Release Candidate 1 Released
+Title: GIMP 2.10.0 Release Candidate 1 Released
 Date: 2018-03-25
 Category: News
 Authors: Wilber
-Slug: gimp-2-10-rc1-released
-Summary: GIMP 2.10 RC1: bugfixes, stability and polish
+Slug: gimp-2-10-0-rc1-released
+Summary: GIMP 2.10.0-rc1: bugfixes, stability and polish
 Status: draft
 
-Newly released GIMP 2.10 RC1 is the first release candidate before GIMP
-2.10 stable release. With more than 740 commits since the 2.9.8
+Newly released GIMP 2.10.0-RC1 is the first release candidate before GIMP
+2.10.0 stable release. With more than 750 commits since the 2.9.8
 development version mid-December, the focus has really been on getting the
 last details right.
 
@@ -224,8 +224,8 @@ has received numerous updates.
 
 Most importantly, all scaling for display is now done on linear data. This
 produces more accurate scaled-down thumbnails and more valid results of mipmap
-computations. GIMP 2.10 doesn't use mipmaps yet, but it definitely will further 
-down the line.
+computations. GIMP 2.10.0-RC1 doesn't use mipmaps yet, but it definitely will
+further down the line.
 
 More work has been done to improve performance of GEGL across many parts of
 the source code. Improvements to pixel data fetching and setting functions have
@@ -266,7 +266,7 @@ release is contributed by their project).
 
 ## What's Next
 
-This is the last stretch before making the final GIMP 2.10 release. There are
+This is the last stretch before making the final GIMP 2.10.0 release. There are
 a few more changes planned before we wrap it up. For instance, [_Americo Gobbo_](http://americogobbo.com.br/)
 is working (with minor help from _ZeMarmot_) on improving our default brush
 set. His work will be available either in another release candidate (if we
