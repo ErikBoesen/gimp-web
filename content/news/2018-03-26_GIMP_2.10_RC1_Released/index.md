@@ -1,5 +1,5 @@
 Title: GIMP 2.10.0 Release Candidate 1 Released
-Date: 2018-03-25
+Date: 2018-03-26
 Category: News
 Authors: Wilber
 Slug: gimp-2-10-0-rc1-released
