@@ -5,7 +5,7 @@ Authors: Wilber
 Slug: gimp-2-10-0-rc1-released
 Summary: GIMP 2.10.0-rc1: bugfixes, stability and polish
 
-Newly released GIMP 2.10.0-RC1 is the first release candidate before the GIMP 2.10.0 stable release. With more than 750 commits since the 2.9.8 development version from mid-December, the focus has really been on getting the last details right.
+Newly released GIMP 2.10.0-RC1 is the first release candidate before the GIMP 2.10.0 stable release. With 142 bugs fixed and more than 750 commits since the 2.9.8 development version from mid-December, the focus has really been on getting the last details right.
 
 All the new features we added for this release are instrumental in either improving how GIMP handles system resources, or helping you to report bugs and recover lost data. For a complete list of changes please see [NEWS](https://git.gnome.org/browse/gimp/tree/NEWS).
 
