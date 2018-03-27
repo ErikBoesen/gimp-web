@@ -2,3 +2,7 @@
 # 301 for the old macintosh page
 #
 Redirect 301 /macintosh/index.html https://www.gimp.org/downloads/
+
+# This is because Pat David is not a smart man.
+Redirect 301 /news/2018/03/26/gimp-2-10-rc1-released/ /news/2018/03/26/gimp-2-10-0-rc1-released/
+
