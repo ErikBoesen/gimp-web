@@ -82,13 +82,13 @@
 
         <p>
             <span class='win-button' id='osx-torrent'>
-                <a href="//download.gimp.org/pub/gimp/v2.9/osx/{{ MACOS_FILE_DEVELOPMENT }}.torrent">
+                <a href="//download.gimp.org/pub/gimp/v{{ MACOS_VER_DEVELOPMENT.split('.')[0]}}.{{ MACOS_VER_DEVELOPMENT.split('.')[1]}}/osx/{{ MACOS_FILE_DEVELOPMENT }}.torrent">
                     Download GIMP&nbsp;{{ MACOS_VER_DEVELOPMENT }}<br/>
                     via BitTorrent
                 </a>
             </span>
             <span class='win-button'>
-                <a href="//download.gimp.org/mirror/pub/gimp/v2.9/osx/{{ MACOS_FILE_DEVELOPMENT }}">
+                <a href="//download.gimp.org/mirror/pub/gimp/v{{ MACOS_VER_DEVELOPMENT.split('.')[0]}}.{{ MACOS_VER_DEVELOPMENT.split('.')[1]}}/osx/{{ MACOS_FILE_DEVELOPMENT }}">
                     Download GIMP&nbsp;{{ MACOS_VER_DEVELOPMENT }}<br/>
                     directly
                 </a>
@@ -98,7 +98,7 @@
         <small>
             <p>
                 The download links above will attempt to download GIMP from one of our trusted mirror servers.
-                If the mirrors do not work or you would rather download directly from our server, you can get the <a href='//download.gimp.org/pub/gimp/v2.9/osx/'>direct download here</a>.
+                If the mirrors do not work or you would rather download directly from our server, you can get the <a href='//download.gimp.org/pub/gimp/v{{ MACOS_VER_DEVELOPMENT.split('.')[0]}}.{{ MACOS_VER_DEVELOPMENT.split('.')[1]}}/osx/'>direct download here</a>.
             </p>
         </small>
 
@@ -106,7 +106,7 @@
 
         <h3>Native build</h3>
 
-        <p>The official GIMP 2.9 DMG installer (linked above) is a stock GIMP build without any add-ons. It works on OS X 10.6 Snow Leopard and later. Just open the downloaded DMG and drag and drop GIMP into your "Applications" folder.</p>
+        <p>The official GIMP {{ MACOS_VER_DEVELOPMENT }} DMG installer (linked above) is a stock GIMP build without any add-ons. It works on OS X 10.6 Snow Leopard and later. Just open the downloaded DMG and drag and drop GIMP into your "Applications" folder.</p>
 
         <p>
             The MD5 hash sum for <code>{{ MACOS_FILE_DEVELOPMENT }}</code> is:
@@ -137,13 +137,13 @@
 
     <p>
         <span class='win-button' id='win-torrent'>
-            <a href="//download.gimp.org/pub/gimp/v2.9/windows/{{ WINDOWS_FILE_DEVELOPMENT }}.torrent" title="Download GIMP via BitTorrent" id="win-torrent-link">
+            <a href="//download.gimp.org/pub/gimp/v{{ WINDOWS_VER_DEVELOPMENT.split('.')[0] }}.{{ WINDOWS_VER_DEVELOPMENT.split('.')[1] }}/windows/{{ WINDOWS_FILE_DEVELOPMENT }}.torrent" title="Download GIMP via BitTorrent" id="win-torrent-link">
                 Download GIMP&nbsp;{{ WINDOWS_VER_DEVELOPMENT }}<br/>
                 via BitTorrent
             </a>
         </span>
         <span class='win-button'>
-            <a href="//download.gimp.org/mirror/pub/gimp/v2.9/windows/{{ WINDOWS_FILE_DEVELOPMENT }}" title="Download GIMP via HTTP" id='win-download-link' >
+            <a href="//download.gimp.org/mirror/pub/gimp/v{{ WINDOWS_VER_DEVELOPMENT.split('.')[0] }}.{{ WINDOWS_VER_DEVELOPMENT.split('.')[1] }}/windows/{{ WINDOWS_FILE_DEVELOPMENT }}" title="Download GIMP via HTTP" id='win-download-link' >
                 Download GIMP&nbsp;{{ WINDOWS_VER_DEVELOPMENT }}<br/>
                 directly
             </a>
@@ -153,7 +153,7 @@
     <small>
         <p>
             The download links above will attempt to download GIMP from one of our trusted mirror servers.
-            If the mirrors do not work or you would rather download directly from our server, you can get the <a href="//download.gimp.org/pub/gimp/v2.9/windows/">direct download here</a>.
+            If the mirrors do not work or you would rather download directly from our server, you can get the <a href="//download.gimp.org/pub/gimp/v{{ WINDOWS_VER_DEVELOPMENT.split('.')[0] }}.{{ WINDOWS_VER_DEVELOPMENT.split('.')[1] }}/windows/">direct download here</a>.
         </p>
     </small>
 
@@ -187,21 +187,25 @@
     </div>
 
     <div id='source'>
-    <h2>Source for version 2.9 (Development)</h2>
+        <h2>Source for version 
+            {{ GIMP_VERSION_DEVELOPMENT.split('.')[0] }}.{{ GIMP_VERSION_DEVELOPMENT.split('.')[1] }} (Development)</h2>
+    
 
     <p>GIMP releases available from gimp.org and its <a href='#mirrors'>mirrors</a> contain the source code and have to be compiled in order to be installed on your system.</p>
 
     <p>For instructions, how to build GIMP from source code, please see <a href='/source/'>this page</a>.</p>
 
-    <p>GIMP {{ GIMP_VERSION_DEVELOPMENT }} is now available at <a href='//download.gimp.org/mirror/pub/gimp/v2.9/'>https://download.gimp.org/mirror/pub/gimp/v2.9/</a>. You may want to read the <a href='/release-notes/gimp-2.9.html'>Release Notes for GIMP 2.9</a>.</p>
+    <p>GIMP {{ GIMP_VERSION_DEVELOPMENT }} is now available at <a href='//download.gimp.org/mirror/pub/gimp/v{{ GIMP_VERSION_DEVELOPMENT.split('.')[0] }}.{{ GIMP_VERSION_DEVELOPMENT.split('.')[1] }}/'>https://download.gimp.org/mirror/pub/gimp/v{{ GIMP_VERSION_DEVELOPMENT.split('.')[0] }}.{{ GIMP_VERSION_DEVELOPMENT.split('.')[1] }}/</a>.
+    </p>
 
     <p>To allow you to check the integrity of the tarballs, here are the MD5 sums of the latest releases:</p>
 
     {% if GIMP.DEVELOPMENT %}
         {% for version, values in GIMP.DEVELOPMENT.iteritems() %}
+            {% set ver = version.split('.') %}
             {% if 'source' in values %}
             <p>
-                <a href="//download.gimp.org/mirror/pub/gimp/v2.9/{{ values['source'].keys()[0] }}"><strong>{{ values['source'].keys()[0] }}</strong></a><br>
+                <a href="//download.gimp.org/mirror/pub/gimp/v{{ ver[0] }}.{{ ver[1] }}/{{ values['source'].keys()[0] }}"><strong>{{ values['source'].keys()[0] }}</strong></a><br>
                 <kbd>{{ values['source'].values()[0] }}</kbd>
             </p>
             {% endif %}

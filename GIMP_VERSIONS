@@ -138,6 +138,13 @@
             }
     },
     "DEVELOPMENT": {
+        "2.10.0-RC1": {
+            "date": "2018-03-26",
+            "source": {
+                "gimp-2.10.0-RC1.tar.bz2 ": "e8892481e70c4ee3c204b6aa484f4eba"
+            }
+        },
+
         "2.9.8": {
             "date": "2017-12-12",
             "source": {
