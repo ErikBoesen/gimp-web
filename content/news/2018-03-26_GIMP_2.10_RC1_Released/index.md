@@ -9,6 +9,7 @@ Newly released GIMP 2.10.0-RC1 is the first release candidate before the GIMP 2.
 
 All the new features we added for this release are instrumental in either improving how GIMP handles system resources, or helping you to report bugs and recover lost data. For a complete list of changes please see [NEWS](https://git.gnome.org/browse/gimp/tree/NEWS).
 
+(Update): Thanks to _Ell_ the windows installer (64-bit) is now available from the [Development Downloads](/downloads/devel/) page.
 
 ## New features
 
@@ -195,7 +196,7 @@ In this release for instance, about 15% of changes were done by
 non-regular contributors.
 
 You can also contribute tutorials or news for our website, as _Pat David_ explained so well in his talk [*Why the GIMP Team Obviously Hates You*](https://www.youtube.com/watch?v=AemoQzCFHpc). 
-_Pat David_ is himself one of important GIMP contributors on the community side (and he is also the one who created our current website [back in 2015](https://www.gimp.org/news/2015/11/22/20-years-of-gimp-release-of-gimp-2816/#new-website)).
+_Pat David_ is himself one of the important GIMP contributors on the community side (he also created our current website [back in 2015](https://www.gimp.org/news/2015/11/22/20-years-of-gimp-release-of-gimp-2816/#new-website)).
 
 Last but not least, we remind that you can contribute financially in a few ways. You can [donate to the project itself](https://www.gimp.org/donating/), or you can support the core team developers who raise funds individually, in particular [_Øyvind Kolås_](https://www.patreon.com/pippin) for his work on GEGL, GIMP graphics engine, and [_ZeMarmot_ project](https://film.zemarmot.net/en/donate) (_Aryeom & Jehan_) for their work on GIMP itself (about 35% of this release is contributed by their project).
 
