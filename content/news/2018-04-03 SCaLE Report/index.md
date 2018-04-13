@@ -2,9 +2,8 @@ Title: Fun at SCaLE 2018
 Date: 2018-04-03
 Category: News
 Authors: Pat David
-Slug: gimp-2-10-0-rc1-released
 Summary: On a Libre Graphics track at the Southern California Linux Expo
-Status: draft
+Status: Published
 
 I am finally back and have a moment to write a bit about the wonderful time I had out in Pasadena at the [Southern California Linux Expo][scale16x] (SCaLE 16x)!
 
