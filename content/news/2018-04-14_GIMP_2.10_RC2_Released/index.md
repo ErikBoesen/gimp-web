@@ -16,7 +16,7 @@ For a complete list of changes please see [NEWS](https://git.gnome.org/browse/gi
 
 A major regression of GIMP 2.10, compared to 2.8, was slower painting.
 To address this issue, several contributors (Ell, Jehan, Massimo Valentini,
-Øyvind Kolås…) introduced im;rovements to the GIMP core, as well as to the
+Øyvind Kolås…) introduced improvements to the GIMP core, as well as to the
 GEGL and babl libraries. Additionally, Elle Stone and Jose Americo Gobbo
 contributed performance testing.
 
