@@ -59,7 +59,8 @@ person stays around for maintenance).
 
 ## Gradient tool improved to work in linear color space
 
-The gradient tool can now work in linear color space, thus making sure you have way more even transitions.
+The gradient tool can now work in either perceptual RGB, linear RGB,
+or CIE LAB color space at your preference.
 
 <figure>
 <img src="{attach}gimp-2-10-rc-2-gradient-tool-linear.jpg" alt="Gradient tool in linear space" width="1260" height="788">
@@ -69,7 +70,7 @@ Gradient tool in perceptual and linear spaces
 </figure>
 
 We also used the opportunity to rename the tool, which used to be called
-"Blend tool" until now, even though nobody uses such name. "Gradient
+"Blend tool" until now, even though barely anyone uses such name. "Gradient
 tool" is a much more understandable naming.
 
 ## New on-canvas control for 3D rotation
