@@ -36,8 +36,10 @@ used for improving other parts of GIMP.
 ## Themes rewritten
 
 Since the development version 2.9.4, we had [new themes shipped with
-GIMP](https://www.gimp.org/news/2016/07/13/gimp-2-9-4-released/), and in particular dark themes (as is now common for creative applications).
-Unfortunately they were unmaintained, bugs kept piling up, and the user experience wasn't exactly stellar.
+GIMP](https://www.gimp.org/news/2016/07/13/gimp-2-9-4-released/), and in
+particular dark themes (as is now common for creative applications).
+Unfortunately they were unmaintained, bugs kept piling up, and the user
+experience wasn't exactly stellar.
 
 <figure>
 <img src="{attach}gimp-2-10-rc-2-themes.png" alt="GIMP Themes" width="656" height="713">
@@ -113,4 +115,5 @@ it possible to achieve hard edges on rescaled buffers.
 ## What's Next
 
 We are now **8 blocker bugs** away from the final release.
+
 On your marks, get set…
