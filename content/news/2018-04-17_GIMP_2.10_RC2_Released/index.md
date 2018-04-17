@@ -4,7 +4,6 @@ Category: News
 Authors: Wilber
 Slug: gimp-2-10-0-rc2-released
 Summary: GIMP 2.10.0-rc2: so close…
-Status: draft
 
 Hot on the heels of the first release candidate, we're happy to have a second
 RC ready! In the last 3 weeks since releasing GIMP 2.10.0-RC1, we've fixed
