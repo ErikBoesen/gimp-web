@@ -7,7 +7,7 @@ Summary: GIMP 2.10.0-rc2: so close…
 
 Hot on the heels of the first release candidate, we're happy to have a second
 RC ready! In the last 3 weeks since releasing GIMP 2.10.0-RC1, we've fixed
-**40 bugs** and introduced important performance improvements.
+**44 bugs** and introduced important performance improvements.
 
 As usual, for a complete list of changes please see [NEWS](https://git.gnome.org/browse/gimp/tree/NEWS).
 
@@ -122,6 +122,6 @@ it possible to achieve hard edges on rescaled buffers.
 
 ## What's Next
 
-We are now **8 blocker bugs** away from the final release.
+We are now **7 blocker bugs** away from the final release.
 
 On your marks, get set…
