@@ -91,7 +91,7 @@ Panorama projection filter
 
 GIMP doesn't do any gamma conversion when converting between selection,
 channels, and masks anymore. This makes the selection -> channel -> selection
-roundtrips correct anbd predictable.
+roundtrips correct and predictable.
 
 Additionally, for all >8-bit per channel images, GIMP now uses linear color
 space for channels.
@@ -110,7 +110,7 @@ improvements and micro-optimizations in display paths. Additionally, avoiding
 incorrectly gamma/ungamma correcting alpha in u8 formats provides a tiny
 2-3% performance boost.
 
-For further work on muipmaps support, GEGL now keeps track of valid/invalid
+For further work on mipmaps support, GEGL now keeps track of valid/invalid
 areas on smaller granularity than tiles in mipmap.
 
 The _Panorama Projection_ operation got reverse transform, which permits using
