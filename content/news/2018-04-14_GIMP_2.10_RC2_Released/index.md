@@ -6,11 +6,11 @@ Slug: gimp-2-10-0-rc2-released
 Summary: GIMP 2.10.0-rc2: the end is near
 Status: draft
 
-Hot on the heels of the first Release Candidate we're happy to have a second RC ready!
-In the last 3 weeks since releasing GIMP 2.10.0-RC1, we've fixed **38 bugs** and introduced important performance improvements.
+Hot on the heels of the first release candidate, we're happy to have a second
+RC ready! In the last 3 weeks since releasing GIMP 2.10.0-RC1, we've fixed
+**40 bugs** and introduced important performance improvements.
 
 As usual, for a complete list of changes please see [NEWS](https://git.gnome.org/browse/gimp/tree/NEWS).
-
 
 ## Optimizations and multi-threading for painting and display
 
@@ -40,7 +40,7 @@ GIMP](https://www.gimp.org/news/2016/07/13/gimp-2-9-4-released/), and in particu
 Unfortunately they were unmaintained, bugs kept piling up, and the user experience wasn't exactly stellar.
 
 <figure>
-<img src="{attach}themes.png" alt="GIMP Themes" width="656" height="713">
+<img src="{attach}gimp-2-10-rc-2-themes.png" alt="GIMP Themes" width="656" height="713">
 <figcaption>
 Light, Gray, and Dark themes.
 </figcaption>
@@ -61,7 +61,7 @@ person stays around for maintenance).
 The gradient tool can now work in linear color space, thus making sure you have way more even transitions.
 
 <figure>
-<img src="{attach}gradient-tool-linear.jpg" alt="Gradient tool in linear space" width="1260" height="788">
+<img src="{attach}gimp-2-10-rc-2-gradient-tool-linear.jpg" alt="Gradient tool in linear space" width="1260" height="788">
 <figcaption>
 Gradient tool in perceptual and linear spaces
 </figcaption>
@@ -78,7 +78,7 @@ has been implemented by Ell. This new widget is currently only used for
 the Panorama Projection filter.
 
 <figure>
-<img src="{attach}gegl-pano.jpg" alt="GEGL Panorama View" width="1260" height="1018">
+<img src="{attach}gimp-2-10-rc-2-gegl-pano.jpg" alt="GEGL Panorama View" width="1260" height="1018">
 <figcaption>
 Panorama projection filter  
 (image: <a href="https://commons.wikimedia.org/wiki/File:Hellbrunn_banqueting_hall_360_panoramic_view.jpg">Hellbrunn Banquet Hall</a> by Matthias Kabel (<span class="cc"><a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">cba</a></span>))
@@ -95,6 +95,20 @@ we recommend starting now.
 
 ## GEGL changes
 
+Mosty of the changes in GEGL since the release in March are performance
+improvements and micro-optimizations in display paths. Additionally, avoiding
+incorrectly gamma/ungamma correcting alpha in u8 formats provides a tiny
+2-3% performance boost.
+
+For further work on muipmaps support, GEGL now keeps track of valid/invalid
+areas on smaller granularity than tiles in mipmap.
+
+The _Panorama Projection_ operation got reverse transform, which permits using
+GIMP for retouching zenith, nadir or other arbitrary gaze directions in
+equirectangular, also known as 360×180 panoramas.
+
+Finally, abyss policy support in the base class for scale operations now makes
+it possible to achieve hard edges on rescaled buffers.
 
 ## What's Next
 
