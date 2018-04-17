@@ -25,7 +25,6 @@ contributed performance testing.
 [Elle Stone]: https://ninedegreesbelow.com/
 [Jose Americo Gobbo]: http://americogobbo.com.br/
 
-
 The whole issue pushed Ell to implement multi-threading within GIMP, so
 that painting and display are now run on separate threads, thus greatly
 speeding up feedback of the graphical interface.
@@ -87,6 +86,14 @@ Panorama projection filter
 </figcaption>
 </figure>
 
+## Improvements in handling masks, channels, and selections
+
+GIMP doesn't do any gamma conversion when converting between selection,
+channels, and masks anymore. This makes the selection -> channel -> selection
+roundtrips correct anbd predictable.
+
+Additionally, for all >8-bit per channel images, GIMP now uses linear color
+space for channels.
 
 ## Translations
 
