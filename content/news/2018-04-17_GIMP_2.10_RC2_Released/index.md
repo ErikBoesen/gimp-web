@@ -59,8 +59,8 @@ person stays around for maintenance).
 
 ## Gradient tool improved to work in linear color space
 
-The gradient tool can now work in either perceptual RGB, linear RGB,
-or CIE LAB color space at your preference.
+Thanks to Michael Natterer and Øyvind Kolås, the gradient tool can now work in
+either perceptual RGB, linear RGB, or CIE LAB color space at your preference.
 
 <figure>
 <img src="{attach}gimp-2-10-rc-2-gradient-tool-linear.jpg" alt="Gradient tool in linear space" width="1260" height="788">
@@ -94,7 +94,8 @@ channels, and masks anymore. This makes the selection -> channel -> selection
 roundtrips correct and predictable.
 
 Additionally, for all >8-bit per channel images, GIMP now uses linear color
-space for channels.
+space for channels. This and many other fixes in the new release were done
+by Michael Natterer.
 
 ## Translations
 
