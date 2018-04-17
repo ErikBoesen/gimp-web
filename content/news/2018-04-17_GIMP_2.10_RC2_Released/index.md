@@ -1,9 +1,9 @@
 Title: GIMP 2.10.0 Release Candidate 2 Released
-Date: 2018-04-14
+Date: 2018-04-17
 Category: News
 Authors: Wilber
 Slug: gimp-2-10-0-rc2-released
-Summary: GIMP 2.10.0-rc2: the end is near
+Summary: GIMP 2.10.0-rc2: so close…
 Status: draft
 
 Hot on the heels of the first release candidate, we're happy to have a second
