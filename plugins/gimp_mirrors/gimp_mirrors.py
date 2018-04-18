@@ -57,7 +57,8 @@ def do_mirrors(path, context):
     path = path.replace( os.path.sep, '/' )
 
     # if we are on a downloads page
-    if '/downloads/index.html' in path:
+    #if '/downloads/index.html' in path:
+    if '/downloads/' in path:
 
         # create mirrors dict
         mirrors = {}
