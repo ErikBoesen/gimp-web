@@ -145,6 +145,14 @@
             },
             "windows": {
                 "gimp-2.10.0-RC2-x64-setup.exe": "6199bf303ef3f731d0da336e0afcb62b"
+                },
+            "flatpak": {
+                "i386": {
+                    "gimp-2.10.0-RC2-i386.flatpak": "d1d2fcffa4c6ed6575bb67133250796a"
+                    },
+                "x86_64": {
+                    "gimp-2.10.0-RC2-x86_64.flatpak": "ee30a0982b2956f6904bdd4b0f834aa8"
+                    }
                 }
         },
 

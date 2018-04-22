@@ -55,13 +55,63 @@
     <div id='linux' class="os linux" markdown='1'>
         <h2>GIMP (development version) for Unix-like systems</h2>
 
-        <p>It's very likely your Unix-like system such as a GNU/Linux distribution already comes with a GIMP package. It is a preferred method of installing GIMP, as the distribution maintainers take care of all the dependencies and bug fix updates. Please note that many distros decide to pin a specific version of GIMP to their releases.</p>
+{% if FLATPAK_FILE_DEVELOPMENT is defined %}
+
+        {% if FLATPAK_VER_DEVELOPMENT != GIMP_VERSION_DEVELOPMENT %}
+        <p>Note: the currently available flatpak bundle provides GIMP {{
+        FLATPAK_VER_DEVELOPMENT }} and has not yet updated to the latest
+        version, GIMP {{ GIMP_VERSION_DEVELOPMENT }}. We're working on
+        that, please check back later.</p>
+        {% endif %}
+
+        <p>
+            {% for arch, file in FLATPAK_FILE_DEVELOPMENT.iteritems() %}
+              <span class='win-button'>
+                  <a
+                  href="//download.gimp.org/mirror/pub/gimp/v{{FLATPAK_VER_DEVELOPMENT.split('.')[0]}}.{{FLATPAK_VER_DEVELOPMENT.split('.')[1]}}/flatpak/{{file}}">
+                      Download GIMP&nbsp;{{ FLATPAK_VER_DEVELOPMENT }} for {{ arch }}<br/>
+                      directly
+                  </a>
+              </span>
+            {% endfor %}
+        </p>
+        <p>
+            {% for arch, hash in FLATPAK_HASH_DEVELOPMENT.iteritems() %}
+            <p>
+                The MD5 hash sum for <code>{{ FLATPAK_VER_DEVELOPMENT
+                }}</code> flatpak on <code>{{ arch }}</code> is:
+                <kbd>{{ hash }}</kbd>
+            </p>
+            {% endfor %}
+        </p>
+
+        <small>
+            <p>
+                The download links above will attempt to download GIMP from one of our trusted mirror servers.
+                If the mirrors do not work or you would rather download
+                directly from our server, you can get the <a
+                href='//download.gimp.org/pub/gimp/v{{FLATPAK_VER_DEVELOPMENT.split('.')[0]}}.{{FLATPAK_VER_DEVELOPMENT.split('.')[1]}}/flatpak/'>direct download here</a>.
+            </p>
+        </small>
+
+        <h3>Native build</h3>
+
+        <p>The official GIMP {{ FLATPAK_VER_DEVELOPMENT }} flatpak
+        bundle (linked above) is a stock GIMP build without any add-ons.
+        It doesn't provide a repository for automatic update, as does
+        the stable version flatpak repository.
+        </p>
+
+{% else %}
+
+        <p>There is no flatpak package yet, sorry. Please check back later.</p>
+
+{% endif %}
+
+        <p>It's very likely your Unix-like system such as a GNU/Linux distribution already comes with a GIMP package. It may be a preferred method of installing GIMP, as the distribution maintainers take care of all the dependencies and bug fix updates. Please note that many distros decide to pin a specific version of GIMP to their releases.</p>
 
         <p>
             GIMP can also run on Solaris and is available for the BSD family of systems such as FreeBSD and OpenBSD.
-        </p>
-
-        <p>
             Please refer to the documentation for your Unix-like system on the installation of software.
         </p>
 

@@ -190,6 +190,16 @@ if 'DEVELOPMENT' in GIMP:
                 MACOS_VER_DEVELOPMENT = version
                 MACOS_FILE_DEVELOPMENT = info['macos'].keys()[0]
                 MACOS_HASH_DEVELOPMENT = info['macos'].values()[0]
+        if 'flatpak' in info:
+            try:
+                FLATPAK_FILE_DEVELOPMENT
+            except NameError:
+                FLATPAK_VER_DEVELOPMENT = version
+                FLATPAK_FILE_DEVELOPMENT = {}
+                FLATPAK_HASH_DEVELOPMENT = {}
+                for arch, package in info['flatpak'].iteritems() :
+                    FLATPAK_FILE_DEVELOPMENT[arch] = package.keys()[0]
+                    FLATPAK_HASH_DEVELOPMENT[arch] = package.values()[0]
 else:
     print 'DEVELOPMENT not defined'
 
