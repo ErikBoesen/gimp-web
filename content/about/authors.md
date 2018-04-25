@@ -1,6 +1,6 @@
 Title: Authors: The People That Made it Happen
-Date: 2017-10-23T23:47:03+02:00
-Modified: 2017-10-23T23:47:03+02:00
+Date: 2018-04-26T01:18:09+02:00
+Modified: 2018-04-26T01:18:09+02:00
 Author: generated from authors.xml.
 
 ## GIMP was originally written by:
@@ -267,6 +267,7 @@ Author: generated from authors.xml.
 * Michael Schumacher
 * Tracy Scott
 * Craig Setera
+* shark0r
 * Peter Sikking
 * RyōTa SimaMoto
 * Ted Shaneyfelt
@@ -332,6 +333,7 @@ Author: generated from authors.xml.
 * Paul Davey
 * Alexia Death
 * Aurore Derriennic
+* Philipp Haegi
 * Aryeom Han
 * Tuomas Kuosmanen
 * Karl La Rocca
