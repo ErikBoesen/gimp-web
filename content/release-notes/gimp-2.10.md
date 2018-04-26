@@ -71,7 +71,7 @@ Another benefit of using GEGL is being able to work on images in a linear RGB
 color space as opposed to gamma-corrected (perceptual) RGB color space.
 
 <figure>
-    <img src="https://www.gimp.org/news/2018/03/26/gimp-2-10-0-rc1-released/gimp-2-10-rc1-curves-linear.jpg" alt="Curves in linear mode" width='965' height='642' />
+    <img src="{filename}/news/2018-03-26_GIMP_2.10_RC1_Released/gimp-2-10-rc1-curves-linear.jpg" alt="Curves in linear mode" width='965' height='642' />
 </figure>
 
 Here is what it boils down to:
@@ -97,7 +97,7 @@ made it possible, in particular, to introduce color management to all custom
 widgets we could think of: image previews, color and pattern previews etc.
 
 <figure>
-    <img src="https://www.gimp.org/news/2016-07-13%20GIMP%202.9.4%20Released/gimp-2-9-4-preferences-cms.png" alt="Color Management Preferences" width='975' height='920' />
+    <img src="{filename}/news/2016-07-13 GIMP 2.9.4 Released/gimp-2-9-4-preferences-cms.png" alt="Color Management Preferences" width='975' height='920' />
 </figure>
 
 GIMP now uses LittleCMS v2, which allows it to use ICC v4 color profiles.
@@ -127,7 +127,7 @@ Compositing options for layers are exposed to users now, and all layer-related
 settings are finally available in the _Layer Attributes_ dialog.
 
 <figure>
-    <img src="https://www.gimp.org/news/2017-08-24%20GIMP%202.9.6%20Released/gimp-2-9-6-layer-attributes-dialog.png" alt="Updated Layer Attributes dialog" width='608' height='579' />
+    <img src="{filename}/news/2017-08-24 GIMP 2.9.6 Released/gimp-2-9-6-layer-attributes-dialog.png" alt="Updated Layer Attributes dialog" width='608' height='579' />
 </figure>
 
 Moreover, if you always need alpha in your layers, you can enable automatic
@@ -137,7 +137,7 @@ _Edit > Preferences > Image Import & Export_ page for this and more policies.
 Layer groups can finally have masks on:
 
 <figure>
-    <img src="https://www.gimp.org/news/2018/03/26/gimp-2-10-0-rc1-released/gimp-2-10-rc1-mask-on-layer-group.jpg" alt="Mask on a layer group" width='950' height='685' />
+    <img src="{filename}/news/2018-03-26_GIMP_2.10_RC1_Released/gimp-2-10-rc1-mask-on-layer-group.jpg" alt="Mask on a layer group" width='950' height='685' />
 </figure>
 
 ## More use for CIE LAB and CIE LCH
@@ -261,7 +261,7 @@ depending on your platform and Input Method Engine. Several input method-related
 bugs and crashes have also been fixed.
 
 <figure>
-    <img src="https://www.gimp.org/news/2016-07-13%20GIMP%202.9.4%20Released/gimp-2-9-4-ime.png" alt="Input Method Engine support in text tool" width='417' height='240' />
+    <img src="{filename}/news/2016-07-13 GIMP 2.9.4 Released/gimp-2-9-4-ime.png" alt="Input Method Engine support in text tool" width='417' height='240' />
 </figure>
 
 **Contributors:** Jehan Pagès…
@@ -337,7 +337,7 @@ _Exposure_, _Shadows-Highlights_, _High-pass_, _Wavelet Decompose_, _Panorama
 Projection_ and others will be an important addition to your toolbox.
 
 <figure>
-    <img src="https://www.gimp.org/news/2018/03/26/gimp-2-10-0-rc1-released/gimp-2-10-rc1-shadows-highlights.jpg" alt="Shadows-Highlights" width='950' height='685' />
+    <img src="{filename}/news/2018-03-26_GIMP_2.10_RC1_Released/gimp-2-10-rc1-shadows-highlights.jpg" alt="Shadows-Highlights" width='950' height='685' />
 </figure>
 
 On top of that, the new _Extract Component_ filter simplifies extracting a
@@ -471,7 +471,7 @@ feature to watch and intercept critical errors and crashes, then generate a
 useful error log that you can copy/paste to a bug report.
 
 <figure>
-    <img src="https://www.gimp.org/news/2018/03/26/gimp-2-10-0-rc1-released/gimp-2-10-rc1-bug-reporting.jpg" alt="Debug dialog to simplify bug reporting" width='914' height='662' />
+    <img src="{filename}/news/2018-03-26_GIMP_2.10_RC1_Released/gimp-2-10-rc1-bug-reporting.jpg" alt="Debug dialog to simplify bug reporting" width='914' height='662' />
 </figure>
 
 On development versions, the dialog will be raised on all kind of errors (even
@@ -487,7 +487,7 @@ with unsaved changes, then suggest to reopen them the next time you start the
 application.
 
 <figure>
-    <img src="https://www.gimp.org/news/2018/03/26/gimp-2-10-0-rc1-released/gimp-2-10-rc1-crash-recovery.jpg" alt="Crash recovery dialog" width='914' height='507' />
+    <img src="{filename}/news/2018-03-26_GIMP_2.10_RC1_Released/gimp-2-10-rc1-crash-recovery.jpg" alt="Crash recovery dialog" width='914' height='507' />
 </figure>
 
 We cannot guarantee 100% success, but it will succeed sometimes, and this might
