@@ -18,7 +18,9 @@ One thing immediately noticeable about GIMP 2.10 is the new dark theme and
 symbolic icons enabled by default. This is meant to somewhat dim the environment
 and shift the focus towards content.
 
-FIXME screenshot
+<figure>
+    <img src="{filename}images/2.10-update-ui.jpg" alt="GIMP 2.10 with dark UI theme and symbolic icon theme" width='960' height='587' />
+</figure>
 
 There are now 4 user interface themes available in GIMP: Dark (default), Gray,
 Light, and System. Icons are now separate from themes, and we maintain both
@@ -164,8 +166,6 @@ New _Unified Transform_ tool simplifies making multiple transforms, such as
 scaling, rotating, and correcting perspective in one go. The design is based
 on a functional spec written by our former UX expert Peter Sikking.
 
-FIXME: screenshot
-
 **Contributors:** Mikael Magnusson…
 
 ### Warp Transform
@@ -179,8 +179,6 @@ time of its inception (and pre-dated Photoshop's Liquify filter), but was
 ultimately cumbersome to use. The _Warp Transform_ tool also features an
 _Eraser_ mode to selectively remove changes, previously unavailable in the
 _iWarp_ filter.
-
-FIXME screenshot
 
 **Contributors:** Michael Muré, Michael Natterer, Jonathan Tait…
 
@@ -205,7 +203,7 @@ stops, change blending and coloring for segments between color stops and create
 new color stops from midpoints _right on the canvas_.
 
 <p>
-<video width="830" height="467" controls>
+<video width="960" height="540" controls>
   <source src="https://download.gimp.org/mirror/pub/gimp/video/v2.9/gimp-2-9-8-gradient-edit.webm" type="video/webm">
   <source src="https://download.gimp.org/mirror/pub/gimp/video/v2.9/gimp-2-9-8-gradient-edit.mp4" type="video/mp4">
 Your browser does not support the video tag.
@@ -274,7 +272,9 @@ broken for you (up to have GIMP crash). We only mention them, because we need
 contributors to get them into the releasable state.
 
 _N-Point Deformation_ tool introduces the kind of smooth, as little rigid as
-possible warping you would expect physical objects to have. FIXME
+possible warping you would expect physical objects to have.
+
+<iframe width="960" height="540" src="https://www.youtube.com/embed/OmOyQyuiO_E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 _Seamless Clone_ tool is aimed to simplify making layered compositions.
 Typically when you paste one image into another, there are all sorts of
@@ -303,29 +303,29 @@ new _No erase effect_ option prevents the tools from changing alpha of pixels.
 And the foreground color can now be blended into smudged pixels, controlled by
 a new _Flow_ slider, where 0 means no blending.
 
-FIXME screenshot from https://www.gimp-forum.net/Thread-Customized-smudge-tool-Smudge-with-painting  ???
-
 All painting tools now have explicit _Hardness_ and _Force_ sliders except for
 the _MyPaint Brush_ tool that only has the _Hardness_ slider.
 
 Most importantly, GIMP now supports canvas rotation and flipping to help
 illustrators checking proportions and perspective.
 
-FIXME video or screenshot?
-
-New _Symmetry Painting_ dockable dialog, enabled on per-image basis, allows to
-use all painting tools with various symmetries (mirror, mandala, tiling…).
-
-FIXME screenshot
+<figure>
+    <img src="{filename}/news/2018-03-26_GIMP_2.10_RC1_Released/gimp-2-10-rc1-lock-brush-to-view.jpg" alt="Lock brush to view demo" width='950' height='568' />
+</figure>
 
 A new _Brush lock to view_ option gives you a choice whether you want a brush
 locked to a certain zoom level and rotation angle of the canvas. The option is
 available for all painting tools that use a brush except for the _MyPaint Brush_
 tool.
 
-FIXME screenshot
+New _Symmetry Painting_ dockable dialog, enabled on per-image basis, allows to
+use all painting tools with various symmetries (mirror, mandala, tiling…).
 
-This new version of GIMP also ships with more new brushes available by default. FIXME
+<figure>
+    <img src="{filename}/news/2016-07-13 GIMP 2.9.4 Released/gimp-2-9-4-symmetry.png" alt="Symmetry painting" width='975' height='1440' />
+</figure>
+
+This new version of GIMP also ships with more new brushes available by default.
 
 **Contributors:**: Michael Natterer, Alexia Death, Daniel Sabo, shark0r, Jehan
 Pagès, Ell, Jose Americo Gobbo, Aryeom Han…
@@ -355,7 +355,7 @@ mostly benefit from this if you work on 16/32 bit per channel float images such
 as EXR and TIFF.
 
 <p>
-<video width="830" height="467" controls>
+<video width="960" height="540" controls>
   <source src="https://download.gimp.org/mirror/pub/gimp/video/v2.9/gimp-2-9-8-clipped-colors-warning.webm" type="video/webm">
   <source src="https://download.gimp.org/mirror/pub/gimp/video/v2.9/gimp-2-9-8-clipped-colors-warning.mp4" type="video/mp4">
 Your browser does not support the video tag.
@@ -367,11 +367,7 @@ Your browser does not support the video tag.
 
 ## Plug-ins
 
-GIMP now ships with over 60 GEGL-based filters.
-
-FIXME screenshot
-
-A lot of those are former GIMP effects. Here is why GEGL-based implementations
+GIMP now ships with over 60 GEGL-based filters. A lot of those are former GIMP effects. Here is why GEGL-based implementations
 are better:
 
 * You can apply them on images in 32-bit per color channel precision mode.
@@ -381,6 +377,10 @@ viewport, GIMP will render the viewport first for immediate feedback.
 and swap before/after sides both horizontally and vertically.
 * In a future non-destructive GIMP, you will be able to adjust settings of those
 filters without undoing a ton of steps.
+
+<figure>
+    <img src="{filename}/news/2016-07-13 GIMP 2.9.4 Released/gimp-2-9-4-gegl-curtain.jpg" alt="GEGL preview curtain - original image by Aryeom Han" width='975' height='548' />
+</figure>
 
 Some of the GEGL-based filters have OpenCL version for hardware acceleration.
 This will come in handy, if OpenCL drivers work well for you.
@@ -428,6 +428,9 @@ Finally, the PDF plug-in now supports importing password-protected files (you
 need to know the password) and exporting multipage PDF documents (each layer
 will be a page).
 
+**Contributors:** Michael Natterer, Mukund Sivamaran, Ell, Jehan Pagès,
+Lionel N…
+
 ## Metadata viewing, editing, and preservation
 
 GIMP now ships with plug-ins for viewing and editing Exif, XMP, IPTC, GPS, and
@@ -455,7 +458,7 @@ on-canvas controls. For now, this applies to just three filters: _Spiral_,
 _Supernova_, and _Panorama Projection_. But there will be more in the future.
 
 <p>
-<video width="880" height="528" controls>
+<video width="960" height="576" controls>
   <source src="https://download.gimp.org/mirror/pub/gimp/video/v2.9/gimp-2-9-6-spiral-filter.webm" type="video/webm">
   <source src="https://download.gimp.org/mirror/pub/gimp/video/v2.9/gimp-2-9-6-spiral-filter.mp4" type="video/mp4">
 Your browser does not support the video tag.
@@ -495,10 +498,6 @@ rescue your unsaved work!
 
 **Contributors**: Jehan Pagès…
 
-## Known regressions
-
-FIXME
-
 ## API changes
 
 Over the course of this development cycle, we deprecated a lot of API, providing
@@ -525,10 +524,6 @@ indeed be backported to a 2.10.x release as long as its code is not too invasive
 and making maintenance difficult.
 
 All the new features from 2.10.x will be part of 3.0 as well.
-
-## Getting involved with contributing to GIMP
-
-FIXME
 
 ## Download and install pre-made packages
 
