@@ -7,31 +7,31 @@ Status: hidden
 
 GIMP 2.10 is the result of six years of work that originally focused on porting
 the program to a new image processing engine, GEGL. However the new version
-ships with more far new features, including new and improved tools, better file
+ships with far more new features, including new and improved tools, better file
 formats support, various usability improvements, revamped color management
 support, a plethora of improvements targeted at digital painters and
 photographers, metadata editing, and much, much more.
 
 ## Updated user interface and initial HiDPI support
 
-One thing immediately noticeable about GIMP 2.10 is the new dark theme and 
+One thing immediately noticeable about GIMP 2.10 is the new dark theme and
 symbolic icons enabled by default. This is meant to somewhat dim the environment
 and shift the focus towards content.
 
 FIXME screenshot
 
-There are now 4 user interface themes available in GIMP: dark (default), grey,
-light, and system. Icons are separate from themes now, and we maintain both
-color and symbolic icons, so you can configure GIMP to have system theme with
+There are now 4 user interface themes available in GIMP: Dark (default), Gray,
+Light, and System. Icons are now separate from themes, and we maintain both
+color and symbolic icons, so you can configure GIMP to have System theme with
 color icons if you prefer the old look.
 
 Moreover, icons are available in four sizes now, so that GIMP would look better
 on HiDPI displays. GIMP will do its best to detect which size to use, but you
-can manually override that selection in _Edit > Preferences > Interface > 
+can manually override that selection in _Edit > Preferences > Interface >
 Icon Themes_.
 
-**Contributors:** Benoit Turkotte, Ville Pätsi, Aryeom Khan, Jehan Pagès,
-Alexandre Prokoudine
+**Contributors:** Benoit Touchette, Ville Pätsi, Aryeom Han, Jehan Pagès,
+Alexandre Prokoudine…
 
 ## GEGL port, high bit depth support, multi-threading, and more
 
@@ -52,8 +52,10 @@ channel precision and open/export PSD, TIFF, PNG, EXR, and RGBE files in their
 native fidelity. Additionally, FITS images can be opened with up to 64-bit per
 channel precision.
 
-**Multi-threading** allows making use of multiple cores for processing. Not all 
+**Multi-threading** allows making use of multiple cores for processing. Not all
 features in GIMP make use of that, it's something we intend to work on further.
+A point of interest is that multi-threading happens through GEGL processing, but
+also in core GIMP itself, for instance to separate painting from display code.
 
 **GPU-side processing** is still optional, but available for systems with stable
 OpenCL drivers.
@@ -61,7 +63,7 @@ OpenCL drivers.
 You can find configuration options for multi-threading and hardware acceleration
 in _Edit > Preferences > System Resources_.
 
-**Contributors:** Michael Natterer, Øyvind Kolås, Ell, Jehan Pagès, FIXME
+**Contributors:** Michael Natterer, Øyvind Kolås, Ell, Jehan Pagès…
 
 ## Linear color space workflow
 
@@ -86,29 +88,29 @@ linear.
 * You can choose whether the gradient tool should work in perceptual RGB, linear
 RGB, or CIE LAB color space
 
-**Contributors:** Michael Natterer, Øyvind Kolås, Ell
+**Contributors:** Michael Natterer, Øyvind Kolås, Ell…
 
 ## Color management revamped
 
 Color management is now a core feature of GIMP rather than a plug-in. This
 made it possible, in particular, to introduce color management to all custom
-widgets we could think of: imahge previews, color and pattern previews etc.
+widgets we could think of: image previews, color and pattern previews etc.
 
 <figure>
     <img src="https://www.gimp.org/news/2016-07-13%20GIMP%202.9.4%20Released/gimp-2-9-4-preferences-cms.png" alt="Color Management Preferences" width='975' height='920' />
 </figure>
 
 GIMP now uses LittleCMS v2, which allows it to use ICC v4 color profiles.
-But GIMP now also partially relies on the babl library for handling color
-transforms, because babl is simply up to 10 times faster than LCMS2 for the
-cases we tested both of them on.
+It also partially relies on the babl library for handling color transforms,
+since babl is simply up to 10 times faster than LCMS2 for the cases we tested
+both of them on. Eventually babl could replace LittleCMS in GIMP.
 
-**Contributors:** Michael Natterer, Øyvind Kolås
+**Contributors:** Michael Natterer, Øyvind Kolås…
 
 ## Layers and masks
 
 GIMP now ships with two groups of blending modes: legacy (perceptual) and
-default (linear). 
+default (linear).
 
 New blend modes are:
 
@@ -128,8 +130,8 @@ settings are finally available in the _Layer Attributes_ dialog.
     <img src="https://www.gimp.org/news/2017-08-24%20GIMP%202.9.6%20Released/gimp-2-9-6-layer-attributes-dialog.png" alt="Updated Layer Attributes dialog" width='608' height='579' />
 </figure>
 
-Moreover, if you always need alpha in your layers, you can enable automatic 
-generation of the alpha channel in imported images upon opening them. See 
+Moreover, if you always need alpha in your layers, you can enable automatic
+generation of the alpha channel in imported images upon opening them. See
 _Edit > Preferences > Image Import & Export_ page for this and more policies.
 
 Layer groups can finally have masks on:
@@ -147,12 +149,12 @@ CIE LCH color spaces:
 selector also displays out-of-gamut warning.
 * A new _Hue-Chroma_ filter in the _Colors_ menu works much like _Hue-Saturation_,
 but operates in CIE LCH color space.
-* The _Fuzzy Select_ and the _Bucket Fill_ tools now can select colors by their
+* The _Fuzzy Select_ and the _Bucket Fill_ tools can now select colors by their
 values in CIE _L_, _C_, and _H_ channels.
 * Both the _Color Picker_ and the _Sample Points_ dialog now display pixel
 values in CIE LAB and CIE LCH at your preference.
 
-**Contributors:** Michael Natterer, Elle Stone, Ell
+**Contributors:** Michael Natterer, Elle Stone, Ell…
 
 ## Tools
 
@@ -164,7 +166,7 @@ on a functional spec written by our former UX expert Peter Sikking.
 
 FIXME: screenshot
 
-**Contributors:** Mikael Magnusson
+**Contributors:** Mikael Magnusson…
 
 ### Warp Transform
 
@@ -174,24 +176,24 @@ in fashion photography for retouching.
 
 As such, the new tool retires the old _iWarp_ filter that was innovative at the
 time of its inception (and pre-dated Photoshop's Liquify filter), but was
-ultimately cumbersome to use. The _Warp Transform_ tools also features an
+ultimately cumbersome to use. The _Warp Transform_ tool also features an
 _Eraser_ mode to selectively remove changes, previously unavailable in the
 _iWarp_ filter.
 
 FIXME screenshot
 
-**Contributors:** Michael Muré, Michael Natterer, Jonathan Tait
+**Contributors:** Michael Muré, Michael Natterer, Jonathan Tait…
 
 ### Handle Transform
 
-The new _Handle Transform_ tools provides an interesting approach at applying
+The new _Handle Transform_ tool provides an interesting approach at applying
 scaling, rotating, and perspective correction using handles placed on the
 canvas. People who are used to editing on touch surfaces might find this tool
 strangely easy to grasp.
 
-**Contributors:** Johannes Matschke, Michael Natterer, Ell
+**Contributors:** Johannes Matschke, Michael Natterer, Ell…
 
-### Blend tool becomes Gradient tool, gets on-canvas editing
+### Blend tool becomes Gradient tool and gets on-canvas editing
 
 We renamed the _Blend_ tool to _Gradient_ tool and changed its default shortcut
 to **G**. But this pales in comparison to what the tool can actually do now, and
@@ -199,8 +201,8 @@ it's a lot.
 
 The new tool pretty much obsoletes the old _Gradient Editor_ dialog. Now you can
 create and delete color stops, select and shift them, assign colors to color
-stops, change blending and coloring for segments between color stops, create new
-color stops from midpoints _right on the canvas_.
+stops, change blending and coloring for segments between color stops and create
+new color stops from midpoints _right on the canvas_.
 
 <p>
 <video width="830" height="467" controls>
@@ -219,7 +221,7 @@ it will become the new custom gradient.
 We intend to use the generic implementation of this later for brushes and other
 types of resources.
 
-**Contributors:** Michael Henning, Michael Natterer, Ell, Øyvind Kolås
+**Contributors:** Michael Henning, Michael Natterer, Ell, Øyvind Kolås…
 
 ## Better selection tools
 
@@ -240,16 +242,16 @@ The _Intelligent Scissors_ tool finally allows to remove the last added segment
 with **Backspace** key, and GIMP now checks, whether the first and the last
 segments are distinct before closing the curve.
 
-**Contributors:** Michael Natterer, Jan Rüegg, Daniel Sabo, Ell
+**Contributors:** Michael Natterer, Jan Rüegg, Daniel Sabo, Ell…
 
 ### Color tools
 
 All color tools have been refactored to become GEGL-based filters, so they could
 be properly used later on when we introduce non-destructive editing. Hence,
-the _Color_ submenu in the _Tools_ menu has been retired, and these filters
-are now mostly unavaliable in the toolbox.
+the _Color_ submenu in the _Tools_ menu has been removed, and these filters
+are now mostly unavailable in the toolbox.
 
-**Contributors:** Michael Natterer
+**Contributors:** Michael Natterer…
 
 ## Text tool supports CJK and more writing systems
 
@@ -262,14 +264,14 @@ bugs and crashes have also been fixed.
     <img src="https://www.gimp.org/news/2016-07-13%20GIMP%202.9.4%20Released/gimp-2-9-4-ime.png" alt="Input Method Engine support in text tool" width='417' height='240' />
 </figure>
 
-**Contributors:** Jehan Pagès
+**Contributors:** Jehan Pagès…
 
 ### Experimental tools
 
 Two new tools were incomplete for inclusion to GIMP 2.10 by default, but still
 can be enabled. Please note that they are highly experimental and likely to be
-broken for you. We only mention them, because we need contributors to get them
-into the releasable state.
+broken for you (up to have GIMP crash). We only mention them, because we need
+contributors to get them into the releasable state.
 
 _N-Point Deformation_ tool introduces the kind of smooth, as little rigid as
 possible warping you would expect physical objects to have. FIXME
@@ -288,7 +290,7 @@ enable the respective options, so that the tools would show up in the toolbox.
 We need to stress again that you should only do so either if you are very
 curious, or (which we hope for) intend to help us fix them.
 
-**Contributors:** Marek Dvoroznak, Barak Itkin, Jehan Pagès, Michael Natterer
+**Contributors:** Marek Dvoroznak, Barak Itkin, Jehan Pagès, Michael Natterer…
 
 ## Digital painting improvements
 
@@ -297,7 +299,7 @@ of the most interesting new additions here is the _MyPaint Brush_ tool that
 first appeared in the GIMP-Painter fork.
 
 The _Smudge_ tool got updates specifically targeted in painting use case. The
-new _No erase effect_ option prevent the tools from changing alpha of pixels.
+new _No erase effect_ option prevents the tools from changing alpha of pixels.
 And the foreground color can now be blended into smudged pixels, controlled by
 a new _Flow_ slider, where 0 means no blending.
 
@@ -323,10 +325,10 @@ tool.
 
 FIXME screenshot
 
-The new version of GIMP also ships with more new brushes available by default. FIXME
+This new version of GIMP also ships with more new brushes available by default. FIXME
 
 **Contributors:**: Michael Natterer, Alexia Death, Daniel Sabo, shark0r, Jehan
-Pagès, Ell, Jose Americo Gobbo, Aryeom Khan
+Pagès, Ell, Jose Americo Gobbo, Aryeom Han…
 
 ## Digital photography improvements
 
@@ -349,7 +351,7 @@ opening raw files. Any recent version of either application will do.
 A new _Clip Warning_ display filter will visualize underexposed and overexposed
 areas of a photo for you, with customizable colors. For now, it’s mostly geared
 towards images where colors are stored with floating point precision. You will
-mostly benefit from this, if you work on 16/32 bit per channel float images such
+mostly benefit from this if you work on 16/32 bit per channel float images such
 as EXR and TIFF.
 
 <p>
@@ -361,7 +363,7 @@ Your browser does not support the video tag.
 </p>
 
 **Contributors:**: Michael Natterer, Ell, Thomas Manni, Tobias Ellinghaus,
-Øyvind Kolås
+Øyvind Kolås, Jehan Pagès, Alberto Griggio…
 
 ## Plug-ins
 
@@ -374,7 +376,7 @@ are better:
 
 * You can apply them on images in 32-bit per color channel precision mode.
 * You can preview them right on the canvas, and if an image is larger than the
-viewport, GIMP will render the viewport first.
+viewport, GIMP will render the viewport first for immediate feedback.
 * You can use split preview to compare original image with its processed version
 and swap before/after sides both horizontally and vertically.
 * In a future non-destructive GIMP, you will be able to adjust settings of those
@@ -382,6 +384,8 @@ filters without undoing a ton of steps.
 
 Some of the GEGL-based filters have OpenCL version for hardware acceleration.
 This will come in handy, if OpenCL drivers work well for you.
+Furthermore many operations can come multi-threaded to use your processor at
+their full power.
 
 ## Usability improvements
 
@@ -402,7 +406,9 @@ canvas.
 There is a lot to improve to make GIMP better suited for professional workflows.
 As usual, we welcome constructive discussion and recently create a
 [mailing list](https://mail.gnome.org/mailman/listinfo/gimp-gui-list)
-to discuss the topic of improving GIMP's usability.
+to discuss the topic of improving GIMP's usability. This is a long-term
+enhancement process, which can take more time than localized changes and
+features.
 
 ## File formats support
 
@@ -415,14 +421,12 @@ light, and linear light blending modes.
 GIMP now also ships with native WebP support, including features like animation,
 ICC profiles, and metadata. Both importing and exporting are supported.
 
-The JPEG 2000 plug-in was rewritten to use OpenJPEG rather than somwhat obsolete
-Jasper library. 
+The JPEG 2000 plug-in was rewritten to use the *OpenJPEG* library rather than
+the somewhat obsolete *Jasper* library.
 
 Finally, the PDF plug-in now supports importing password-protected files (you
 need to know the password) and exporting multipage PDF documents (each layer
 will be a page).
-
-**Contributors:** FIXME
 
 ## Metadata viewing, editing, and preservation
 
@@ -442,12 +446,12 @@ metadata in all affected file format plug-ins at once depending on whether they
 want complete privacy or, instead, do a lot of microstock photography. The
 settings are available on the _Image Import & Export_ page in _Preferences_.
 
-**Contributors:** Benoit Touchette, Michael Natterer, Jehan Pagès
+**Contributors:** Benoit Touchette, Michael Natterer, Jehan Pagès…
 
 ## On-canvas interaction
 
 GIMP 2.10 ships with a new feature that allows some GEGL-based filters to render
-on-canvas controls. For now, this applies to just three filters: _Spiral_, 
+on-canvas controls. For now, this applies to just three filters: _Spiral_,
 _Supernova_, and _Panorama Projection_. But there will be more in the future.
 
 <p>
@@ -458,7 +462,7 @@ Your browser does not support the video tag.
 </video>
 </p>
 
-**Contributors:** Michael Natterer, Ell
+**Contributors:** Michael Natterer, Ell…
 
 ### Simplified bug reporting and crash recovery
 
@@ -475,8 +479,8 @@ minor ones). On stable releases, it will be raised only during crashes. The
 default behavior can be customized in _Edit > Preferences > Debugging_.
 
 Please note that we still need you to provide context, e.g. what you were doing
-when a crash occured. A step-by-step description how to reperoduce this bug will
-be most helpful.
+when a crash occured. A step-by-step description of how to reproduce this bug
+will be most helpful.
 
 Additionally, in case of a crash, GIMP will now attempt to backup all images
 with unsaved changes, then suggest to reopen them the next time you start the
@@ -489,7 +493,7 @@ application.
 We cannot guarantee 100% success, but it will succeed sometimes, and this might
 rescue your unsaved work!
 
-**Contributors**: Jehan Pagès
+**Contributors**: Jehan Pagès…
 
 ## Known regressions
 
@@ -500,23 +504,25 @@ FIXME
 Over the course of this development cycle, we deprecated a lot of API, providing
 a compatibility layer for 3rd party developers who write scripts and plug-ins.
 
-For the full list of changes in PDB, please [see the wiki](https://wiki.gimp.org/wiki/Release:2.10_changelog#API_Changes). This ChangeLog page also has a verbose list
-of all other changes in 2.10.
-
-https://wiki.gimp.org/wiki/Release:2.10_changelog
+For the full list of changes in PDB, please [see the
+wiki](https://wiki.gimp.org/wiki/Release:2.10_changelog#API_Changes).
+This ChangeLog page also has a verbose list of all other changes in
+2.10.
 
 ### Roadmap and what's next
 
 We maintain a [roadmap for GIMP development](http://wiki.gimp.org/index.php/Roadmap)
 that outlines the order of features to be implemented based on priorities.
 
-The next big updated will be v3.0 that will feature GTK+3 port and a lot of
+The next big update will be v3.0 that will feature GTK+3 port and a lot of
 internal changes. For users, this will mostly mean: updated user interface,
-better support for graphic tablets on Windows, better support for HiDPI
-displays, better support for Wayland on Linux.
+better support for graphic tablets, better support for HiDPI displays, better
+support for Wayland on Linux.
 
 We are also opening the 2.10.x series for new features. This means you don't
-have to wait for exciting improvements for years anymore.
+have to wait for exciting improvements for years anymore: any new feature can
+indeed be backported to a 2.10.x release as long as its code is not too invasive
+and making maintenance difficult.
 
 All the new features from 2.10.x will be part of 3.0 as well.
 
@@ -527,6 +533,8 @@ FIXME
 ## Download and install pre-made packages
 
 GIMP can be downloaded directly from our [Downloads](/downloads/) section.
+As usual, we will have Windows installers and macOS packages readily
+available. We now also provide a Flatpak repository for Linux.
 
 Please be very cautious when downloading from anywhere else — some sites use
 GIMP's popularity to lure unwary users into their traps by shipping modified
@@ -543,7 +551,10 @@ new bug-report. Here are some interesting Bugzilla queries:
 
 ## Contributing
 
-We need your help to make GIMP 2.8 a success. If you want to join us hacking,
-show up in #gimp or introduce yourself on the gimp-developer mailing-list. We
-are also looking for people to look after the web-site and update the tutorials.
+We need your help to make GIMP 2.10 a success. If you want to join us hacking,
+show up on [IRC](https://www.gimp.org/irc.html) in #gimp (on *irc.gimp.org*
+server) or introduce yourself on the [gimp-developer
+mailing-list](https://mail.gnome.org/mailman/listinfo/gimp-developer-list).
+We are also looking for people to look after the web-site and update the
+[tutorials](https://www.gimp.org/tutorials/).
 Or you might want to join the [documentation team](http://docs.gimp.org/).
