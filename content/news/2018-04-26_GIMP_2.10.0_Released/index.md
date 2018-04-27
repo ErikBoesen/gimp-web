@@ -45,7 +45,12 @@ notable changes:
   Preferences).
 * And more, better, more, and even more awesome!
 
-# Enjoy GIMP #
+<a href="https://www.gimp.org/release-notes/gimp-2.10.html"
+   title="GIMP 2.10.0 Release Notes" >
+    <span id="ReleaseButton">READ COMPLETE RELEASE NOTES</span>
+</a>
+
+# Enjoy GIMP! #
 
 <figure>
     <img src="{attach}gimp-2-10-0-Wilber-pepper.png" alt="Wilber likes it spicy!" width='714' height='602' />
