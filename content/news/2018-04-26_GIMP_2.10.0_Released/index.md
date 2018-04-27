@@ -17,7 +17,7 @@ contributors](https://www.openhub.net/p/gimp/contributors/summary).
 
 We are not going to list the full changelog here, since you can get a
 better idea with our [official GIMP 2.10 release
-notes](https://ww.gimp.org/release-notes/gimp-2.10.html). To get an even more
+notes](https://www.gimp.org/release-notes/gimp-2.10.html). To get an even more
 detailed list of changes please see the
 [NEWS](https://git.gnome.org/browse/gimp/tree/NEWS) file.
 
