@@ -100,7 +100,7 @@ Here is what it boils down to:
 * There is now a linear version of the _Color Invert_ command.
 * You can freely switch between the two at any time via _Image > Precision_
 submenu.
-* You can choose which mode id displayed in the _Histogram_ docker.
+* You can choose which mode is displayed in the _Histogram_ docker.
 * You can apply _Levels_ and _Curves_ filters in either perceptual or linear
 mode
 * When higher than 8-bit per channel precision is used, all channels data is
@@ -129,8 +129,8 @@ both of them on. Eventually babl could replace LittleCMS in GIMP.
 
 ## Layers and masks
 
-GIMP now ships with two groups of blending modes: legacy (perceptual) and
-default (linear).
+GIMP now ships with two groups of blending modes: legacy (perceptual, mostly
+to make old XCF files look exactly as before) and default (mostly linear).
 
 New blend modes are:
 
@@ -449,7 +449,7 @@ timestamped presets for the last time you used them.
 canvas.
 
 There is a lot to improve to make GIMP better suited for professional workflows.
-As usual, we welcome constructive discussion and recently create a
+As usual, we welcome constructive discussion and recently created a
 [mailing list](https://mail.gnome.org/mailman/listinfo/gimp-gui-list)
 to discuss the topic of improving GIMP's usability. This is a long-term
 enhancement process, which can take more time than localized changes and
