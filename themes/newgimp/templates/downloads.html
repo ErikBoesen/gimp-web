@@ -73,6 +73,7 @@
     <div id='mac' class="os mac" markdown="1">
         <h2>GIMP for macOS</h2>
 
+        {% if MACOS_FILE is defined %}
         <p>
             <span class='win-button' id='osx-torrent'>
                 <a href="//download.gimp.org/pub/gimp/v{{ MACOS_MAJOR_MINOR_VER }}/osx/{{ MACOS_FILE }}.torrent">
@@ -106,6 +107,11 @@
             <kbd>{{ MACOS_HASH }}</kbd>
         </p>
 
+        {% else %}
+            <p>
+            There is no macOS package yet, sorry. Please check back later.
+            </p>
+        {% endif %}
 
 
         <h3>Older Downloads</h3>
@@ -170,6 +176,7 @@
     <div id='win' class="os win" markdown="1">
     <h2>GIMP for Windows</h2>
 
+    {% if WINDOWS_FILE is defined %}
     <p>
         <span class='win-button' id='win-torrent'>
             <a
@@ -211,6 +218,12 @@
     <p>
         The MD5 hash sum for <code>{{ WINDOWS_FILE }}</code> is: <kbd>{{ WINDOWS_HASH }}</kbd>
     </p>
+
+    {% else %}
+        <p>
+        There is no Windows installer yet, sorry. Please check back later.
+        </p>
+    {% endif %}
 
     <h3>Older Downloads</h3>
     <p>
