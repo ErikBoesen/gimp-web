@@ -45,9 +45,10 @@ notable changes:
   Preferences).
 * And more, better, more, and even more awesome!
 
-<a href="https://www.gimp.org/release-notes/gimp-2.10.html"
+<a class="NewsButton"
+   href="https://www.gimp.org/release-notes/gimp-2.10.html"
    title="GIMP 2.10.0 Release Notes" >
-    <span id="ReleaseButton">READ COMPLETE RELEASE NOTES</span>
+    » READ COMPLETE RELEASE NOTES «
 </a>
 
 # Enjoy GIMP! #
