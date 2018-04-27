@@ -4,7 +4,7 @@ Category: News
 Authors: Wilber
 Slug: gimp-2-10-0-released
 Summary: GIMP 2.10.0 is now out with a boom!
-Status: draft
+Status: Published
 
 The long-awaited GIMP 2.10.0 is finally here! This is a huge release,
 which contains the result of 6 long years of work ([GIMP
