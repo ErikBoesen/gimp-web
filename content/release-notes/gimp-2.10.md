@@ -1,7 +1,7 @@
 Title: GIMP 2.10 Release Notes
 Date: 2018-04-27
 Authors: Wilber
-Status: hidden
+Status: Published
 
 ## Introduction
 
@@ -37,17 +37,17 @@ color icons if you prefer the old look.
     </figcaption>
 </figure>
 
+Moreover, icons are available in four sizes now, so that GIMP would look better
+on HiDPI displays. GIMP will do its best to detect which size to use, but you
+can manually override that selection in _Edit > Preferences > Interface >
+Icon Themes_.
+
 <figure>
     <img src="{attach}images/2.10-icon-sizes.png" alt="GIMP icon sizes" width="832" height="880">
     <figcaption>
     Icons in various sizes to adapt for HiDPI displays.
     </figcaption>
 </figure>
-
-Moreover, icons are available in four sizes now, so that GIMP would look better
-on HiDPI displays. GIMP will do its best to detect which size to use, but you
-can manually override that selection in _Edit > Preferences > Interface >
-Icon Themes_.
 
 **Contributors:** Benoit Touchette, Ville Pätsi, Aryeom Han, Jehan Pagès,
 Alexandre Prokoudine…
@@ -263,6 +263,9 @@ now available for that.
 
 <figure>
     <img src="{attach}images/2.10-foreground-select.jpg" alt="New foreground select" width="650" height="567">
+    <figcaption>
+    New foreground select tool using Matting Global for fine selections of foreground objects, particularly things like find hairs.
+    </figcaption>
 </figure>
 
 The _Select by Color_ and _Fuzzy Select_ tools now both feature a _Draw mask_
@@ -311,6 +314,7 @@ contributors to get them into the releasable state.
 
 _N-Point Deformation_ tool introduces the kind of smooth, as little rigid as
 possible warping you would expect physical objects to have.
+
 
 <iframe width="960" height="540" src="https://www.youtube.com/embed/OmOyQyuiO_E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
@@ -376,10 +380,16 @@ Projection_ and others will be an important addition to your toolbox.
 
 <figure>
     <img src="{filename}/news/2018-03-26_GIMP_2.10_RC1_Released/gimp-2-10-rc1-shadows-highlights.jpg" alt="Shadows-Highlights" width='950' height='685' />
+    <figcaption>
+    GEGL Shadow-Highlights filter.
+    </figcaption>
 </figure>
 
 <figure>
     <img src="{filename}/news/2018-04-17_GIMP_2.10_RC2_Released/gimp-2-10-rc-2-gegl-pano.jpg" width="979" height="791">
+    <figcaption>
+    GEGL panorama projection allows editing panorama images, <em>mapped</em>.
+    </figcaption>
 </figure>
 
 On top of that, the new _Extract Component_ filter simplifies extracting a
@@ -407,12 +417,12 @@ Your browser does not support the video tag.
 </video>
 </p>
 
-**Contributors:**: Michael Natterer, Ell, Thomas Manni, Tobias Ellinghaus,
+**Contributors:** Michael Natterer, Ell, Thomas Manni, Tobias Ellinghaus,
 Øyvind Kolås, Jehan Pagès, Alberto Griggio…
 
 ## Plug-ins
 
-GIMP now ships with over 60 GEGL-based filters. A lot of those are former GIMP effects. Here is why GEGL-based implementations
+GIMP now ships with over **80** GEGL-based filters. A lot of those are former GIMP effects. Here is why GEGL-based implementations
 are better:
 
 * You can apply them on images in 32-bit per color channel precision mode.
@@ -553,7 +563,7 @@ wiki](https://wiki.gimp.org/wiki/Release:2.10_changelog#API_Changes).
 This ChangeLog page also has a verbose list of all other changes in
 2.10.
 
-### Roadmap and what's next
+## Roadmap and what's next
 
 We maintain a [roadmap for GIMP development](http://wiki.gimp.org/index.php/Roadmap)
 that outlines the order of features to be implemented based on priorities.
@@ -601,3 +611,14 @@ We are also looking for people to look after the web-site and update the
 Or you might want to join the [documentation team](http://docs.gimp.org/)
 or the [translation team](https://wiki.gnome.org/TranslationProject) for
 your language.
+
+## Supporting
+
+Currently there are crowdfunding efforts underway for both Jehan Pagès and Øyvind Kolås.
+This is a wonderful way to help support core developers directly with their efforts and to help move great new features forward.
+Consider supporting Jehan ([Patreon][jpatreon], [Liberapay][jlpay]) and Øyvind ([Patreon][opatreon], [Liberapay][olpay]) and help keep the bugfixes and improvements coming!
+
+[jpatreon]: https://www.patreon.com/zemarmot "ZeMarmot Patreon"
+[jlpay]: https://liberapay.com/ZeMarmot "ZeMarmot Liberapay"
+[opatreon]: https://www.patreon.com/pippin "Pippin Patreon"
+[olpay]: https://liberapay.com/pippin "Pippin Liberapay"
