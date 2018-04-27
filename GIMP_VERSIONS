@@ -1,6 +1,18 @@
 {
     "STABLE":  {
 
+        "2.10.0": {
+
+            "date": "2018-04-27",
+            "source": {
+                "gimp-2.10.0.tar.bz2": "9a7111fb66a9da977fca1565d0637029"
+                }
+
+        }
+    },
+
+    "OLD-STABLE":  {
+
         "2.8.22": {
             "date": "2017-05-11",
             "source": {
@@ -137,7 +149,8 @@
                 }
             }
     },
-    "DEVELOPMENT": {
+
+    "OLD-DEVELOPMENT": {
         "2.10.0-RC2": {
             "date": "2018-04-17",
             "source": {

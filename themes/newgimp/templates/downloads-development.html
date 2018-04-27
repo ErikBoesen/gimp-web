@@ -27,6 +27,8 @@
     {% endif %}
 
     <h2>Current Development Version</h2>
+
+    {% if GIMP_VERSION_DEVELOPMENT is defined %}
     <p>The current development release of GIMP is <b>{{ GIMP_VERSION_DEVELOPMENT }}</b> ({{ RELEASE_DATE_DEVELOPMENT }}).</p>
 
 
@@ -288,6 +290,12 @@
     <!-- MIRRORS -->
 
     </div>
+
+    {% else %}
+    <p>
+    No recent development version of GIMP available
+    </p>
+    {% endif %}
 
 
     <script src='/js/platform.js'></script>
