@@ -1,5 +1,5 @@
 Title: GIMP 2.10 Release Notes
-Date: 2018-04-26
+Date: 2018-04-27
 Authors: Wilber
 Status: hidden
 
@@ -365,7 +365,7 @@ use all painting tools with various symmetries (mirror, mandala, tiling…).
 
 This new version of GIMP also ships with more new brushes available by default.
 
-**Contributors:**: Michael Natterer, Alexia Death, Daniel Sabo, shark0r, Jehan
+**Contributors:** Michael Natterer, Alexia Death, Daniel Sabo, shark0r, Jehan
 Pagès, Ell, Jose Americo Gobbo, Aryeom Han…
 
 ## Digital photography improvements
@@ -474,7 +474,7 @@ need to know the password) and exporting multipage PDF documents (each layer
 will be a page).
 
 **Contributors:** Michael Natterer, Mukund Sivamaran, Ell, Jehan Pagès,
-Lionel N…
+Lionel N, Darshan Kadu…
 
 ## Metadata viewing, editing, and preservation
 
@@ -584,7 +584,8 @@ installer packages.
 
 If you think you found a bug in GIMP, please make sure that it hasn't been
 already reported. Search [Bugzilla](http://bugzilla.gnome.org/) before filing a
-new bug-report. Here are some interesting Bugzilla queries:
+[new bug-report](https://bugzilla.gnome.org/enter_bug.cgi?product=GIMP).
+Here are some interesting Bugzilla queries:
 
 * [Open bugs with milestone 2.10](https://bugzilla.gnome.org/buglist.cgi?product=GIMP&target_milestone=2.10&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED)
 * [Resolved bugs with milestone 2.10](https://bugzilla.gnome.org/buglist.cgi?product=GIMP&target_milestone=2.10&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED)
@@ -597,4 +598,6 @@ server) or introduce yourself on the [gimp-developer
 mailing-list](https://mail.gnome.org/mailman/listinfo/gimp-developer-list).
 We are also looking for people to look after the web-site and update the
 [tutorials](https://www.gimp.org/tutorials/).
-Or you might want to join the [documentation team](http://docs.gimp.org/).
+Or you might want to join the [documentation team](http://docs.gimp.org/)
+or the [translation team](https://wiki.gnome.org/TranslationProject) for
+your language.
