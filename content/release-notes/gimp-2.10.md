@@ -183,7 +183,7 @@ values in CIE LAB and CIE LCH at your preference.
 
 <p>
 <video width="960" height="540" controls>
-  <source src="https://pixls.us/files/2.10-unified-transform.webm" type="video/webm">
+  <source src="https://download.gimp.org/mirror/pub/gimp/video/v2.10/gimp-2-10-0-unified-transform.webm" type="video/webm">
 Your browser does not support the video tag.
 </video>
 </p>
@@ -203,7 +203,7 @@ in fashion photography for retouching.
 
 <p>
 <video width="960" height="540" controls>
-  <source src="https://pixls.us/files/2.10-warp-transform.webm" type="video/webm">
+  <source src="https://download.gimp.org/mirror/pub/gimp/video/v2.10/gimp-2-10-0-warp-transform.webm" type="video/webm">
 Your browser does not support the video tag.
 </video>
 </p>
