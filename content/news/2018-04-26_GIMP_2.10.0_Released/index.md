@@ -8,7 +8,7 @@ Status: draft
 
 The long-awaited GIMP 2.10.0 is finally here! This is a huge release,
 which contains the result of 6 long years of work ([GIMP
-2.8 was released nearly exactly 6 years
+2.8 was released almost exactly 6 years
 ago!](https://www.gimp.org/news/2012/05/03/gimp-28-released/)) by a
 small but dedicated [core of
 contributors](https://www.openhub.net/p/gimp/contributors/summary).
@@ -21,7 +21,7 @@ notes](https://www.gimp.org/release-notes/gimp-2.10.html). To get an even more
 detailed list of changes please see the
 [NEWS](https://git.gnome.org/browse/gimp/tree/NEWS) file.
 
-Still to get you a quick taste of GIMP 2.10, here are some of the most
+Still, to get you a quick taste of GIMP 2.10, here are some of the most
 notable changes:
 
 * Image processing nearly fully ported to [GEGL](https://gegl.org),
@@ -29,16 +29,16 @@ notable changes:
   accelerated pixel processing, and more.
 * Color management is a core feature now, most widgets and preview areas
   are color-managed.
-* Many tools improved and several new and exciting tools, such as the
+* Many improved tools, and several new and exciting tools, such as the
   Warp transform, the Unified transform and the Handle transform tools.
 * On-canvas preview for all filters ported to GEGL.
 * Improved digital painting with canvas rotation and flipping, symmetry
   painting, [MyPaint](http://mypaint.org/) brush support…
-* Several new image format support added (OpenEXR, RGBE, WebP, HGT), as
+* Support for several new image formats added (OpenEXR, RGBE, WebP, HGT), as
   well as improved support for many existing formats (in particular
-  robuster PSD importing).
+  more robust PSD importing).
 * Metadata viewing and editing for Exif, XMP, IPTC, and DICOM.
-* Basic HiDPI support: automatically or user-selected icon size.
+* Basic HiDPI support: automatic or user-selected icon size.
 * New themes for GIMP (Light, Gray, Dark, and System) and new symbolic
   icons meant to somewhat dim the environment and shift the focus
   towards content (former theme and color icons are still available in
