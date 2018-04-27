@@ -6,11 +6,14 @@ Status: hidden
 ## Introduction
 
 GIMP 2.10 is the result of six years of work that originally focused on porting
-the program to a new image processing engine, GEGL. However the new version
+the program to a new image processing engine, [GEGL][]. However the new version
 ships with far more new features, including new and improved tools, better file
 formats support, various usability improvements, revamped color management
 support, a plethora of improvements targeted at digital painters and
 photographers, metadata editing, and much, much more.
+
+[GEGL]: http://gegl.org/ "GEGL - Generic Graphics Library"
+
 
 ## Updated user interface and initial HiDPI support
 
@@ -27,6 +30,20 @@ Light, and System. Icons are now separate from themes, and we maintain both
 color and symbolic icons, so you can configure GIMP to have System theme with
 color icons if you prefer the old look.
 
+<figure>
+    <img src="{attach}images/2.10-icon-themes.png" alt="GIMP Icon Themes" width="536" height="572">
+    <figcaption>
+    Color, Legacy, and Symbolic icons
+    </figcaption>
+</figure>
+
+<figure>
+    <img src="{attach}images/2.10-icon-sizes.png" alt="GIMP icon sizes" width="832" height="880">
+    <figcaption>
+    Icons in various sizes to adapt for HiDPI displays.
+    </figcaption>
+</figure>
+
 Moreover, icons are available in four sizes now, so that GIMP would look better
 on HiDPI displays. GIMP will do its best to detect which size to use, but you
 can manually override that selection in _Edit > Preferences > Interface >
@@ -34,6 +51,7 @@ Icon Themes_.
 
 **Contributors:** Benoit Touchette, Ville Pätsi, Aryeom Han, Jehan Pagès,
 Alexandre Prokoudine…
+
 
 ## GEGL port, high bit depth support, multi-threading, and more
 
@@ -162,6 +180,14 @@ values in CIE LAB and CIE LCH at your preference.
 
 ### Unified Transform
 
+
+<p>
+<video width="960" height="540" controls>
+  <source src="https://pixls.us/files/2.10-unified-transform.webm" type="video/webm">
+Your browser does not support the video tag.
+</video>
+</p>
+
 New _Unified Transform_ tool simplifies making multiple transforms, such as
 scaling, rotating, and correcting perspective in one go. The design is based
 on a functional spec written by our former UX expert Peter Sikking.
@@ -173,6 +199,14 @@ on a functional spec written by our former UX expert Peter Sikking.
 The new _Warp Transform_ tool allows doing localized transforms like growing or
 shifting pixels with a soft brush and undo support. Such tools are commonly used
 in fashion photography for retouching.
+
+
+<p>
+<video width="960" height="540" controls>
+  <source src="https://pixls.us/files/2.10-warp-transform.webm" type="video/webm">
+Your browser does not support the video tag.
+</video>
+</p>
 
 As such, the new tool retires the old _iWarp_ filter that was innovative at the
 time of its inception (and pre-dated Photoshop's Liquify filter), but was
@@ -226,6 +260,10 @@ types of resources.
 The _Foreground Select_ tool can finally make subpixel selections in complex
 cases such as strays of hair on textured background. Two new masking methods are
 now available for that.
+
+<figure>
+    <img src="{attach}images/2.10-foreground-select.jpg" alt="New foreground select" width="650" height="567">
+</figure>
 
 The _Select by Color_ and _Fuzzy Select_ tools now both feature a _Draw mask_
 option to display future selection area with a magenta fill, and the latter tool
@@ -283,7 +321,7 @@ to adapt various properties of a pasted image with regards to its backdrop.
 
 To enable these tools, you need to first enable the _Playground_ page of the
 _Preferences_ dialog. Do it by running GIMP with a '--show-playground.' switch
-(for Windows, you might want tweaking the path to GIMP in the shorcut properties
+(for Windows, you might want tweaking the path to GIMP in the shortcut properties
 accordingly). Then you need to go to _Edit -> Preferences -> Playground_ and
 enable the respective options, so that the tools would show up in the toolbox.
 
@@ -340,13 +378,20 @@ Projection_ and others will be an important addition to your toolbox.
     <img src="{filename}/news/2018-03-26_GIMP_2.10_RC1_Released/gimp-2-10-rc1-shadows-highlights.jpg" alt="Shadows-Highlights" width='950' height='685' />
 </figure>
 
+<figure>
+    <img src="{filename}/news/2018-04-17_GIMP_2.10_RC2_Released/gimp-2-10-rc-2-gegl-pano.jpg" width="979" height="791">
+</figure>
+
 On top of that, the new _Extract Component_ filter simplifies extracting a
 channel of an arbitrary color model (LAB, LCH, CMYK etc.) from currently
 selected layer. If you were used to decomposing and recomposing images just for
 this, your work will be that easier now.
 
-Moreover, you can now use either darktable or RawTherapee as GIMP plug-ins for
+Moreover, you can now use either [darktable][] or [RawTherapee][] as GIMP plug-ins for
 opening raw files. Any recent version of either application will do.
+
+[darktable]: https://www.darktable.org "darktable.org"
+[RawTherapee]: https://www.rawtherapee.com "RawTherapee"
 
 A new _Clip Warning_ display filter will visualize underexposed and overexposed
 areas of a photo for you, with customizable colors. For now, it’s mostly geared
@@ -437,7 +482,7 @@ GIMP now ships with plug-ins for viewing and editing Exif, XMP, IPTC, GPS, and
 DICOM metadata. They are available via the _Image > Metadata_ submenu.
 
 <figure>
-<img src="{filename}images/2.8-single-window-mode.png" alt="Single-window mode screenshot" />
+<img src="{filename}images/2.10-metadata-editor.png" alt="Metadata Editor" width="650" height="713" />
 </figure>
 
 GIMP will also preserve existing metadata in TIFF, PNG, JPEG, and WebP files.
@@ -482,7 +527,7 @@ minor ones). On stable releases, it will be raised only during crashes. The
 default behavior can be customized in _Edit > Preferences > Debugging_.
 
 Please note that we still need you to provide context, e.g. what you were doing
-when a crash occured. A step-by-step description of how to reproduce this bug
+when a crash occurred. A step-by-step description of how to reproduce this bug
 will be most helpful.
 
 Additionally, in case of a crash, GIMP will now attempt to backup all images
