@@ -19,7 +19,7 @@ We are not going to list the full changelog here, since you can get a
 better idea with our [official GIMP 2.10 release
 notes](https://www.gimp.org/release-notes/gimp-2.10.html). To get an even more
 detailed list of changes please see the
-[NEWS](https://git.gnome.org/browse/gimp/tree/NEWS) file.
+[NEWS](https://git.gnome.org/browse/gimp/tree/NEWS.pre-2-10) file.
 
 Still, to get you a quick taste of GIMP 2.10, here are some of the most
 notable changes:
