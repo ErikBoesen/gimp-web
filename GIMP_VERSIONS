@@ -7,10 +7,7 @@
             "source": {
                 "gimp-2.10.0.tar.bz2": "5e91357ede5a5d5cb0db981ff8f9726c"
                 },
-            "macos": {
-                "": ""
-                },
-	    "windows": {
+            "windows": {
                 "gimp-2.10.0-x64-setup.exe": "ca990683d398cb85a0f6d970f183bf68"
                 }
         }
