@@ -8,6 +8,7 @@
                 "gimp-2.10.0.tar.bz2": "5e91357ede5a5d5cb0db981ff8f9726c"
                 },
             "windows": {
+                "gimp-2.10.0-setup-1.exe": "47a9b0595a07bb1e744afab61c5cf8d2",	    
                 "gimp-2.10.0-setup.exe": "25290028ce4878991b6a06804979303f",
                 "gimp-2.10.0-x64-setup.exe": "ca990683d398cb85a0f6d970f183bf68"
                 }
