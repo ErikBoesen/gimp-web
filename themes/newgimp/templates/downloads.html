@@ -103,7 +103,7 @@
 
         <p>The official GIMP {{ MACOS_MAJOR_MINOR_VER }} DMG installer (linked above) is a stock GIMP build without any add-ons. It works on OS X 10.6 Snow Leopard and later. Just open the downloaded DMG and drag and drop GIMP into your "Applications" folder.</p>
         <p>
-            The MD5 hash sum for <code>{{ MACOS_FILE }}</code> is:
+            The {{MACOS_HASH_FUN.upper() }} hash sum for <code>{{ MACOS_FILE }}</code> is:
             <kbd>{{ MACOS_HASH }}</kbd>
         </p>
 
@@ -216,9 +216,10 @@
         You may need to install a torrent client to make use of this file. <a href="//en.wikipedia.org/wiki/BitTorrent" title="BitTorrent on Wikipedia">Learn more...</a>
     </p>
 
-    <h3>MD5 Hash Sum</h3>
+    <h3>Hash Sum</h3>
     <p>
-        The MD5 hash sum for <code>{{ WINDOWS_FILE }}</code> is: <kbd>{{ WINDOWS_HASH }}</kbd>
+        The {{ WINDOWS_HASH_FUN.upper() }} hash sum for <code>{{ WINDOWS_FILE }}</code> is:
+        <kbd>{{ WINDOWS_HASH }}</kbd>
     </p>
 
     {% else %}
@@ -287,17 +288,26 @@
     href='//download.gimp.org/mirror/pub/gimp/v{{ GIMP_MAJOR_MINOR_VERSION }}/'>https://download.gimp.org/mirror/pub/gimp/v{{ GIMP_MAJOR_MINOR_VERSION }}/</a>. You may want to read the <a
     href='/release-notes/gimp-{{ GIMP_MAJOR_MINOR_VERSION }}.html'>Release Notes for GIMP {{ GIMP_MAJOR_MINOR_VERSION }}</a>.</p>
 
-    <p>To allow you to check the integrity of the tarballs, here are the MD5 sums of the latest releases:</p>
+    <p>To allow you to check the integrity of the tarballs, here are the hashes of the latest releases:</p>
 
     {% if GIMP.STABLE %}
+        <dl>
         {% for version, values in GIMP.STABLE.iteritems() %}
             {% if 'source' in values %}
-            <p>
-                <strong>{{ values['source'].keys()[0] }}</strong><br>
-                <kbd>{{ values['source'].values()[0] }}</kbd>
-            </p>
+              <dt><strong>{{ values['source'].keys()[0] }}</strong>
+              {% if 'sha256' in values['source'].values()[0] %}
+              (sha256): </dt>
+              <dd><kbd>{{ values['source'].values()[0]['sha256'] }}</kbd></dd>
+              {% elif 'sha512' in values['source'].values()[0] %}
+              (sha512): </dt>
+              <dd><kbd>{{ values['source'].values()[0]['sha512'] }}</kbd></dd>
+              {% elif 'md5' in values['source'].values()[0] %}
+              (md5): </dt>
+              <dd><kbd>{{ values['source'].values()[0]['md5'] }}</kbd></dd>
+              {% endif %}
             {% endif %}
         {% endfor %}
+        </dl>
     {% endif %}
 
 
