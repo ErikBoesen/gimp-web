@@ -155,7 +155,13 @@ if 'STABLE' in GIMP:
                 WINDOWS_VER = version
                 WINDOWS_MAJOR_MINOR_VER = version[:version.index('.', version.index('.') + 1)]
                 WINDOWS_FILE = info['windows'].keys()[0]
-                WINDOWS_HASH = info['windows'].values()[0]
+                if 'sha256' in info['windows'].values()[0]:
+                    WINDOWS_HASH_FUN = 'sha256'
+                elif 'sha512' in info['windows'].values()[0]:
+                    WINDOWS_HASH_FUN = 'sha512'
+                elif 'md5' in info['windows'].values()[0]:
+                    WINDOWS_HASH_FUN = 'md5'
+                WINDOWS_HASH = info['windows'].values()[0][WINDOWS_HASH_FUN]
         if 'macos' in info:
             try:
                 MACOS_FILE
@@ -163,7 +169,13 @@ if 'STABLE' in GIMP:
                 MACOS_VER = version
                 MACOS_MAJOR_MINOR_VER = version[:version.index('.', version.index('.') + 1)]
                 MACOS_FILE = info['macos'].keys()[0]
-                MACOS_HASH = info['macos'].values()[0]
+                if 'sha256' in info['macos'].values()[0]:
+                    MACOS_HASH_FUN = 'sha256'
+                elif 'sha512' in info['macos'].values()[0]:
+                    MACOS_HASH_FUN = 'sha512'
+                elif 'md5' in info['macos'].values()[0]:
+                    MACOS_HASH_FUN = 'md5'
+                MACOS_HASH = info['macos'].values()[0][MACOS_HASH_FUN]
 else:
     print 'STABLE not defined'
 
@@ -214,14 +226,26 @@ if 'DEVELOPMENT' in GIMP:
             except NameError:
                 WINDOWS_VER_DEVELOPMENT = version
                 WINDOWS_FILE_DEVELOPMENT = info['windows'].keys()[0]
-                WINDOWS_HASH_DEVELOPMENT = info['windows'].values()[0]
+                if 'sha256' in info['windows'].values()[0]:
+                    WINDOWS_HASH_FUN_DEVELOPMENT = 'sha256'
+                elif 'sha512' in info['windows'].values()[0]:
+                    WINDOWS_HASH_FUN_DEVELOPMENT = 'sha512'
+                elif 'md5' in info['windows'].values()[0]:
+                    WINDOWS_HASH_FUN_DEVELOPMENT = 'md5'
+                WINDOWS_HASH_DEVELOPMENT = info['windows'].values()[0][WINDOWS_HASH_FUN_DEVELOPMENT]
         if 'macos' in info:
             try:
                 MACOS_FILE_DEVELOPMENT
             except NameError:
                 MACOS_VER_DEVELOPMENT = version
                 MACOS_FILE_DEVELOPMENT = info['macos'].keys()[0]
-                MACOS_HASH_DEVELOPMENT = info['macos'].values()[0]
+                if 'sha256' in info['macos'].values()[0]:
+                    MACOS_HASH_FUN_DEVELOPMENT = 'sha256'
+                elif 'sha512' in info['macos'].values()[0]:
+                    MACOS_HASH_FUN_DEVELOPMENT = 'sha512'
+                elif 'md5' in info['macos'].values()[0]:
+                    MACOS_HASH_FUN_DEVELOPMENT = 'md5'
+                MACOS_HASH_DEVELOPMENT = info['macos'].values()[0][MACOS_HASH_FUN_DEVELOPMENT]
         if 'flatpak' in info:
             try:
                 FLATPAK_FILE_DEVELOPMENT

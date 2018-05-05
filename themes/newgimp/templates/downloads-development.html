@@ -60,10 +60,10 @@
 {% if FLATPAK_FILE_DEVELOPMENT is defined %}
 
         {% if FLATPAK_VER_DEVELOPMENT != GIMP_VERSION_DEVELOPMENT %}
-        <p>Note: the currently available flatpak bundle provides GIMP {{
-        FLATPAK_VER_DEVELOPMENT }} and has not yet updated to the latest
-        version, GIMP {{ GIMP_VERSION_DEVELOPMENT }}. We're working on
-        that, please check back later.</p>
+        <p>Note: the currently available flatpak bundle provides GIMP
+        {{ FLATPAK_VER_DEVELOPMENT }} and has not yet updated to the
+        latest version, GIMP {{ GIMP_VERSION_DEVELOPMENT }}. We're
+        working on that, please check back later.</p>
         {% endif %}
 
         <p>
@@ -161,7 +161,7 @@
         <p>The official GIMP {{ MACOS_VER_DEVELOPMENT }} DMG installer (linked above) is a stock GIMP build without any add-ons. It works on OS X 10.6 Snow Leopard and later. Just open the downloaded DMG and drag and drop GIMP into your "Applications" folder.</p>
 
         <p>
-            The MD5 hash sum for <code>{{ MACOS_FILE_DEVELOPMENT }}</code> is:
+            The {{ MACOS_HASH_FUN_DEVELOPMENT.upper() }} hash sum for <code>{{ MACOS_FILE_DEVELOPMENT }}</code> is:
             <kbd>{{ MACOS_HASH_DEVELOPMENT }}</kbd>
         </p>
 
@@ -222,7 +222,8 @@
 
     <h3>MD5 Hash Sum</h3>
     <p>
-        The MD5 hash sum for <code>{{ WINDOWS_FILE_DEVELOPMENT }}</code> is: <kbd>{{ WINDOWS_HASH_DEVELOPMENT }}</kbd>
+        The {{ WINDOWS_HASH_FUN_DEVELOPMENT.upper() }} hash sum for <code>{{ WINDOWS_FILE_DEVELOPMENT }}</code> is:
+        <kbd>{{ WINDOWS_HASH_DEVELOPMENT }}</kbd>
     </p>
 
     <h3>Older Downloads</h3>

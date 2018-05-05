@@ -5,12 +5,28 @@
 
             "date": "2018-04-27",
             "source": {
-                "gimp-2.10.0.tar.bz2": "5e91357ede5a5d5cb0db981ff8f9726c"
+                "gimp-2.10.0.tar.bz2": {
+                        "sha512": "a87cf5b3604addcf9d5e50f3d9d1acbbce8ed9e2a025e19bda37ce941acb471fa5e0fe8f71a74671581fce47aaa36a11b94dd96621465168630b97209d0d02fa",
+                        "sha256": "7fcc96fb88cb0a0595d2610f63a15dec245bb37bf9db527d37a24fb75e547de2",
+                        "md5": "5e91357ede5a5d5cb0db981ff8f9726c"
+                    }
                 },
             "windows": {
-                "gimp-2.10.0-setup-1.exe": "47a9b0595a07bb1e744afab61c5cf8d2",	    
-                "gimp-2.10.0-setup.exe": "25290028ce4878991b6a06804979303f",
-                "gimp-2.10.0-x64-setup.exe": "ca990683d398cb85a0f6d970f183bf68"
+                "gimp-2.10.0-setup-1.exe": {
+                        "sha512": "cbe158f3f6b8341d8a74497d33fe65befab979b07aa5ab27e45f929bbe9e5d47da5d67c565a424d3d384c215d9348f1b5af09095f06e9c46d5afac126687f28f",
+                        "sha256": "76819fad10db52844bcf3d1f6a5cfbf1671b3eff783e63149af7218c8d191bf5",
+                        "md5": "47a9b0595a07bb1e744afab61c5cf8d2"
+                    },
+                "gimp-2.10.0-setup.exe": {
+                        "sha512": "5c50bc4db14f315d608af2d634a2cacb6b5f440d71939c81d987fe2982c3e2824a6580b97092615ac818c9259dab010f3815b9e401a80e647a262a41af4bb129",
+                        "sha256": "f4e8fc7813a0b5a797f614d25400eb829c3238546d7fc5940b60553dc46937ca",
+                        "md5": "25290028ce4878991b6a06804979303f"
+                    },
+                "gimp-2.10.0-x64-setup.exe": {
+                        "sha512": "78605e1ac1fe99186d2770aaedc7238e03016d2dbe9376b4c5a22c1623ce46f4078d986e7ba68bbceab298b8e393f5820c8a7ba2e071e988907fbb0bbbf637db",
+                        "sha256": "1babc967a37ad4692d0c2cfb76309c381bab0f4208077e9e2f38c8deec5e0a44",
+                        "md5": "ca990683d398cb85a0f6d970f183bf68"
+                    }
                 }
         }
     },
@@ -20,136 +36,214 @@
         "2.8.22": {
             "date": "2017-05-11",
             "source": {
-                "gimp-2.8.22.tar.bz2": "7e4fd7a53b1d3c32dff642ab1a94b44d"
+                "gimp-2.8.22.tar.bz2": {
+                        "md5": "7e4fd7a53b1d3c32dff642ab1a94b44d"
+                    }
                 },
             "macos": {
-                "gimp-2.8.22-x86_64.dmg": "2d314ae82f686ea15a681c32b5891e20"
+                "gimp-2.8.22-x86_64.dmg": {
+                        "md5": "2d314ae82f686ea15a681c32b5891e20"
+                    }
                 },
             "windows": {
-                "gimp-2.8.22-setup.exe": "8e54225029a44ab6ef1fde09686fec7b"
+                "gimp-2.8.22-setup.exe": {
+                        "md5": "8e54225029a44ab6ef1fde09686fec7b"
+                    }
                 }
         },
 
         "2.8.20": {
             "source": {
-                "gimp-2.8.20.tar.bz2": "d405640c426b234d6efc36fb4f5bae57"
+                "gimp-2.8.20.tar.bz2": {
+                        "md5": "d405640c426b234d6efc36fb4f5bae57"
+                    }
                 },
             "macos": {
-                "gimp-2.8.20-x86_64.dmg": "ba69e3b399c6903180265d60ed2c49b2"
+                "gimp-2.8.20-x86_64.dmg": {
+                        "md5": "ba69e3b399c6903180265d60ed2c49b2"
+                    }
                 },
             "windows": {
-                "gimp-2.8.20-setup.exe": "df90eaa5ababdbc4f2e7e0432ba36fe7"
+                "gimp-2.8.20-setup.exe": {
+                        "md5": "df90eaa5ababdbc4f2e7e0432ba36fe7"
+                    }
                 }
         },
 
         "2.8.18": {
             "source": {
-                "gimp-2.8.18.tar.bz2": "5adaa11a68bc8a42bb2c778fee4d389c"
+                "gimp-2.8.18.tar.bz2": {
+                        "md5": "5adaa11a68bc8a42bb2c778fee4d389c"
+                    }
                 },
             "windows": {
-                "gimp-2.8.18-setup.exe": "510bb11abc72443f431226523fa21b6f"
+                "gimp-2.8.18-setup.exe": {
+                        "md5": "510bb11abc72443f431226523fa21b6f"
+                    }
                 },
             "macos": {
-                "gimp-2.8.18-x86_64-1.dmg": "b86d3b884011b931408c6233d71ee41a",
-                "gimp-2.8.18-x86_64.dmg": "81c62ee2a2708568a26db1d3c200c4ab"
+                "gimp-2.8.18-x86_64-1.dmg": {
+                        "md5": "b86d3b884011b931408c6233d71ee41a"
+                    },
+                "gimp-2.8.18-x86_64.dmg": {
+                        "md5": "81c62ee2a2708568a26db1d3c200c4ab"
+                    }
                 }
             },
 
         "2.8.16": {
             "source": {
-                "gimp-2.8.16.tar.bz2": "30e0a1b7c18b0e3415f4ac54567252ac"
+                "gimp-2.8.16.tar.bz2": {
+                        "md5": "30e0a1b7c18b0e3415f4ac54567252ac"
+                    }
                 },
             "windows": {
-                "gimp-2.8.16-setup-6.exe": "22603259dca51701db129fcfa5c41337",
-                "gimp-2.8.16-setup-4.exe": "3dbad964d5fe1d2a065bc9cbea0ee1a0",
-                "gimp-2.8.16-setup-3.exe": "792d139e651963771091c1b93988cef8",
-                "gimp-2.8.16-setup-2.exe": "f64f32ba01284f8ad7c15c1b8ac12554",
-                "gimp-2.8.16-setup-1.exe": "961bba1aa7aa5346607fb76537b50647",
-                "gimp-2.8.16-setup.exe": "a2095f250fd3a776757ccddc477312d0"
+                "gimp-2.8.16-setup-6.exe": {
+                        "md5": "22603259dca51701db129fcfa5c41337"
+                    },
+                "gimp-2.8.16-setup-4.exe": {
+                        "md5": "3dbad964d5fe1d2a065bc9cbea0ee1a0"
+                    },
+                "gimp-2.8.16-setup-3.exe": {
+                        "md5": "792d139e651963771091c1b93988cef8"
+                    },
+                "gimp-2.8.16-setup-2.exe": {
+                        "md5": "f64f32ba01284f8ad7c15c1b8ac12554"
+                    },
+                "gimp-2.8.16-setup-1.exe": {
+                        "md5": "961bba1aa7aa5346607fb76537b50647"
+                    },
+                "gimp-2.8.16-setup.exe": {
+                        "md5": "a2095f250fd3a776757ccddc477312d0"
+                    }
                 },
             "macos": {
-                "gimp-2.8.16-x86_64-1.dmg": "2c454d4a15af2aa2e114936287f8e4edaece31cd",
-                "gimp-2.8.16-x86_64.dmg": "037cd8fe13b7892da623853c972efeed2d40667d"
+                "gimp-2.8.16-x86_64-1.dmg": {
+                        "md5": "2c454d4a15af2aa2e114936287f8e4edaece31cd"
+                    },
+                "gimp-2.8.16-x86_64.dmg": {
+                        "md5": "037cd8fe13b7892da623853c972efeed2d40667d"
+                    }
                 }
             },
 
         "2.8.14": {
             "source": {
-                "gimp-2.8.14.tar.bz2": "233c948203383fa078434cc3f8f925cb"
+                "gimp-2.8.14.tar.bz2": {
+                        "md5": "233c948203383fa078434cc3f8f925cb"
+                    }
                 },
             "windows": {
-                "gimp-2.8.14-setup-1.exe": "9a6f7af81b4ea15b89089a723fc25ec3",
-                "gimp-2.8.14-setup.exe": "7854adf749a86b60535bd2e0e03be804"
+                "gimp-2.8.14-setup-1.exe": {
+                        "md5": "9a6f7af81b4ea15b89089a723fc25ec3"
+                    },
+                "gimp-2.8.14-setup.exe": {
+                        "md5": "7854adf749a86b60535bd2e0e03be804"
+                    }
                 },
             "macos": {
-                "gimp-2.8.14.dmg": "94bcc3f3831d849e6d22ec11d9f58c2ab3891afb"
+                "gimp-2.8.14.dmg": {
+                        "md5": "94bcc3f3831d849e6d22ec11d9f58c2ab3891afb"
+                    }
                 }
             },
 
         "2.8.12": {
             "source": {
-                "gimp-2.8.12.tar.bz2": "47fefa240c38cfb1016b57ad6324378d"
+                "gimp-2.8.12.tar.bz2": {
+                        "md5": "47fefa240c38cfb1016b57ad6324378d"
+                    }
                 }
             },
 
         "2.8.10": {
             "source": {
-                "gimp-2.8.10.tar.bz2": "84c964aab7044489af69f7319bb59b47"
+                "gimp-2.8.10.tar.bz2": {
+                        "md5": "84c964aab7044489af69f7319bb59b47"
+                    }
                 },
             "windows": {
-                "gimp-2.8.10-setup.exe": "c14fc68cd6b89313da3266210bc73b1f"
+                "gimp-2.8.10-setup.exe": {
+                        "md5": "c14fc68cd6b89313da3266210bc73b1f"
+                    }
                 },
             "macos": {
-                "gimp-2.8.10-dmg-1.dmg": "d4610fb4d9164179112a7b1d0cb43387887301c8"
+                "gimp-2.8.10-dmg-1.dmg": {
+                        "md5": "d4610fb4d9164179112a7b1d0cb43387887301c8"
+                    }
                 }
             },
 
         "2.8.8": {
             "source": {
-                "gimp-2.8.8.tar.bz2": "ef2547c3514a1096931637bd6250635a"
+                "gimp-2.8.8.tar.bz2": {
+                        "md5": "ef2547c3514a1096931637bd6250635a"
+                    }
                 },
             "windows": {
-                "gimp-2.8.8-setup.exe": "b13d0477220a217adc871934d3d67b78"
+                "gimp-2.8.8-setup.exe": {
+                        "md5": "b13d0477220a217adc871934d3d67b78"
+                    }
                 }
             },
 
         "2.8.6": {
             "source": {
-                "gimp-2.8.6.tar.bz2": "12b3fdf33d1f07ae79b412a9e38b9693"
+                "gimp-2.8.6.tar.bz2": {
+                        "md5": "12b3fdf33d1f07ae79b412a9e38b9693"
+                    }
                 }
             },
 
         "2.8.4": {
             "source": {
-                "gimp-2.8.4.tar.bz2": "392592e8755d046317878d226145900f"
+                "gimp-2.8.4.tar.bz2": {
+                        "md5": "392592e8755d046317878d226145900f"
+                    }
                 },
             "windows": {
-                "gimp-2.8.4-setup.exe": "c7a117e7370406448bd32fc99ba5c593"
+                "gimp-2.8.4-setup.exe": {
+                        "md5": "c7a117e7370406448bd32fc99ba5c593"
+                    }
                 },
             "macos": {
-                "gimp-2.8.4-nopython-dmg-1.dmg": "f478ffd8c865bb67b50b6c75f2a68278544d6f79"
+                "gimp-2.8.4-nopython-dmg-1.dmg": {
+                        "md5": "f478ffd8c865bb67b50b6c75f2a68278544d6f79"
+                    }
                 }
             },
 
         "2.8.2": {
             "source": {
-                "gimp-2.8.2.tar.bz2": "b542138820ca3a41cbd63fc331907955"
+                "gimp-2.8.2.tar.bz2": {
+                        "md5": "b542138820ca3a41cbd63fc331907955"
+                    }
                 },
             "windows": {
-                "gimp-2.8.2-setup-1.exe": "64cb169bb7cfac115805b686cb1b2141"
+                "gimp-2.8.2-setup-1.exe": {
+                        "md5": "64cb169bb7cfac115805b686cb1b2141"
+                    }
                 },
             "macos": {
-                "gimp-2.8.2-dmg-2.dmg": "f9acaf794c7055e9ab3d5699963c684bbaf55f59",
-                "gimp-2.8.2-dmg-1.dmg": "503c6fe45e79f069c2013c00c24846a27664b70c"
+                "gimp-2.8.2-dmg-2.dmg": {
+                        "md5": "f9acaf794c7055e9ab3d5699963c684bbaf55f59"
+                    },
+                "gimp-2.8.2-dmg-1.dmg": {
+                        "md5": "503c6fe45e79f069c2013c00c24846a27664b70c"
+                    }
                 }
             },
 
         "2.8.0": {
             "source": {
-                "gimp-2.8.0.tar.bz2": "28997d14055f15db063eb92e1c8a7ebb"
+                "gimp-2.8.0.tar.bz2": {
+                        "md5": "28997d14055f15db063eb92e1c8a7ebb"
+                    }
                 },
             "windows": {
-                "gimp-2.8.0-setup.exe": "631dbbcf6ffcd5249d30a6cde934d35f"
+                "gimp-2.8.0-setup.exe": {
+                        "md5": "631dbbcf6ffcd5249d30a6cde934d35f"
+                    }
                 }
             }
     },
@@ -158,62 +252,86 @@
         "2.10.0-RC2": {
             "date": "2018-04-17",
             "source": {
-                "gimp-2.10.0-RC2.tar.bz2 ": "46aa8b38d8c00fcc912ebb389f653fec"
+                "gimp-2.10.0-RC2.tar.bz2 ": {
+                        "md5": "46aa8b38d8c00fcc912ebb389f653fec"
+                    }
             },
             "windows": {
-                "gimp-2.10.0-RC2-x64-setup.exe": "6199bf303ef3f731d0da336e0afcb62b"
+                "gimp-2.10.0-RC2-x64-setup.exe": {
+                        "md5": "6199bf303ef3f731d0da336e0afcb62b"
+                    }
                 },
             "flatpak": {
                 "i386": {
-                    "gimp-2.10.0-RC2-i386.flatpak": "d1d2fcffa4c6ed6575bb67133250796a"
-                    },
+                    "gimp-2.10.0-RC2-i386.flatpak": {
+                        "md5": "d1d2fcffa4c6ed6575bb67133250796a"
+                    }
+                },
                 "x86_64": {
-                    "gimp-2.10.0-RC2-x86_64.flatpak": "ee30a0982b2956f6904bdd4b0f834aa8"
+                    "gimp-2.10.0-RC2-x86_64.flatpak": {
+                        "md5": "ee30a0982b2956f6904bdd4b0f834aa8"
                     }
                 }
+            }
         },
 
         "2.10.0-RC1": {
             "date": "2018-03-26",
             "source": {
-                "gimp-2.10.0-RC1.tar.bz2 ": "e8892481e70c4ee3c204b6aa484f4eba"
+                "gimp-2.10.0-RC1.tar.bz2 ": {
+                        "md5": "e8892481e70c4ee3c204b6aa484f4eba"
+                    }
             },
             "windows": {
-                 "gimp-2.10.0-RC1-x64-setup.exe": "93dd18d80354db82435eb9c2055d0c83"
+                 "gimp-2.10.0-RC1-x64-setup.exe": {
+                        "md5": "93dd18d80354db82435eb9c2055d0c83"
+                    }
             }
         },
 
         "2.9.8": {
             "date": "2017-12-12",
             "source": {
-                "gimp-2.9.8.tar.bz2": "bade4163fb5b7a2063e1db570f27242f"
+                "gimp-2.9.8.tar.bz2": {
+                        "md5": "bade4163fb5b7a2063e1db570f27242f"
+                    }
             },
             "windows": {
-                 "gimp-2.9.8-x64-setup.exe": "33389c3402c02f0b702370162e2026ca"
+                 "gimp-2.9.8-x64-setup.exe": {
+                        "md5": "33389c3402c02f0b702370162e2026ca"
+                    }
             }
         },
 
         "2.9.6": {
             "date": "2017-08-24",
             "source": {
-                "gimp-2.9.6.tar.bz2": "b2d5b5619630288c882a35118e2241e5"
+                "gimp-2.9.6.tar.bz2": {
+                        "md5": "b2d5b5619630288c882a35118e2241e5"
+                    }
             },
             "windows": {
-                 "gimp-2.9.6-x64-setup.exe": "b5ecff201cade29721fa670420b12222"
+                 "gimp-2.9.6-x64-setup.exe": {
+                        "md5": "b5ecff201cade29721fa670420b12222"
+                    }
             }
         },
 
         "2.9.4":
         {
             "source": {
-                "gimp-2.9.4.tar.bz2": "6b3d425a7949110eeb532badedf721f3"
+                "gimp-2.9.4.tar.bz2": {
+                        "md5": "6b3d425a7949110eeb532badedf721f3"
+                    }
             }
         },
 
         "2.9.2":
         {
             "source": {
-                "gimp-2.9.2.tar.bz2": "aa8a846a497e3328c5b7d2fd33f5cf63"
+                "gimp-2.9.2.tar.bz2": {
+                        "md5": "aa8a846a497e3328c5b7d2fd33f5cf63"
+                    }
             }
         }
 
