@@ -12,6 +12,11 @@
                     }
                 },
             "windows": {
+                "gimp-2.10.0-setup-2.exe": {
+                        "sha512": "a23f3e981ded25968ae6871660d99ae3b7d9cfa40de3a74efacfa48e4f392189180bfa8be1d55d50d8fa55f8c36a6e3613b3d07434508ddb5acba0a907e5a0a5",
+                        "sha256": "ce28b8951318f4f3a54c7009dc783c13be8db90e074c0bb024635daa91b0bbe7",
+                        "md5": "7a8dd908073745ffb2816c3f0010466c"
+                    },
                 "gimp-2.10.0-setup-1.exe": {
                         "sha512": "cbe158f3f6b8341d8a74497d33fe65befab979b07aa5ab27e45f929bbe9e5d47da5d67c565a424d3d384c215d9348f1b5af09095f06e9c46d5afac126687f28f",
                         "sha256": "76819fad10db52844bcf3d1f6a5cfbf1671b3eff783e63149af7218c8d191bf5",
