@@ -7,25 +7,25 @@ Author: Pat David
 
 GIMP comes with a built-in help system. Once you have started the program, press <kbd>F1</kbd> for context-sensitive help. You may have to install the help pages from a separate package (gimp-help), depending on how your version of GIMP was packaged.
 
-The user manual for the GIMP 2.8 release is available in 17 languages:
+The user manual for the GIMP 2.10 release is available in 17 languages:
 
-*   [Català](http://docs.gimp.org/2.8/ca)
-*   [中文 (Chinese Simplified)](http://docs.gimp.org/2.8/zh_CN)
-*   [Dansk](http://docs.gimp.org/2.8/da)
-*   [Deutsch](http://docs.gimp.org/2.8/de/)
-*   [Ελληνικά](http://docs.gimp.org/2.8/el/)
-*   [English](http://docs.gimp.org/2.8/en/)
-*   [Español](http://docs.gimp.org/2.8/es/)
-*   [Français](http://docs.gimp.org/2.8/fr/)
-*   [Italiano](http://docs.gimp.org/2.8/it/)
-*   [日本語(Japanese)](http://docs.gimp.org/2.8/ja/)
-*   [한국어(Korean)](http://docs.gimp.org/2.8/ko/)
-*   [Nederlands](http://docs.gimp.org/2.8/nl/)
-*   [Norwegian Nynorsk](http://docs.gimp.org/2.8/nn/)
-*   [Português](http://docs.gimp.org/2.8/pt_BR)
-*   [Pусский](http://docs.gimp.org/2.8/ru/)
-*   [Slovenščina](http://docs.gimp.org/2.8/sl)
-*   [Svenska](http://docs.gimp.org/2.8/sv)
+*   [Català](http://docs.gimp.org/2.10/ca)
+*   [中文 (Chinese Simplified)](http://docs.gimp.org/2.10/zh_CN)
+*   [Dansk](http://docs.gimp.org/2.10/da)
+*   [Deutsch](http://docs.gimp.org/2.10/de/)
+*   [Ελληνικά](http://docs.gimp.org/2.10/el/)
+*   [English](http://docs.gimp.org/2.10/en/)
+*   [Español](http://docs.gimp.org/2.10/es/)
+*   [Français](http://docs.gimp.org/2.10/fr/)
+*   [Italiano](http://docs.gimp.org/2.10/it/)
+*   [日本語(Japanese)](http://docs.gimp.org/2.10/ja/)
+*   [한국어(Korean)](http://docs.gimp.org/2.10/ko/)
+*   [Nederlands](http://docs.gimp.org/2.10/nl/)
+*   [Norwegian Nynorsk](http://docs.gimp.org/2.10/nn/)
+*   [Português](http://docs.gimp.org/2.10/pt_BR)
+*   [Pусский](http://docs.gimp.org/2.10/ru/)
+*   [Slovenščina](http://docs.gimp.org/2.10/sl)
+*   [Svenska](http://docs.gimp.org/2.10/sv)
 
 ## Tutorials
 
