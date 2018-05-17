@@ -179,6 +179,38 @@ if 'STABLE' in GIMP:
 else:
     print 'STABLE not defined'
 
+if 'OLDSTABLE' in GIMP:
+    # Set the current stable GIMP version from
+    # the GIMP_VERSIONS json file.  The most
+    # current version _should_ be the first key
+    # hence, .keys()[0]
+    GIMP_VERSION_OLDSTABLE = GIMP['OLDSTABLE'].keys()[0]
+    GIMP_MAJOR_MINOR_VERSION_OLDSTABLE= GIMP_VERSION_OLDSTABLE[:GIMP_VERSION_OLDSTABLE.index('.', GIMP_VERSION_OLDSTABLE.index('.') + 1)]
+    for version, info in GIMP['OLDSTABLE'].iteritems() :
+        if 'date' in info:
+            try:
+                RELEASE_DATE_OLDSTABLE
+            except NameError:
+                RELEASE_DATE_OLDSTABLE = info['date']
+        if 'windows' in info:
+            try:
+                WINDOWS_FILE_OLDSTABLE
+            except NameError:
+                WINDOWS_VER_OLDSTABLE = version
+                WINDOWS_MAJOR_MINOR_VER_OLDSTABLE = version[:version.index('.', version.index('.') + 1)]
+                WINDOWS_FILE_OLDSTABLE = info['windows'].keys()[0]
+                WINDOWS_HASH_OLDSTABLE = info['windows'].values()[0]
+        if 'macos' in info:
+            try:
+                MACOS_FILE_OLDSTABLE
+            except NameError:
+                MACOS_VER_OLDSTABLE = version
+                MACOS_MAJOR_MINOR_VER_OLDSTABLE= version[:version.index('.', version.index('.') + 1)]
+                MACOS_FILE_OLDSTABLE = info['macos'].keys()[0]
+                MACOS_HASH_OLDSTABLE = info['macos'].values()[0]
+else:
+    print 'OLDSTABLE not defined'
+
 if 'DEVELOPMENT' in GIMP:
     # development version
     GIMP_VERSION_DEVELOPMENT = GIMP['DEVELOPMENT'].keys()[0]
