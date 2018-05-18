@@ -162,6 +162,8 @@ if 'STABLE' in GIMP:
                 elif 'md5' in info['windows'].values()[0]:
                     WINDOWS_HASH_FUN = 'md5'
                 WINDOWS_HASH = info['windows'].values()[0][WINDOWS_HASH_FUN]
+                if 'min-support' in info['windows'].values()[0]:
+                    WINDOWS_MIN_SUPPORT = info['windows'].values()[0]["min-support"]
         if 'macos' in info:
             try:
                 MACOS_FILE
@@ -176,6 +178,8 @@ if 'STABLE' in GIMP:
                 elif 'md5' in info['macos'].values()[0]:
                     MACOS_HASH_FUN = 'md5'
                 MACOS_HASH = info['macos'].values()[0][MACOS_HASH_FUN]
+                if 'min-support' in info['macos'].values()[0]:
+                    MACOS_MIN_SUPPORT = info['macos'].values()[0]["min-support"]
 else:
     print 'STABLE not defined'
 
