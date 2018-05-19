@@ -28,9 +28,32 @@ Thanks to Dirk Farin for the HEIF plug-in.
 
 ## New filters
 
-TODO: New Spherize filter to wrap an image around a spherical cap
+2 new filters have been added, based off GEGL operations:
 
-TODO: New Recursive Transform filter to create Droste effect.
+**Spherize** filter to wrap an image around a spherical cap, based off
+  "*gegl:spherize*" operation.
+
+<figure>
+<img src="{attach}gimp-2-10-2-spherize.png" alt="Spherize filter">
+<figcaption>
+Spherize filter in GIMP 2.10.2.
+<br/>
+<a href="http://film.zemarmot.net/">Original image CC-BY-SA by Aryeom Han</a>.
+</figcaption>
+</figure>
+
+**Recursive Transform** filter to create Droste effect, based off
+  "gegl:recursive-transform" operation.
+
+<figure>
+<img src="{attach}gimp-2-10-2-recursive-transform.png" alt="Recursive Transform filter">
+<figcaption>
+Recursive transform filter in GIMP 2.10.2, with a custom interface on canvas.
+<br/>
+<a href="https://www.flickr.com/photos/philipphaegi/39057406754">Original image
+CC-BY by Philipp Haegi</a>, with graphics overlay by Patrick David.
+</figcaption>
+</figure>
 
 # Noteworthy improvements
 ## Better single-window screenshots on Windows
@@ -107,7 +130,7 @@ for 921630 lines deleted!
 <figure>
 <img src="{attach}gimp-2-10-2-exterminate-bugs.png" alt="Exterminate (GTK+2)!">
 <figcaption>
-Michael Natterer and Jehan portrayed by <a href="http://film.zemarmot.net/">Aryeom</a>.
+Michael Natterer and Jehan portrayed by Aryeom.
 <br/>
 It actually misses Simon Budig, a long time contributor who made a big
 comeback on the GTK+3 port with dozens of commits!
