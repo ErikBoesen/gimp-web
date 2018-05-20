@@ -122,8 +122,8 @@ useless by the switch to GTK+ 3.x.
 
 The deletion is really going full-speed, with more than [200
 commits](https://git.gnome.org/browse/gimp/log/?h=gtk3-port) made in
-less than a month on the GTK+3 branch, with already 9805 lines inserted
-for 921630 lines deleted!
+less than a month on the gtk3-port git branch, with already 9805 lines
+inserted for 921630 lines deleted!
 
 *Delete delete delete… exterminate!*
 
