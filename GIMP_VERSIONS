@@ -2,13 +2,20 @@
     "STABLE":  {
 
         "2.10.2": {
-            "date": "2018-04-27",
+            "date": "2018-05-20",
             "source": {
                 "gimp-2.10.2.tar.bz2": {
                         "sha512": "6e351294e018a9f879993700355bdf5f10bccc6862604ae1950c4d235d32cdfcd6a0195b37377819adeef53ab3d24f32ed1de60cba6bafe58608ed0906a6fbcf",
                         "sha256": "1cb0baaecdefe44d371a15f2739a1bcbce4682336b4ccf8eb7b587ce52c333eb"
                 }
-            }
+            },
+            "windows": {
+                "gimp-2.10.2-setup.exe": {
+                        "sha512": "695017d87298f4b4aca8e25d823cc0bcd7e3f071899c8daea123c9d3549fc85c1bb89261a405f21849c31fda69e1c801642fff34e679aad7a1dd348b7378b381",
+                        "sha256": "2c18134e0cd0805af3fc0cd2f042031aed8caace1d0dbddb6aff34b40f3ed8a8",
+                        "min-support": "Windows 7"
+                }
+	    }
         },
 
         "2.10.0": {
