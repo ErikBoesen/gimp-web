@@ -120,6 +120,12 @@
             </p>
         </small>
 
+        {% if MACOS_MIN_SUPPORT is defined %}
+        <p>
+            Supported OS: <strong>{{ MACOS_MIN_SUPPORT }}</strong> or over
+        </p>
+        {% endif %}
+
         <p>Since the 2.8.2 version, GIMP runs on OSX natively. No X11 environment is required.</p>
 
         <h3>Native build</h3>
@@ -227,6 +233,11 @@
         </p>
     </small>
 
+    {% if WINDOWS_MIN_SUPPORT is defined %}
+    <p>
+        Supported OS: <strong>{{ WINDOWS_MIN_SUPPORT }}</strong> or over
+    </p>
+    {% endif %}
     <p>
         These links download the official GIMP installer for Windows (~140-150 MB).
         The installer contains both 32-bit and 64-bit versions of GIMP, and will automatically use the appropriate one.
