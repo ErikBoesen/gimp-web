@@ -6,7 +6,7 @@ Slug: gimp-2-10-2-released
 Summary: GIMP 2.10.2 released (bug fixes, HEIF support and new filters)
 Status: draft
 
-It has barely been a month since we released GIMP 2.10.0, and the
+It's barely been a month since we released GIMP 2.10.0, and the
 first bugfix version 2.10.2 is already there!
 Its main purpose is fixing the various bugs and issues
 which were to be expected after the 2.10.0 release.
