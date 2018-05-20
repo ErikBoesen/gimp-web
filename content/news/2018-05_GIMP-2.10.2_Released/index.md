@@ -11,7 +11,7 @@ first bugfix version 2.10.2 is already there!
 Its main purpose is fixing the various bugs and issues
 which were to be expected after the 2.10.0 release.
 
-**Therefore, 43 bugs have been fixed in less than a month!**
+**Therefore, 44 bugs have been fixed in less than a month!**
 
 Yet as you may recall, we have also been relaxing the policy for new
 features, and this is the first time we will be applying this policy
