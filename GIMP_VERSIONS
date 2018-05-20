@@ -1,6 +1,16 @@
 {
     "STABLE":  {
 
+        "2.10.2": {
+            "date": "2018-04-27",
+            "source": {
+                "gimp-2.10.2.tar.bz2": {
+                        "sha512": "6e351294e018a9f879993700355bdf5f10bccc6862604ae1950c4d235d32cdfcd6a0195b37377819adeef53ab3d24f32ed1de60cba6bafe58608ed0906a6fbcf",
+                        "sha256": "1cb0baaecdefe44d371a15f2739a1bcbce4682336b4ccf8eb7b587ce52c333eb"
+                }
+            }
+        },
+
         "2.10.0": {
 
             "date": "2018-04-27",
